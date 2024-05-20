@@ -59,7 +59,7 @@ func Test_Insert(t *testing.T) {
 	generator := spg.New("en-usa")
 	var opt = spg.Options{}
 
-	numItems := 100
+	numItems := 100000
 	items := make([]interface{}, 0, numItems + 20)
 	for i := 0; i < numItems; i++ {
 		items = append(items, Item{

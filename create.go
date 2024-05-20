@@ -32,7 +32,11 @@ func CreateTable(model interface{}) error {
 	for i := 0; i < t.NumField(); i++ {
 		field := t.Field(i)
 		sqlType := sqlType(field.Type)
-		fields = append(fields, fmt.Sprintf("%s %s", field.Name, sqlType))
+    if i == 0 {
+            fields = append(fields, fmt.Sprintf("%s %s PRIMARY KEY", field.Name, sqlType))
+        } else {
+            fields = append(fields, fmt.Sprintf("%s %s", field.Name, sqlType))
+        }
 	}
 	query := fmt.Sprintf("CREATE TABLE IF NOT EXISTS %s (%s);", tableName, strings.Join(fields, ", "))
 	_, err := db.Exec(query)
