@@ -90,7 +90,7 @@ This library is made to make developing an MVP faster and more efficient, it is 
 
 ## To do
 
-- [ ] Update record
+- [x] Update record
 - [ ] Image and files management
 - [ ] Backups
 - [ ] Migration
