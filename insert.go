@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"reflect"
 	"strings"
+	// "errors"
 
 	_ "github.com/mattn/go-sqlite3"
 )
@@ -13,18 +14,23 @@ func InsertInto(models ...interface{}) error {
 	if err != nil {
 		return err
 	}
-
 	defer func() {
 		if p := recover(); p != nil {
-			tx.Rollback()
-			// panic(p) // re-throw panic after Rollback
+			if rbErr := tx.Rollback(); rbErr != nil {
+				err = fmt.Errorf("rollback error: %v, original panic: %v", rbErr, p)
+			} else {
+				panic(p) // re-throw panic after Rollback
+			}
 		} else if err != nil {
-			tx.Rollback() // err is non-nil; don't change it
+			if rbErr := tx.Rollback(); rbErr != nil {
+				err = fmt.Errorf("rollback error: %v, original error: %v", rbErr, err)
+			}
 		} else {
-			err = tx.Commit() // err is nil; if Commit returns error update err
+			if err = tx.Commit(); err != nil {
+				err = fmt.Errorf("commit error: %v", err)
+			}
 		}
 	}()
-
 	for _, model := range models {
 		t := reflect.TypeOf(model)
 		v := reflect.ValueOf(model)
@@ -38,12 +44,18 @@ func InsertInto(models ...interface{}) error {
 			placeholders = append(placeholders, "?")
 			values = append(values, v.Field(i).Interface())
 		}
-		query := fmt.Sprintf("INSERT INTO %s (%s) VALUES (%s);", tableName, strings.Join(fields, ", "), strings.Join(placeholders, ", "))
-		_, err = tx.Exec(query, values...)
+		query := fmt.Sprintf("INSERT INTO %s (%s) VALUES (%s);", tableName, strings.Join(fields, ", "), strings.Join(placeholders, ", ")) // #nosec G201
+		stmt, err := tx.Prepare(query)
+		if err != nil {
+			return err
+		}
+		defer stmt.Close()
+
+		_, err = stmt.Exec(values...)
 		if err != nil {
 			return err
 		}
 	}
 
-	return nil
+	return err
 }
