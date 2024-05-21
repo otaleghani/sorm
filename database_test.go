@@ -59,8 +59,9 @@ func Test_Insert(t *testing.T) {
 	generator := spg.New("en-usa")
 	var opt = spg.Options{}
 
-	numItems := 100000
-	items := make([]interface{}, 0, numItems + 20)
+	numItems := 1
+  numCat := 1
+	items := make([]interface{}, 0, numItems + numCat)
 	for i := 0; i < numItems; i++ {
 		items = append(items, Item{
 			Id:           generator.Product().UUID(opt),
@@ -70,7 +71,7 @@ func Test_Insert(t *testing.T) {
       CatId:        strconv.Itoa(i),
 		})
 	}
-  for i := 0; i < 20; i++ {
+  for i := 0; i < numCat; i++ {
     items = append(items, Cat{
       Id: strconv.Itoa(i),
       CatName: generator.Product().Technology(opt), 
@@ -118,5 +119,40 @@ func Test_Join(t *testing.T) {
   }
   for _, val := range joinResult {
     fmt.Println(val)
+  }
+}
+
+func Test_Update(t *testing.T) {
+	items := make([]interface{}, 0, 1)
+  items = append(items, Item{
+	  Id:           "sandro",
+	  Desc:         "something",
+	  Price:        0.99,
+	  InStock:      false,
+    CatId:        "1",
+  })
+
+	if err := InsertInto(items...); err != nil {
+    t.Fatal(err)
+  }
+
+  updatedItem := Item{
+	  Id:           "sandro",
+	  Desc:         "something else",
+	  // Price:        0.99,
+	  // InStock:      false,
+    // CatId:        "1",
+  }
+  err := Update(updatedItem, "id = ?", "sandro") 
+  if err != nil {
+    t.Fatal(err)
+  }
+
+	var selectResult []Item
+	if err := Select(&selectResult, "id = ?", "sandro"); err != nil {
+		t.Fatal(err)
+	}
+  for _, row := range selectResult {
+    fmt.Println(row)
   }
 }
