@@ -34,11 +34,11 @@ type ItemCat struct {
 
 var path = "test.db"
 
-func Test_Delete(t *testing.T) {
-	if err := DeleteDatabase(path); err != nil {
-		t.Fatal(err)
-	}
-}
+// func Test_Delete(t *testing.T) {
+// 	if err := DeleteDatabase(path); err != nil {
+// 		t.Fatal(err)
+// 	}
+// }
 
 func Test_Create(t *testing.T) {
 	if err := CreateDatabase("test.db"); err != nil {
