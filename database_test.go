@@ -32,15 +32,16 @@ type ItemCat struct {
 	CatDesc string
 }
 
-// var path = "test.db"
+var path = "test.db"
 
-// func Test_Delete(t *testing.T) {
-// 	if err := DeleteDatabase(path); err != nil {
-// 		t.Fatal(err)
-// 	}
-// }
+func Test_Delete(t *testing.T) {
+	if err := DeleteDatabase(path); err != nil {
+		t.Fatal(err)
+	}
+}
 
 func Test_Create(t *testing.T) {
+	fmt.Println("im here")
 	if err := CreateDatabase("test.db"); err != nil {
 		t.Fatal(err)
 	}

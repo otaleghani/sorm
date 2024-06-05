@@ -4,12 +4,12 @@ import (
 	"fmt"
 	"reflect"
 	"strings"
-	// "errors"
 
 	_ "github.com/mattn/go-sqlite3"
 )
 
 func InsertInto(models ...interface{}) error {
+  // Starts database transaction
 	tx, err := db.Begin()
 	if err != nil {
 		return err
@@ -31,6 +31,8 @@ func InsertInto(models ...interface{}) error {
 			}
 		}
 	}()
+
+	// insert
 	for _, model := range models {
 		t := reflect.TypeOf(model)
 		v := reflect.ValueOf(model)
