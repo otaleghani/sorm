@@ -52,8 +52,6 @@ func (db *Database) Update(model interface{}, conditions string, args ...interfa
 		}
 	}
 
-	fmt.Printf("\n\n %v, %v, %v, %v, %v \n\n", t, v, tableName, fields, values)
-
 	query := fmt.Sprintf("UPDATE %s SET %s", tableName, strings.Join(fields, ", "))
 	if conditions != "" {
 		query = fmt.Sprintf("%s WHERE %s", query, conditions)
