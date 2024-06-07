@@ -8,7 +8,7 @@ import (
 	_ "github.com/mattn/go-sqlite3"
 )
 
-func (db Database) InsertInto(models ...interface{}) error {
+func (db *Database) InsertInto(models ...interface{}) error {
   // Starts database transaction
 	tx, err := db.Connection.Begin()
 	if err != nil {

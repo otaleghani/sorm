@@ -44,7 +44,7 @@ func Test_Delete(t *testing.T) {
 func Test_Create(t *testing.T) {
 	fmt.Println("im here")
   db, err := CreateDatabase("test.db")
-  dbG = db
+  dbG = *db
 	if err != nil {
 		t.Fatal(err)
 	}

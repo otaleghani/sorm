@@ -14,12 +14,12 @@ type Database struct {
   Connection *sql.DB
 }
 
-func CreateDatabase(dbPath string) (Database, error) {
+func CreateDatabase(dbPath string) (*Database, error) {
   db, err := sql.Open("sqlite3", dbPath)
 	if err != nil {
-		return Database{}, err
+		return &Database{}, err
 	}
-  return Database{Connection: db, Path: dbPath}, db.Ping()
+  return &Database{Connection: db, Path: dbPath}, db.Ping()
 }
 
 func DeleteDatabase(dbPath string) error {

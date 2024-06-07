@@ -5,7 +5,7 @@ import (
 	"reflect"
 )
 
-func (db Database) Join(dest interface{}, model1 interface{}, model2 interface{}, joinCondition string) error {
+func (db *Database) Join(dest interface{}, model1 interface{}, model2 interface{}, joinCondition string) error {
 	rv := reflect.ValueOf(dest)
 	if rv.Kind() != reflect.Ptr || rv.Elem().Kind() != reflect.Slice {
 		return fmt.Errorf("dest must be a pointer to a slice")

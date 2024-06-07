@@ -25,7 +25,7 @@ func sqlType(goType reflect.Type) string {
 	}
 }
 
-func (db Database) CreateTable(model interface{}) error {
+func (db *Database) CreateTable(model interface{}) error {
 	t := reflect.TypeOf(model)
 	tableName := t.Name()
 	fields := []string{}

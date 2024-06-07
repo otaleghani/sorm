@@ -6,7 +6,7 @@ import (
 	"strings"
 )
 
-func (db Database) Update(model interface{}, conditions string, args ...interface{}) error {
+func (db *Database) Update(model interface{}, conditions string, args ...interface{}) error {
 	t := reflect.TypeOf(model)
 	v := reflect.ValueOf(model)
 
