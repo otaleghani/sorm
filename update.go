@@ -6,7 +6,7 @@ import (
 	"strings"
 )
 
-func Update(model interface{}, conditions string, args ...interface{}) error {
+func (db Database) Update(model interface{}, conditions string, args ...interface{}) error {
 	t := reflect.TypeOf(model)
 	v := reflect.ValueOf(model)
 
@@ -62,6 +62,6 @@ func Update(model interface{}, conditions string, args ...interface{}) error {
 	// Append condition arguments to the values slice
 	values = append(values, args...)
 
-	_, err := db.Exec(query, values...)
+	_, err := db.Connection.Exec(query, values...)
 	return err
 }

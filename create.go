@@ -25,7 +25,7 @@ func sqlType(goType reflect.Type) string {
 	}
 }
 
-func CreateTable(model interface{}) error {
+func (db Database) CreateTable(model interface{}) error {
 	t := reflect.TypeOf(model)
 	tableName := t.Name()
 	fields := []string{}
@@ -39,6 +39,6 @@ func CreateTable(model interface{}) error {
 		}
 	}
 	query := fmt.Sprintf("CREATE TABLE IF NOT EXISTS %s (%s);", tableName, strings.Join(fields, ", "))
-	_, err := db.Exec(query)
+	_, err := db.Connection.Exec(query)
 	return err
 }

@@ -1,20 +1,25 @@
 package sorm
 
 import (
-	"database/sql"
 	"os"
+	"database/sql"
 
 	_ "github.com/mattn/go-sqlite3"
 )
 
-var db *sql.DB
+//var db *sql.DB
 
-func CreateDatabase(dbPath string) (err error) {
-	db, err = sql.Open("sqlite3", dbPath)
+type Database struct {
+  Path string
+  Connection *sql.DB
+}
+
+func CreateDatabase(dbPath string) (Database, error) {
+  db, err := sql.Open("sqlite3", dbPath)
 	if err != nil {
-		return err
+		return Database{}, err
 	}
-	return db.Ping()
+  return Database{Connection: db, Path: dbPath}, db.Ping()
 }
 
 func DeleteDatabase(dbPath string) error {

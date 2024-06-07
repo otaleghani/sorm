@@ -5,7 +5,7 @@ import (
 	"reflect"
 )
 
-func Join(dest interface{}, model1 interface{}, model2 interface{}, joinCondition string) error {
+func (db Database) Join(dest interface{}, model1 interface{}, model2 interface{}, joinCondition string) error {
 	rv := reflect.ValueOf(dest)
 	if rv.Kind() != reflect.Ptr || rv.Elem().Kind() != reflect.Slice {
 		return fmt.Errorf("dest must be a pointer to a slice")
@@ -16,7 +16,7 @@ func Join(dest interface{}, model1 interface{}, model2 interface{}, joinConditio
 	tableName1 := reflect.TypeOf(model1).Name()
 	tableName2 := reflect.TypeOf(model2).Name()
 	query := fmt.Sprintf("SELECT * FROM %s JOIN %s ON %s;", tableName1, tableName2, joinCondition)
-	rows, err := db.Query(query)
+	rows, err := db.Connection.Query(query)
 	if err != nil {
 		return err
 	}

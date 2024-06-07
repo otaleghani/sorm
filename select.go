@@ -8,7 +8,7 @@ import (
 	_ "github.com/mattn/go-sqlite3"
 )
 
-func Select(dest interface{}, conditions string, args ...interface{}) error {
+func (db Database) Select(dest interface{}, conditions string, args ...interface{}) error {
 	rv := reflect.ValueOf(dest)
 	if rv.Kind() != reflect.Ptr || rv.Elem().Kind() != reflect.Slice {
 		return fmt.Errorf("dest must be a pointer to a slice")
@@ -28,7 +28,7 @@ func Select(dest interface{}, conditions string, args ...interface{}) error {
 		query = fmt.Sprintf("%s WHERE %s", query, conditions)
 	}
 
-	stmt, err := db.Prepare(query)
+	stmt, err := db.Connection.Prepare(query)
 	if err != nil {
 		return err
 	}

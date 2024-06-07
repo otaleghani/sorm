@@ -33,6 +33,7 @@ type ItemCat struct {
 }
 
 var path = "test.db"
+var dbG Database
 
 func Test_Delete(t *testing.T) {
 	if err := DeleteDatabase(path); err != nil {
@@ -42,16 +43,18 @@ func Test_Delete(t *testing.T) {
 
 func Test_Create(t *testing.T) {
 	fmt.Println("im here")
-	if err := CreateDatabase("test.db"); err != nil {
+  db, err := CreateDatabase("test.db")
+  dbG = db
+	if err != nil {
 		t.Fatal(err)
 	}
 }
 
 func Test_CreateTable(t *testing.T) {
-	if err := CreateTable(Item{}); err != nil {
+	if err := dbG.CreateTable(Item{}); err != nil {
 		t.Fatal(err)
 	}
-	if err := CreateTable(Cat{}); err != nil {
+	if err := dbG.CreateTable(Cat{}); err != nil {
 		t.Fatal(err)
 	}
 }
@@ -80,7 +83,7 @@ func Test_Insert(t *testing.T) {
 		})
 	}
 
-	if err := InsertInto(items...); err != nil {
+	if err := dbG.InsertInto(items...); err != nil {
 		t.Fatal(err)
 	}
 }
@@ -88,14 +91,14 @@ func Test_Insert(t *testing.T) {
 func Test_Select(t *testing.T) {
 	var selectResult []Item
 	for i := 0; i < 1; i++ {
-		if err := Select(&selectResult, ""); err != nil {
+		if err := dbG.Select(&selectResult, ""); err != nil {
 			t.Fatal(err)
 		}
 	}
 }
 
 func Test_Delete_Items(t *testing.T) {
-	err := Delete(Item{}, "InStock = ?", false)
+	err := dbG.Delete(Item{}, "InStock = ?", false)
 	if err != nil {
 		t.Fatal(err)
 	}
@@ -103,7 +106,7 @@ func Test_Delete_Items(t *testing.T) {
 
 func Test_Select_After_Delete(t *testing.T) {
 	var selectResult []Item
-	if err := Select(&selectResult, ""); err != nil {
+	if err := dbG.Select(&selectResult, ""); err != nil {
 		t.Fatal(err)
 	}
 	for _, row := range selectResult {
@@ -113,7 +116,7 @@ func Test_Select_After_Delete(t *testing.T) {
 
 func Test_Join(t *testing.T) {
 	var joinResult []ItemCat
-	if err := Join(&joinResult, Item{}, Cat{}, "Item.CatId = Cat.Id"); err != nil {
+	if err := dbG.Join(&joinResult, Item{}, Cat{}, "Item.CatId = Cat.Id"); err != nil {
 		t.Fatal(err)
 	}
 	for _, val := range joinResult {
@@ -131,7 +134,7 @@ func Test_Update(t *testing.T) {
 		CatId:   "1",
 	})
 
-	if err := InsertInto(items...); err != nil {
+	if err := dbG.InsertInto(items...); err != nil {
 		t.Fatal(err)
 	}
 
@@ -142,13 +145,13 @@ func Test_Update(t *testing.T) {
 		// InStock:      false,
 		// CatId:        "1",
 	}
-	err := Update(updatedItem, "id = ?", "sandro")
+	err := dbG.Update(updatedItem, "id = ?", "sandro")
 	if err != nil {
 		t.Fatal(err)
 	}
 
 	var selectResult []Item
-	if err := Select(&selectResult, "id = ?", "sandro"); err != nil {
+	if err := dbG.Select(&selectResult, "id = ?", "sandro"); err != nil {
 		t.Fatal(err)
 	}
 	for _, row := range selectResult {

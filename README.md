@@ -94,3 +94,4 @@ This library is made to make developing an MVP faster and more efficient, it is 
 - [ ] Image and files management
 - [ ] Backups
 - [ ] Migration
+- [ ] Show the tables inside of a given db
