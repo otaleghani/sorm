@@ -65,7 +65,6 @@ func (db *Database) CreateTable(model interface{}) error {
   } else {
 	  query = fmt.Sprintf("CREATE TABLE IF NOT EXISTS %s (%s, %s);", tableName, strings.Join(fields, ", "), strings.Join(constraints, ", "))
   }
-  fmt.Println(query)
 	_, err := db.Connection.Exec(query)
 	return err
 }
