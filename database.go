@@ -23,7 +23,7 @@ func CreateDatabase(dbPath string, foreignKeys bool) (*Database, error) {
     _, err = db.Exec("PRAGMA foreign_keys = ON;")
     if err != nil {
       fmt.Println("Failed to enable foreign key constraints:", err)
-      return
+      return &Database{}, err
     }
   }
   return &Database{Connection: db, Path: dbPath}, db.Ping()
