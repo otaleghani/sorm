@@ -14,11 +14,18 @@ type Database struct {
   Connection *sql.DB
 }
 
-func CreateDatabase(dbPath string) (*Database, error) {
+func CreateDatabase(dbPath string, foreignKeys bool) (*Database, error) {
   db, err := sql.Open("sqlite3", dbPath)
 	if err != nil {
 		return &Database{}, err
 	}
+  if foreignKeys {
+    _, err = db.Exec("PRAGMA foreign_keys = ON;")
+    if err != nil {
+      fmt.Println("Failed to enable foreign key constraints:", err)
+      return
+    }
+  }
   return &Database{Connection: db, Path: dbPath}, db.Ping()
 }
 
