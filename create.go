@@ -29,16 +29,43 @@ func (db *Database) CreateTable(model interface{}) error {
 	t := reflect.TypeOf(model)
 	tableName := t.Name()
 	fields := []string{}
+  constraints := []string{}
 	for i := 0; i < t.NumField(); i++ {
 		field := t.Field(i)
 		sqlType := sqlType(field.Type)
-		if i == 0 {
+
+    if field.Name == "Id" {
 			fields = append(fields, fmt.Sprintf("%s %s PRIMARY KEY", field.Name, sqlType))
-		} else {
+      continue
+    }
+
+    parts := strings.Split(field.Name, "_")
+    if len(parts) > 1 {
+      suffix := parts[len(parts)-1]
+      switch suffix {
+      case "u":
+        fields = append(fields, fmt.Sprintf("%s %s UNIQUE", field.Name, sqlType))
+      case "n":
+        fields = append(fields, fmt.Sprintf("%s %s NOT NULL", field.Name, sqlType))
+      case "nu":
+        fields = append(fields, fmt.Sprintf("%s %s NOT NULL UNIQUE", field.Name, sqlType))
+      case "id":
+			  fields = append(fields, fmt.Sprintf("%s %s", field.Name, sqlType))
+        constraints = append(constraints, fmt.Sprintf("FOREIGN KEY (%s) REFERENCES %s(Id) ON UPDATE CASCADE", field.Name, parts[0]))
+      default: 
+			  fields = append(fields, fmt.Sprintf("%s %s", field.Name, sqlType))
+      }
+    } else {
 			fields = append(fields, fmt.Sprintf("%s %s", field.Name, sqlType))
-		}
+    }
 	}
-	query := fmt.Sprintf("CREATE TABLE IF NOT EXISTS %s (%s);", tableName, strings.Join(fields, ", "))
+  query := ""
+  if len(constraints) == 0 {
+	  query = fmt.Sprintf("CREATE TABLE IF NOT EXISTS %s (%s);", tableName, strings.Join(fields, ", "))
+  } else {
+	  query = fmt.Sprintf("CREATE TABLE IF NOT EXISTS %s (%s, %s);", tableName, strings.Join(fields, ", "), strings.Join(constraints, ", "))
+  }
+  fmt.Println(query)
 	_, err := db.Connection.Exec(query)
 	return err
 }

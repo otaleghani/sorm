@@ -32,19 +32,22 @@ type Product struct {
 }
 
 func main() {
-    dbPath := "test.db"
-    err := sorm.CreateDatabase(dbPath)
-    if err != nil {
-        fatal(err)
-    }
     // Create a new database at given path
-
-    err = sorm.CreateTable(Product{})
+    dbPath := "test.db"
+    db, err := sorm.CreateDatabase(dbPath)
     if err != nil {
         fatal(err)
     }
-    // Create inside of the database a table using struct Product
 
+    // Create inside of the database a table using struct Product
+    err = db.CreateTable(Product{})
+    if err != nil {
+        fatal(err)
+    }
+
+    // Create dummy data by using spg (Simple Placeholder Generator).
+    // You can find it in my Github page. In this example is just used
+    // to generate random dummy data to fill the database.
     gen := spg.New("en-usa") 
     opt := spg.Options{}
     var items []interface{}
@@ -56,28 +59,68 @@ func main() {
             InStock: gen.Boolean(),
         })
     }
-    // Create dummy data by using spg (Simple Placeholder Generator). You can find it in my Github page. In this example is just used to generate random dummy data to fill the database.
 
-    err = sorm.InsertInto(items)
-    if err != nil {
-        fatal(err)
-    }
     // Insert every item in the database, regardless of the type.
+    err = db.InsertInto(items)
+    if err != nil {
+        fatal(err)
+    }
 
+    // Here the database is queried to get in return all of the items
+    // that have InStock set to true
     selectDest := []Product{}
-    err = sorm.Select(selectDest, "InStock = ?", true)
+    err = db.Select(selectDest, "InStock = ?", true)
     if err != nil {
         fatal(err)
     }
-    // Here the database is queried to get in return all of the items that have InStock set to true
     
-    err = DeleteDatabase(dbPath)
+    // Deletes the database at given path
+    err = db.DeleteDatabase(dbPath)
     if err != nil {
         fatal(err)
     }
-    // Deletes the database at given path
 }
 ```
+
+## Constraints
+
+`sorm` has some constraints to work. The first is that the primary key
+in every table will be the field `Id`. So you'll need to add an `Id`
+field inside of your types to add a primary key.
+
+## Flags
+
+You can specify some flags to add constraints to your SQL tables. Every
+flag is spciefied with a suffix in the type name. This suffix needs to
+be preceded by an underscore, like this: `Name_u string`. There are
+several flags that you can use.
+
+- `u` adds the `UNIQUE` constraint;
+- `n` adds the `NOT NULL`;
+- `nu` adds both `UNIQUE` and `NOT NULL`;
+- `id` creates a `FOREIGN KEY` taking the first part of the name as
+  the name of the table and linking the `Id` of said table to this
+  field.
+
+### Example FOREIGN KEY
+
+``` go
+type Category struct {
+    Id string
+    Name string
+}
+
+type Product struct {
+    Id string
+    Name string
+    Quantity int
+    Category_id string
+}
+```
+
+To create a foreign key you need to specify the name of the table that
+you want to link and then the suffix `_id`.
+
 
 ## Benchmarks
 
