@@ -1,0 +1,2067 @@
+2024/06/12 14:59:41 sorm.LOG:       Opening database connection...
+2024/06/12 14:59:41 sorm.LOG:       Database opened
+2024/06/12 14:59:41 sorm.LOG:       Activating Foreign Keys
+2024/06/12 14:59:41 sorm.SUCCESS:   Database opened without error
+2024/06/12 14:59:41 sorm.LOG:       Creating table Cat
+2024/06/12 14:59:41 sorm.LOG:       	Id: TEXT PRIMARY KEY
+2024/06/12 14:59:41 sorm.LOG:       	CatName_u: TEXT UNIQUE
+2024/06/12 14:59:41 sorm.LOG:       	CatDesc: TEXT
+2024/06/12 14:59:41 sorm.LOG:       Executing CREATE TABLE query
+2024/06/12 14:59:42 sorm.SUCCESS:   Table Cat created
+2024/06/12 14:59:42 sorm.LOG:       Inserting default nil value into Cat
+2024/06/12 14:59:42 sorm.SUCCESS:   Nil value inserted into Cat
+2024/06/12 14:59:42 sorm.LOG:       Creating table Item
+2024/06/12 14:59:42 sorm.LOG:       	Id: TEXT PRIMARY KEY
+2024/06/12 14:59:42 sorm.LOG:       	Desc: TEXT
+2024/06/12 14:59:42 sorm.LOG:       	Price: REAL
+2024/06/12 14:59:42 sorm.LOG:       	InStock: BOOLEAN
+2024/06/12 14:59:42 sorm.LOG:       	Cat_id: TEXT FOREIGN KEY REFERENCES Cat
+2024/06/12 14:59:42 sorm.LOG:       Executing CREATE TABLE query
+2024/06/12 14:59:42 sorm.SUCCESS:   Table Item created
+2024/06/12 14:59:42 sorm.LOG:       Inserting default nil value into Item
+2024/06/12 14:59:42 sorm.SUCCESS:   Nil value inserted into Item
+2024/06/12 14:59:42 sorm.LOG:       Creating table SomeType
+2024/06/12 14:59:42 sorm.LOG:       	Seppia: TEXT
+2024/06/12 14:59:42 sorm.LOG:       	CatName_nu: TEXT NOT NULL UNIQUE
+2024/06/12 14:59:42 sorm.LOG:       	Cat_id: TEXT FOREIGN KEY REFERENCES Cat
+2024/06/12 14:59:42 sorm.LOG:       	Anvedi: INTEGER
+2024/06/12 14:59:42 sorm.LOG:       Executing CREATE TABLE query
+2024/06/12 14:59:42 sorm.SUCCESS:   Table SomeType created
+2024/06/12 14:59:42 sorm.LOG:       Inserting default nil value into SomeType
+2024/06/12 14:59:42 sorm.SUCCESS:   Nil value inserted into SomeType
+2024/06/12 15:00:46 sorm.LOG:       Opening database connection...
+2024/06/12 15:00:46 sorm.LOG:       Database opened
+2024/06/12 15:00:46 sorm.LOG:       Activating Foreign Keys
+2024/06/12 15:00:46 sorm.SUCCESS:   Database opened without error
+2024/06/12 15:00:46 sorm.LOG:       Creating table Cat with rows:
+2024/06/12 15:00:46 sorm.LOG:       Id: TEXT PRIMARY KEY
+2024/06/12 15:00:46 sorm.LOG:       CatName_u: TEXT UNIQUE
+2024/06/12 15:00:46 sorm.LOG:       	CatDesc: TEXT
+2024/06/12 15:00:46 sorm.LOG:       Executing CREATE TABLE query
+2024/06/12 15:00:46 sorm.SUCCESS:   Table Cat created
+2024/06/12 15:00:46 sorm.LOG:       Inserting default nil value into Cat
+2024/06/12 15:00:46 sorm.SUCCESS:   Nil value inserted into Cat
+2024/06/12 15:00:46 sorm.LOG:       Creating table Item with rows:
+2024/06/12 15:00:46 sorm.LOG:       Id: TEXT PRIMARY KEY
+2024/06/12 15:00:46 sorm.LOG:       	Desc: TEXT
+2024/06/12 15:00:46 sorm.LOG:       	Price: REAL
+2024/06/12 15:00:46 sorm.LOG:       	InStock: BOOLEAN
+2024/06/12 15:00:46 sorm.LOG:       Cat_id: TEXT FOREIGN KEY REFERENCES Cat
+2024/06/12 15:00:46 sorm.LOG:       Executing CREATE TABLE query
+2024/06/12 15:00:46 sorm.SUCCESS:   Table Item created
+2024/06/12 15:00:46 sorm.LOG:       Inserting default nil value into Item
+2024/06/12 15:00:46 sorm.SUCCESS:   Nil value inserted into Item
+2024/06/12 15:00:46 sorm.LOG:       Creating table SomeType with rows:
+2024/06/12 15:00:46 sorm.LOG:       	Seppia: TEXT
+2024/06/12 15:00:46 sorm.LOG:       CatName_nu: TEXT NOT NULL UNIQUE
+2024/06/12 15:00:46 sorm.LOG:       Cat_id: TEXT FOREIGN KEY REFERENCES Cat
+2024/06/12 15:00:46 sorm.LOG:       	Anvedi: INTEGER
+2024/06/12 15:00:46 sorm.LOG:       Executing CREATE TABLE query
+2024/06/12 15:00:46 sorm.SUCCESS:   Table SomeType created
+2024/06/12 15:00:46 sorm.LOG:       Inserting default nil value into SomeType
+2024/06/12 15:00:46 sorm.SUCCESS:   Nil value inserted into SomeType
+2024/06/12 15:00:55 sorm.LOG:       Opening database connection...
+2024/06/12 15:00:55 sorm.LOG:       Database opened
+2024/06/12 15:00:55 sorm.LOG:       Activating Foreign Keys
+2024/06/12 15:00:55 sorm.SUCCESS:   Database opened without error
+2024/06/12 15:00:55 sorm.LOG:       Creating table Cat with rows:
+2024/06/12 15:00:55 sorm.LOG:       Id: TEXT PRIMARY KEY
+2024/06/12 15:00:55 sorm.LOG:       CatName_u: TEXT UNIQUE
+2024/06/12 15:00:55 sorm.LOG:       CatDesc: TEXT
+2024/06/12 15:00:55 sorm.LOG:       Executing CREATE TABLE query
+2024/06/12 15:00:55 sorm.SUCCESS:   Table Cat created
+2024/06/12 15:00:55 sorm.LOG:       Inserting default nil value into Cat
+2024/06/12 15:00:55 sorm.SUCCESS:   Nil value inserted into Cat
+2024/06/12 15:00:55 sorm.LOG:       Creating table Item with rows:
+2024/06/12 15:00:55 sorm.LOG:       Id: TEXT PRIMARY KEY
+2024/06/12 15:00:55 sorm.LOG:       Desc: TEXT
+2024/06/12 15:00:55 sorm.LOG:       Price: REAL
+2024/06/12 15:00:55 sorm.LOG:       InStock: BOOLEAN
+2024/06/12 15:00:55 sorm.LOG:       Cat_id: TEXT FOREIGN KEY REFERENCES Cat
+2024/06/12 15:00:55 sorm.LOG:       Executing CREATE TABLE query
+2024/06/12 15:00:55 sorm.SUCCESS:   Table Item created
+2024/06/12 15:00:55 sorm.LOG:       Inserting default nil value into Item
+2024/06/12 15:00:55 sorm.SUCCESS:   Nil value inserted into Item
+2024/06/12 15:00:55 sorm.LOG:       Creating table SomeType with rows:
+2024/06/12 15:00:55 sorm.LOG:       Seppia: TEXT
+2024/06/12 15:00:55 sorm.LOG:       CatName_nu: TEXT NOT NULL UNIQUE
+2024/06/12 15:00:55 sorm.LOG:       Cat_id: TEXT FOREIGN KEY REFERENCES Cat
+2024/06/12 15:00:55 sorm.LOG:       Anvedi: INTEGER
+2024/06/12 15:00:55 sorm.LOG:       Executing CREATE TABLE query
+2024/06/12 15:00:55 sorm.SUCCESS:   Table SomeType created
+2024/06/12 15:00:55 sorm.LOG:       Inserting default nil value into SomeType
+2024/06/12 15:00:55 sorm.SUCCESS:   Nil value inserted into SomeType
+2024/06/12 15:01:24 sorm.LOG:       Opening database connection...
+2024/06/12 15:01:24 sorm.LOG:       Database opened
+2024/06/12 15:01:24 sorm.LOG:       Activating Foreign Keys
+2024/06/12 15:01:24 sorm.SUCCESS:   Database opened without error
+2024/06/12 15:01:24 sorm.LOG:       Creating table Cat with rows:
+2024/06/12 15:01:24 sorm.LOG:       Id: TEXT PRIMARY KEY
+2024/06/12 15:01:24 sorm.LOG:       CatName_u: TEXT UNIQUE
+2024/06/12 15:01:24 sorm.LOG:       Cat.CatDesc: TEXT
+2024/06/12 15:01:24 sorm.LOG:       Executing CREATE TABLE query
+2024/06/12 15:01:24 sorm.SUCCESS:   Table Cat created
+2024/06/12 15:01:24 sorm.LOG:       Inserting default nil value into Cat
+2024/06/12 15:01:24 sorm.SUCCESS:   Nil value inserted into Cat
+2024/06/12 15:01:24 sorm.LOG:       Creating table Item with rows:
+2024/06/12 15:01:24 sorm.LOG:       Id: TEXT PRIMARY KEY
+2024/06/12 15:01:24 sorm.LOG:       Item.Desc: TEXT
+2024/06/12 15:01:24 sorm.LOG:       Item.Price: REAL
+2024/06/12 15:01:24 sorm.LOG:       Item.InStock: BOOLEAN
+2024/06/12 15:01:24 sorm.LOG:       Cat_id: TEXT FOREIGN KEY REFERENCES Cat
+2024/06/12 15:01:24 sorm.LOG:       Executing CREATE TABLE query
+2024/06/12 15:01:24 sorm.SUCCESS:   Table Item created
+2024/06/12 15:01:24 sorm.LOG:       Inserting default nil value into Item
+2024/06/12 15:01:24 sorm.SUCCESS:   Nil value inserted into Item
+2024/06/12 15:01:24 sorm.LOG:       Creating table SomeType with rows:
+2024/06/12 15:01:24 sorm.LOG:       SomeType.Seppia: TEXT
+2024/06/12 15:01:24 sorm.LOG:       CatName_nu: TEXT NOT NULL UNIQUE
+2024/06/12 15:01:24 sorm.LOG:       Cat_id: TEXT FOREIGN KEY REFERENCES Cat
+2024/06/12 15:01:24 sorm.LOG:       SomeType.Anvedi: INTEGER
+2024/06/12 15:01:24 sorm.LOG:       Executing CREATE TABLE query
+2024/06/12 15:01:24 sorm.SUCCESS:   Table SomeType created
+2024/06/12 15:01:24 sorm.LOG:       Inserting default nil value into SomeType
+2024/06/12 15:01:24 sorm.SUCCESS:   Nil value inserted into SomeType
+2024/06/12 15:02:00 sorm.LOG:       Opening database connection...
+2024/06/12 15:02:00 sorm.LOG:       Database opened
+2024/06/12 15:02:00 sorm.LOG:       Activating Foreign Keys
+2024/06/12 15:02:00 sorm.SUCCESS:   Database opened without error
+2024/06/12 15:02:00 sorm.LOG:       Creating table Cat with rows:
+2024/06/12 15:02:00 sorm.LOG:       Id: TEXT PRIMARY KEY
+2024/06/12 15:02:00 sorm.LOG:       CatName_u: TEXT UNIQUE
+2024/06/12 15:02:00 sorm.LOG:       Cat.CatDesc                       : TEXT
+2024/06/12 15:02:00 sorm.LOG:       Executing CREATE TABLE query
+2024/06/12 15:02:00 sorm.SUCCESS:   Table Cat created
+2024/06/12 15:02:00 sorm.LOG:       Inserting default nil value into Cat
+2024/06/12 15:02:00 sorm.SUCCESS:   Nil value inserted into Cat
+2024/06/12 15:02:00 sorm.LOG:       Creating table Item with rows:
+2024/06/12 15:02:00 sorm.LOG:       Id: TEXT PRIMARY KEY
+2024/06/12 15:02:00 sorm.LOG:       Item.Desc                          : TEXT
+2024/06/12 15:02:00 sorm.LOG:       Item.Price                         : REAL
+2024/06/12 15:02:00 sorm.LOG:       Item.InStock                       : BOOLEAN
+2024/06/12 15:02:00 sorm.LOG:       Cat_id: TEXT FOREIGN KEY REFERENCES Cat
+2024/06/12 15:02:00 sorm.LOG:       Executing CREATE TABLE query
+2024/06/12 15:02:00 sorm.SUCCESS:   Table Item created
+2024/06/12 15:02:00 sorm.LOG:       Inserting default nil value into Item
+2024/06/12 15:02:00 sorm.SUCCESS:   Nil value inserted into Item
+2024/06/12 15:02:00 sorm.LOG:       Creating table SomeType with rows:
+2024/06/12 15:02:00 sorm.LOG:       SomeType.Seppia                        : TEXT
+2024/06/12 15:02:00 sorm.LOG:       CatName_nu: TEXT NOT NULL UNIQUE
+2024/06/12 15:02:00 sorm.LOG:       Cat_id: TEXT FOREIGN KEY REFERENCES Cat
+2024/06/12 15:02:00 sorm.LOG:       SomeType.Anvedi                        : INTEGER
+2024/06/12 15:02:00 sorm.LOG:       Executing CREATE TABLE query
+2024/06/12 15:02:00 sorm.SUCCESS:   Table SomeType created
+2024/06/12 15:02:00 sorm.LOG:       Inserting default nil value into SomeType
+2024/06/12 15:02:00 sorm.SUCCESS:   Nil value inserted into SomeType
+2024/06/12 15:02:15 sorm.LOG:       Opening database connection...
+2024/06/12 15:02:15 sorm.LOG:       Database opened
+2024/06/12 15:02:15 sorm.LOG:       Activating Foreign Keys
+2024/06/12 15:02:15 sorm.SUCCESS:   Database opened without error
+2024/06/12 15:02:15 sorm.LOG:       Creating table Cat with rows:
+2024/06/12 15:02:15 sorm.LOG:       Id: TEXT PRIMARY KEY
+2024/06/12 15:02:15 sorm.LOG:       CatName_u: TEXT UNIQUE
+2024/06/12 15:02:15 sorm.LOG:       Cat.CatDesc             : TEXT
+2024/06/12 15:02:15 sorm.LOG:       Executing CREATE TABLE query
+2024/06/12 15:02:15 sorm.SUCCESS:   Table Cat created
+2024/06/12 15:02:15 sorm.LOG:       Inserting default nil value into Cat
+2024/06/12 15:02:15 sorm.SUCCESS:   Nil value inserted into Cat
+2024/06/12 15:02:15 sorm.LOG:       Creating table Item with rows:
+2024/06/12 15:02:15 sorm.LOG:       Id: TEXT PRIMARY KEY
+2024/06/12 15:02:15 sorm.LOG:       Item.Desc                : TEXT
+2024/06/12 15:02:15 sorm.LOG:       Item.Price               : REAL
+2024/06/12 15:02:15 sorm.LOG:       Item.InStock             : BOOLEAN
+2024/06/12 15:02:15 sorm.LOG:       Cat_id: TEXT FOREIGN KEY REFERENCES Cat
+2024/06/12 15:02:15 sorm.LOG:       Executing CREATE TABLE query
+2024/06/12 15:02:15 sorm.SUCCESS:   Table Item created
+2024/06/12 15:02:15 sorm.LOG:       Inserting default nil value into Item
+2024/06/12 15:02:15 sorm.SUCCESS:   Nil value inserted into Item
+2024/06/12 15:02:15 sorm.LOG:       Creating table SomeType with rows:
+2024/06/12 15:02:15 sorm.LOG:       SomeType.Seppia              : TEXT
+2024/06/12 15:02:15 sorm.LOG:       CatName_nu: TEXT NOT NULL UNIQUE
+2024/06/12 15:02:15 sorm.LOG:       Cat_id: TEXT FOREIGN KEY REFERENCES Cat
+2024/06/12 15:02:15 sorm.LOG:       SomeType.Anvedi              : INTEGER
+2024/06/12 15:02:15 sorm.LOG:       Executing CREATE TABLE query
+2024/06/12 15:02:15 sorm.SUCCESS:   Table SomeType created
+2024/06/12 15:02:15 sorm.LOG:       Inserting default nil value into SomeType
+2024/06/12 15:02:15 sorm.SUCCESS:   Nil value inserted into SomeType
+2024/06/12 15:02:28 sorm.LOG:       Opening database connection...
+2024/06/12 15:02:28 sorm.LOG:       Database opened
+2024/06/12 15:02:28 sorm.LOG:       Activating Foreign Keys
+2024/06/12 15:02:28 sorm.SUCCESS:   Database opened without error
+2024/06/12 15:02:28 sorm.LOG:       Creating table Cat with rows:
+2024/06/12 15:02:28 sorm.LOG:       Id: TEXT PRIMARY KEY
+2024/06/12 15:02:28 sorm.LOG:       CatName_u: TEXT UNIQUE
+2024/06/12 15:02:28 sorm.LOG:       Cat.CatDesc             : TEXT
+2024/06/12 15:02:28 sorm.LOG:       Executing CREATE TABLE query
+2024/06/12 15:02:28 sorm.SUCCESS:   Table Cat created
+2024/06/12 15:02:28 sorm.LOG:       Inserting default nil value into Cat
+2024/06/12 15:02:28 sorm.SUCCESS:   Nil value inserted into Cat
+2024/06/12 15:02:28 sorm.LOG:       Creating table Item with rows:
+2024/06/12 15:02:28 sorm.LOG:       Id: TEXT PRIMARY KEY
+2024/06/12 15:02:28 sorm.LOG:       Item.Desc                : TEXT
+2024/06/12 15:02:28 sorm.LOG:       Item.Price               : REAL
+2024/06/12 15:02:28 sorm.LOG:       Item.InStock             : BOOLEAN
+2024/06/12 15:02:28 sorm.LOG:       Cat_id: TEXT FOREIGN KEY REFERENCES Cat
+2024/06/12 15:02:28 sorm.LOG:       Executing CREATE TABLE query
+2024/06/12 15:02:28 sorm.SUCCESS:   Table Item created
+2024/06/12 15:02:28 sorm.LOG:       Inserting default nil value into Item
+2024/06/12 15:02:28 sorm.SUCCESS:   Nil value inserted into Item
+2024/06/12 15:02:28 sorm.LOG:       Creating table SomeType with rows:
+2024/06/12 15:02:28 sorm.LOG:       SomeType.Seppia              : TEXT
+2024/06/12 15:02:28 sorm.LOG:       CatName_nu: TEXT NOT NULL UNIQUE
+2024/06/12 15:02:28 sorm.LOG:       Cat_id: TEXT FOREIGN KEY REFERENCES Cat
+2024/06/12 15:02:28 sorm.LOG:       SomeType.Anvedi              : INTEGER
+2024/06/12 15:02:28 sorm.LOG:       Executing CREATE TABLE query
+2024/06/12 15:02:28 sorm.SUCCESS:   Table SomeType created
+2024/06/12 15:02:28 sorm.LOG:       Inserting default nil value into SomeType
+2024/06/12 15:02:28 sorm.SUCCESS:   Nil value inserted into SomeType
+2024/06/12 15:03:07 sorm.LOG:       Opening database connection...
+2024/06/12 15:03:07 sorm.LOG:       Database opened
+2024/06/12 15:03:07 sorm.LOG:       Activating Foreign Keys
+2024/06/12 15:03:07 sorm.SUCCESS:   Database opened without error
+2024/06/12 15:03:07 sorm.LOG:       Creating table Cat with rows:
+2024/06/12 15:03:07 sorm.LOG:       Id: TEXT PRIMARY KEY
+2024/06/12 15:03:07 sorm.LOG:       CatName_u: TEXT UNIQUE
+2024/06/12 15:03:07 sorm.LOG:       Cat.CatDesc             : TEXT
+2024/06/12 15:03:07 sorm.LOG:       Executing CREATE TABLE query
+2024/06/12 15:03:07 sorm.SUCCESS:   Table Cat created
+2024/06/12 15:03:07 sorm.LOG:       Inserting default nil value into Cat
+2024/06/12 15:03:07 sorm.SUCCESS:   Nil value inserted into Cat
+2024/06/12 15:03:07 sorm.LOG:       Creating table Item with rows:
+2024/06/12 15:03:07 sorm.LOG:       Id: TEXT PRIMARY KEY
+2024/06/12 15:03:07 sorm.LOG:       Item.Desc                : TEXT
+2024/06/12 15:03:07 sorm.LOG:       Item.Price               : REAL
+2024/06/12 15:03:07 sorm.LOG:       Item.InStock             : BOOLEAN
+2024/06/12 15:03:07 sorm.LOG:       Item.Cat_id              : TEXT FOREIGN KEY REFERENCES Cat
+2024/06/12 15:03:07 sorm.LOG:       Executing CREATE TABLE query
+2024/06/12 15:03:07 sorm.SUCCESS:   Table Item created
+2024/06/12 15:03:07 sorm.LOG:       Inserting default nil value into Item
+2024/06/12 15:03:07 sorm.SUCCESS:   Nil value inserted into Item
+2024/06/12 15:03:07 sorm.LOG:       Creating table SomeType with rows:
+2024/06/12 15:03:07 sorm.LOG:       SomeType.Seppia              : TEXT
+2024/06/12 15:03:07 sorm.LOG:       CatName_nu: TEXT NOT NULL UNIQUE
+2024/06/12 15:03:07 sorm.LOG:       SomeType.Cat_id              : TEXT FOREIGN KEY REFERENCES Cat
+2024/06/12 15:03:07 sorm.LOG:       SomeType.Anvedi              : INTEGER
+2024/06/12 15:03:07 sorm.LOG:       Executing CREATE TABLE query
+2024/06/12 15:03:07 sorm.SUCCESS:   Table SomeType created
+2024/06/12 15:03:07 sorm.LOG:       Inserting default nil value into SomeType
+2024/06/12 15:03:07 sorm.SUCCESS:   Nil value inserted into SomeType
+2024/06/12 15:03:53 sorm.LOG:       Opening database connection...
+2024/06/12 15:03:53 sorm.LOG:       Database opened
+2024/06/12 15:03:53 sorm.LOG:       Activating Foreign Keys
+2024/06/12 15:03:53 sorm.SUCCESS:   Database opened without error
+2024/06/12 15:03:53 sorm.LOG:       Creating table Cat with rows:
+2024/06/12 15:03:53 sorm.LOG:       Id: TEXT PRIMARY KEY
+2024/06/12 15:03:53 sorm.LOG:       CatName_u: TEXT UNIQUE
+2024/06/12 15:03:53 sorm.LOG:       Cat.CatDesc             : TEXT
+2024/06/12 15:03:53 sorm.LOG:       Executing CREATE TABLE query
+2024/06/12 15:03:53 sorm.SUCCESS:   Table Cat created
+2024/06/12 15:03:53 sorm.LOG:       Inserting default nil value into Cat
+2024/06/12 15:03:53 sorm.SUCCESS:   Nil value inserted into Cat
+2024/06/12 15:03:53 sorm.LOG:       Creating table Item with rows:
+2024/06/12 15:03:53 sorm.LOG:       Id: TEXT PRIMARY KEY
+2024/06/12 15:03:53 sorm.LOG:       Item.Desc                : TEXT
+2024/06/12 15:03:53 sorm.LOG:       Item.Price               : REAL
+2024/06/12 15:03:53 sorm.LOG:       Item.InStock             : BOOLEAN
+2024/06/12 15:03:53 sorm.LOG:       Item.Cat_id              : TEXT FOREIGN KEY REFERENCES Cat
+2024/06/12 15:03:53 sorm.LOG:       Executing CREATE TABLE query
+2024/06/12 15:03:53 sorm.SUCCESS:   Table Item created
+2024/06/12 15:03:53 sorm.LOG:       Inserting default nil value into Item
+2024/06/12 15:03:53 sorm.SUCCESS:   Nil value inserted into Item
+2024/06/12 15:03:53 sorm.LOG:       Creating table SomeType with rows:
+2024/06/12 15:03:53 sorm.LOG:       SomeType.Seppia              : TEXT
+2024/06/12 15:03:53 sorm.LOG:       SomeType.CatName_nu          : TEXT NOT NULL UNIQUE
+2024/06/12 15:03:53 sorm.LOG:       SomeType.Cat_id              : TEXT FOREIGN KEY REFERENCES Cat
+2024/06/12 15:03:53 sorm.LOG:       SomeType.Anvedi              : INTEGER
+2024/06/12 15:03:53 sorm.LOG:       Executing CREATE TABLE query
+2024/06/12 15:03:53 sorm.SUCCESS:   Table SomeType created
+2024/06/12 15:03:53 sorm.LOG:       Inserting default nil value into SomeType
+2024/06/12 15:03:53 sorm.SUCCESS:   Nil value inserted into SomeType
+2024/06/12 15:04:14 sorm.LOG:       Opening database connection...
+2024/06/12 15:04:14 sorm.LOG:       Database opened
+2024/06/12 15:04:14 sorm.LOG:       Activating Foreign Keys
+2024/06/12 15:04:14 sorm.SUCCESS:   Database opened without error
+2024/06/12 15:04:14 sorm.LOG:       Creating table Cat with rows:
+2024/06/12 15:04:14 sorm.LOG:       Id: TEXT PRIMARY KEY
+2024/06/12 15:04:14 sorm.LOG:       CatName_u: TEXT UNIQUE
+2024/06/12 15:04:14 sorm.LOG:       Cat.CatDesc             : TEXT
+2024/06/12 15:04:14 sorm.LOG:       Executing CREATE TABLE query
+2024/06/12 15:04:14 sorm.SUCCESS:   Table Cat created
+2024/06/12 15:04:14 sorm.LOG:       Inserting default nil value into Cat
+2024/06/12 15:04:14 sorm.SUCCESS:   Nil value inserted into Cat
+2024/06/12 15:04:14 sorm.LOG:       Creating table Item with rows:
+2024/06/12 15:04:14 sorm.LOG:       Id: TEXT PRIMARY KEY
+2024/06/12 15:04:14 sorm.LOG:       Item.Desc                : TEXT
+2024/06/12 15:04:14 sorm.LOG:       Item.Price               : REAL
+2024/06/12 15:04:14 sorm.LOG:       Item.InStock             : BOOLEAN
+2024/06/12 15:04:14 sorm.LOG:       Item.Cat_id              : TEXT FOREIGN KEY REFERENCES Cat
+2024/06/12 15:04:14 sorm.LOG:       Executing CREATE TABLE query
+2024/06/12 15:04:14 sorm.SUCCESS:   Table Item created
+2024/06/12 15:04:14 sorm.LOG:       Inserting default nil value into Item
+2024/06/12 15:04:14 sorm.SUCCESS:   Nil value inserted into Item
+2024/06/12 15:04:14 sorm.LOG:       Creating table SomeType with rows:
+2024/06/12 15:04:14 sorm.LOG:       SomeType.Seppia              : TEXT
+2024/06/12 15:04:14 sorm.LOG:                   SomeType.CatName_nu          : TEXT NOT NULL UNIQUE
+2024/06/12 15:04:14 sorm.LOG:       SomeType.Cat_id              : TEXT FOREIGN KEY REFERENCES Cat
+2024/06/12 15:04:14 sorm.LOG:       SomeType.Anvedi              : INTEGER
+2024/06/12 15:04:14 sorm.LOG:       Executing CREATE TABLE query
+2024/06/12 15:04:14 sorm.SUCCESS:   Table SomeType created
+2024/06/12 15:04:14 sorm.LOG:       Inserting default nil value into SomeType
+2024/06/12 15:04:14 sorm.SUCCESS:   Nil value inserted into SomeType
+2024/06/12 15:05:40 sorm.LOG:       Opening database connection...
+2024/06/12 15:05:40 sorm.LOG:       Database opened
+2024/06/12 15:05:40 sorm.LOG:       Activating Foreign Keys
+2024/06/12 15:05:40 sorm.SUCCESS:   Database opened without error
+2024/06/12 15:05:40 sorm.LOG:       Creating table Cat with rows:
+2024/06/12 15:05:40 sorm.LOG:       Id: TEXT PRIMARY KEY
+2024/06/12 15:05:40 sorm.LOG:       CatName_u: TEXT UNIQUE
+2024/06/12 15:05:40 sorm.LOG:       CatDesc             : TEXT
+2024/06/12 15:05:40 sorm.LOG:       Executing CREATE TABLE query
+2024/06/12 15:05:40 sorm.SUCCESS:   Table Cat created
+2024/06/12 15:05:40 sorm.LOG:       Inserting default nil value into Cat
+2024/06/12 15:05:40 sorm.SUCCESS:   Nil value inserted into Cat
+2024/06/12 15:05:40 sorm.LOG:       Creating table Item with rows:
+2024/06/12 15:05:40 sorm.LOG:       Id: TEXT PRIMARY KEY
+2024/06/12 15:05:40 sorm.LOG:       Desc                : TEXT
+2024/06/12 15:05:40 sorm.LOG:       Price               : REAL
+2024/06/12 15:05:40 sorm.LOG:       InStock             : BOOLEAN
+2024/06/12 15:05:40 sorm.LOG:       Cat_id              : TEXT FOREIGN KEY REFERENCES Cat
+2024/06/12 15:05:40 sorm.LOG:       Executing CREATE TABLE query
+2024/06/12 15:05:40 sorm.SUCCESS:   Table Item created
+2024/06/12 15:05:40 sorm.LOG:       Inserting default nil value into Item
+2024/06/12 15:05:40 sorm.SUCCESS:   Nil value inserted into Item
+2024/06/12 15:05:40 sorm.LOG:       Creating table SomeType with rows:
+2024/06/12 15:05:40 sorm.LOG:       Seppia              : TEXT
+2024/06/12 15:05:40 sorm.LOG:       CatName_nu          : TEXT NOT NULL UNIQUE
+2024/06/12 15:05:40 sorm.LOG:       Cat_id              : TEXT FOREIGN KEY REFERENCES Cat
+2024/06/12 15:05:40 sorm.LOG:       Anvedi              : INTEGER
+2024/06/12 15:05:40 sorm.LOG:       Executing CREATE TABLE query
+2024/06/12 15:05:40 sorm.SUCCESS:   Table SomeType created
+2024/06/12 15:05:40 sorm.LOG:       Inserting default nil value into SomeType
+2024/06/12 15:05:40 sorm.SUCCESS:   Nil value inserted into SomeType
+2024/06/12 18:16:41 sorm.LOG:       Opening database connection...
+2024/06/12 18:16:41 sorm.LOG:       Database opened
+2024/06/12 18:16:41 sorm.LOG:       Activating Foreign Keys
+2024/06/12 18:16:41 sorm.SUCCESS:   Database opened without error
+2024/06/12 18:16:41 sorm.LOG:       Creating table Cat with rows:
+2024/06/12 18:16:41 sorm.LOG:       Id: TEXT PRIMARY KEY
+2024/06/12 18:16:41 sorm.LOG:       CatName_u: TEXT UNIQUE
+2024/06/12 18:16:41 sorm.LOG:       CatDesc             : TEXT
+2024/06/12 18:16:41 sorm.LOG:       Executing CREATE TABLE query
+2024/06/12 18:16:41 sorm.SUCCESS:   Table Cat created
+2024/06/12 18:16:41 sorm.LOG:       Inserting default nil value into Cat
+2024/06/12 18:16:41 sorm.SUCCESS:   Nil value inserted into Cat
+2024/06/12 18:16:41 sorm.LOG:       Creating table Item with rows:
+2024/06/12 18:16:41 sorm.LOG:       Id: TEXT PRIMARY KEY
+2024/06/12 18:16:41 sorm.LOG:       Desc                : TEXT
+2024/06/12 18:16:41 sorm.LOG:       Price               : REAL
+2024/06/12 18:16:41 sorm.LOG:       InStock             : BOOLEAN
+2024/06/12 18:16:41 sorm.LOG:       Cat_id              : TEXT FOREIGN KEY REFERENCES Cat
+2024/06/12 18:16:41 sorm.LOG:       Executing CREATE TABLE query
+2024/06/12 18:16:41 sorm.SUCCESS:   Table Item created
+2024/06/12 18:16:41 sorm.LOG:       Inserting default nil value into Item
+2024/06/12 18:16:41 sorm.SUCCESS:   Nil value inserted into Item
+2024/06/12 18:16:41 sorm.LOG:       Creating table SomeType with rows:
+2024/06/12 18:16:41 sorm.LOG:       Seppia              : TEXT
+2024/06/12 18:16:41 sorm.LOG:       CatName_nu          : TEXT NOT NULL UNIQUE
+2024/06/12 18:16:41 sorm.LOG:       Cat_id              : TEXT FOREIGN KEY REFERENCES Cat
+2024/06/12 18:16:41 sorm.LOG:       Anvedi              : INTEGER
+2024/06/12 18:16:41 sorm.LOG:       Executing CREATE TABLE query
+2024/06/12 18:16:41 sorm.SUCCESS:   Table SomeType created
+2024/06/12 18:16:41 sorm.LOG:       Inserting default nil value into SomeType
+2024/06/12 18:16:41 sorm.SUCCESS:   Nil value inserted into SomeType
+2024/06/12 18:17:04 sorm.LOG:       Opening database connection...
+2024/06/12 18:17:04 sorm.LOG:       Database opened
+2024/06/12 18:17:04 sorm.LOG:       Activating Foreign Keys
+2024/06/12 18:17:04 sorm.SUCCESS:   Database opened without error
+2024/06/12 18:17:04 sorm.LOG:       Creating table Cat with rows:
+2024/06/12 18:17:04 sorm.LOG:       Id                  : TEXT PRIMARY KEY
+2024/06/12 18:17:04 sorm.LOG:       CatName_u           : TEXT UNIQUE
+2024/06/12 18:17:04 sorm.LOG:       CatDesc             : TEXT
+2024/06/12 18:17:04 sorm.LOG:       Executing CREATE TABLE query
+2024/06/12 18:17:04 sorm.SUCCESS:   Table Cat created
+2024/06/12 18:17:04 sorm.LOG:       Inserting default nil value into Cat
+2024/06/12 18:17:04 sorm.SUCCESS:   Nil value inserted into Cat
+2024/06/12 18:17:04 sorm.LOG:       Creating table Item with rows:
+2024/06/12 18:17:04 sorm.LOG:       Id                  : TEXT PRIMARY KEY
+2024/06/12 18:17:04 sorm.LOG:       Desc                : TEXT
+2024/06/12 18:17:04 sorm.LOG:       Price               : REAL
+2024/06/12 18:17:04 sorm.LOG:       InStock             : BOOLEAN
+2024/06/12 18:17:04 sorm.LOG:       Cat_id              : TEXT FOREIGN KEY REFERENCES Cat
+2024/06/12 18:17:04 sorm.LOG:       Executing CREATE TABLE query
+2024/06/12 18:17:04 sorm.SUCCESS:   Table Item created
+2024/06/12 18:17:04 sorm.LOG:       Inserting default nil value into Item
+2024/06/12 18:17:04 sorm.SUCCESS:   Nil value inserted into Item
+2024/06/12 18:17:04 sorm.LOG:       Creating table SomeType with rows:
+2024/06/12 18:17:04 sorm.LOG:       Seppia              : TEXT
+2024/06/12 18:17:04 sorm.LOG:       CatName_nu          : TEXT NOT NULL UNIQUE
+2024/06/12 18:17:04 sorm.LOG:       Cat_id              : TEXT FOREIGN KEY REFERENCES Cat
+2024/06/12 18:17:04 sorm.LOG:       Anvedi              : INTEGER
+2024/06/12 18:17:04 sorm.LOG:       Executing CREATE TABLE query
+2024/06/12 18:17:04 sorm.SUCCESS:   Table SomeType created
+2024/06/12 18:17:04 sorm.LOG:       Inserting default nil value into SomeType
+2024/06/12 18:17:04 sorm.SUCCESS:   Nil value inserted into SomeType
+2024/06/12 18:17:16 sorm.LOG:       Opening database connection...
+2024/06/12 18:17:16 sorm.LOG:       Database opened
+2024/06/12 18:17:16 sorm.LOG:       Activating Foreign Keys
+2024/06/12 18:17:16 sorm.SUCCESS:   Database opened without error
+2024/06/12 18:17:16 sorm.LOG:       Creating table Cat with rows:
+2024/06/12 18:17:16 sorm.LOG:                         Id: TEXT PRIMARY KEY
+2024/06/12 18:17:16 sorm.LOG:                  CatName_u: TEXT UNIQUE
+2024/06/12 18:17:16 sorm.LOG:       CatDesc             : TEXT
+2024/06/12 18:17:16 sorm.LOG:       Executing CREATE TABLE query
+2024/06/12 18:17:16 sorm.SUCCESS:   Table Cat created
+2024/06/12 18:17:16 sorm.LOG:       Inserting default nil value into Cat
+2024/06/12 18:17:16 sorm.SUCCESS:   Nil value inserted into Cat
+2024/06/12 18:17:16 sorm.LOG:       Creating table Item with rows:
+2024/06/12 18:17:16 sorm.LOG:                         Id: TEXT PRIMARY KEY
+2024/06/12 18:17:16 sorm.LOG:       Desc                : TEXT
+2024/06/12 18:17:16 sorm.LOG:       Price               : REAL
+2024/06/12 18:17:16 sorm.LOG:       InStock             : BOOLEAN
+2024/06/12 18:17:16 sorm.LOG:       Cat_id              : TEXT FOREIGN KEY REFERENCES Cat
+2024/06/12 18:17:16 sorm.LOG:       Executing CREATE TABLE query
+2024/06/12 18:17:16 sorm.SUCCESS:   Table Item created
+2024/06/12 18:17:16 sorm.LOG:       Inserting default nil value into Item
+2024/06/12 18:17:16 sorm.SUCCESS:   Nil value inserted into Item
+2024/06/12 18:17:16 sorm.LOG:       Creating table SomeType with rows:
+2024/06/12 18:17:16 sorm.LOG:       Seppia              : TEXT
+2024/06/12 18:17:16 sorm.LOG:                 CatName_nu: TEXT NOT NULL UNIQUE
+2024/06/12 18:17:16 sorm.LOG:       Cat_id              : TEXT FOREIGN KEY REFERENCES Cat
+2024/06/12 18:17:16 sorm.LOG:       Anvedi              : INTEGER
+2024/06/12 18:17:16 sorm.LOG:       Executing CREATE TABLE query
+2024/06/12 18:17:16 sorm.SUCCESS:   Table SomeType created
+2024/06/12 18:17:16 sorm.LOG:       Inserting default nil value into SomeType
+2024/06/12 18:17:16 sorm.SUCCESS:   Nil value inserted into SomeType
+2024/06/12 18:17:25 sorm.LOG:       Opening database connection...
+2024/06/12 18:17:25 sorm.LOG:       Database opened
+2024/06/12 18:17:25 sorm.LOG:       Activating Foreign Keys
+2024/06/12 18:17:25 sorm.SUCCESS:   Database opened without error
+2024/06/12 18:17:25 sorm.LOG:       Creating table Cat with rows:
+2024/06/12 18:17:25 sorm.LOG:       Id                  : TEXT PRIMARY KEY
+2024/06/12 18:17:25 sorm.LOG:       CatName_u           : TEXT UNIQUE
+2024/06/12 18:17:25 sorm.LOG:       CatDesc             : TEXT
+2024/06/12 18:17:25 sorm.LOG:       Executing CREATE TABLE query
+2024/06/12 18:17:25 sorm.SUCCESS:   Table Cat created
+2024/06/12 18:17:25 sorm.LOG:       Inserting default nil value into Cat
+2024/06/12 18:17:25 sorm.SUCCESS:   Nil value inserted into Cat
+2024/06/12 18:17:25 sorm.LOG:       Creating table Item with rows:
+2024/06/12 18:17:25 sorm.LOG:       Id                  : TEXT PRIMARY KEY
+2024/06/12 18:17:25 sorm.LOG:       Desc                : TEXT
+2024/06/12 18:17:25 sorm.LOG:       Price               : REAL
+2024/06/12 18:17:25 sorm.LOG:       InStock             : BOOLEAN
+2024/06/12 18:17:25 sorm.LOG:       Cat_id              : TEXT FOREIGN KEY REFERENCES Cat
+2024/06/12 18:17:25 sorm.LOG:       Executing CREATE TABLE query
+2024/06/12 18:17:25 sorm.SUCCESS:   Table Item created
+2024/06/12 18:17:25 sorm.LOG:       Inserting default nil value into Item
+2024/06/12 18:17:25 sorm.SUCCESS:   Nil value inserted into Item
+2024/06/12 18:17:25 sorm.LOG:       Creating table SomeType with rows:
+2024/06/12 18:17:25 sorm.LOG:       Seppia              : TEXT
+2024/06/12 18:17:25 sorm.LOG:       CatName_nu          : TEXT NOT NULL UNIQUE
+2024/06/12 18:17:25 sorm.LOG:       Cat_id              : TEXT FOREIGN KEY REFERENCES Cat
+2024/06/12 18:17:25 sorm.LOG:       Anvedi              : INTEGER
+2024/06/12 18:17:25 sorm.LOG:       Executing CREATE TABLE query
+2024/06/12 18:17:25 sorm.SUCCESS:   Table SomeType created
+2024/06/12 18:17:25 sorm.LOG:       Inserting default nil value into SomeType
+2024/06/12 18:17:25 sorm.SUCCESS:   Nil value inserted into SomeType
+2024/06/12 18:17:52 sorm.LOG:       Opening database connection...
+2024/06/12 18:17:52 sorm.LOG:       Database opened
+2024/06/12 18:17:52 sorm.LOG:       Activating Foreign Keys
+2024/06/12 18:17:52 sorm.SUCCESS:   Database opened without error
+2024/06/12 18:17:52 sorm.LOG:       Creating table Cat with rows:
+2024/06/12 18:17:52 sorm.LOG:       Id        : TEXT PRIMARY KEY
+2024/06/12 18:17:52 sorm.LOG:       CatName_u : TEXT UNIQUE
+2024/06/12 18:17:52 sorm.LOG:       CatDesc   : TEXT
+2024/06/12 18:17:52 sorm.LOG:       Executing CREATE TABLE query
+2024/06/12 18:17:52 sorm.SUCCESS:   Table Cat created
+2024/06/12 18:17:52 sorm.LOG:       Inserting default nil value into Cat
+2024/06/12 18:17:52 sorm.SUCCESS:   Nil value inserted into Cat
+2024/06/12 18:17:52 sorm.LOG:       Creating table Item with rows:
+2024/06/12 18:17:52 sorm.LOG:       Id        : TEXT PRIMARY KEY
+2024/06/12 18:17:52 sorm.LOG:       Desc      : TEXT
+2024/06/12 18:17:52 sorm.LOG:       Price     : REAL
+2024/06/12 18:17:52 sorm.LOG:       InStock   : BOOLEAN
+2024/06/12 18:17:52 sorm.LOG:       Cat_id    : TEXT FOREIGN KEY REFERENCES Cat
+2024/06/12 18:17:52 sorm.LOG:       Executing CREATE TABLE query
+2024/06/12 18:17:52 sorm.SUCCESS:   Table Item created
+2024/06/12 18:17:52 sorm.LOG:       Inserting default nil value into Item
+2024/06/12 18:17:52 sorm.SUCCESS:   Nil value inserted into Item
+2024/06/12 18:17:52 sorm.LOG:       Creating table SomeType with rows:
+2024/06/12 18:17:52 sorm.LOG:       Seppia    : TEXT
+2024/06/12 18:17:52 sorm.LOG:       CatName_nu: TEXT NOT NULL UNIQUE
+2024/06/12 18:17:52 sorm.LOG:       Cat_id    : TEXT FOREIGN KEY REFERENCES Cat
+2024/06/12 18:17:52 sorm.LOG:       Anvedi    : INTEGER
+2024/06/12 18:17:52 sorm.LOG:       Executing CREATE TABLE query
+2024/06/12 18:17:52 sorm.SUCCESS:   Table SomeType created
+2024/06/12 18:17:52 sorm.LOG:       Inserting default nil value into SomeType
+2024/06/12 18:17:52 sorm.SUCCESS:   Nil value inserted into SomeType
+2024/06/12 18:19:01 sorm.LOG:       Opening database connection...
+2024/06/12 18:19:01 sorm.LOG:       Database opened
+2024/06/12 18:19:01 sorm.LOG:       Activating Foreign Keys
+2024/06/12 18:19:01 [31msorm.SUCCESS:[0m Database opened without error
+2024/06/12 18:19:01 sorm.LOG:       Creating table Cat with rows:
+2024/06/12 18:19:01 sorm.LOG:       Id        : TEXT PRIMARY KEY
+2024/06/12 18:19:01 sorm.LOG:       CatName_u : TEXT UNIQUE
+2024/06/12 18:19:01 sorm.LOG:       CatDesc   : TEXT
+2024/06/12 18:19:01 sorm.LOG:       Executing CREATE TABLE query
+2024/06/12 18:19:01 [31msorm.SUCCESS:[0m Table Cat created
+2024/06/12 18:19:01 sorm.LOG:       Inserting default nil value into Cat
+2024/06/12 18:19:01 [31msorm.SUCCESS:[0m Nil value inserted into Cat
+2024/06/12 18:19:01 sorm.LOG:       Creating table Item with rows:
+2024/06/12 18:19:01 sorm.LOG:       Id        : TEXT PRIMARY KEY
+2024/06/12 18:19:01 sorm.LOG:       Desc      : TEXT
+2024/06/12 18:19:01 sorm.LOG:       Price     : REAL
+2024/06/12 18:19:01 sorm.LOG:       InStock   : BOOLEAN
+2024/06/12 18:19:01 sorm.LOG:       Cat_id    : TEXT FOREIGN KEY REFERENCES Cat
+2024/06/12 18:19:01 sorm.LOG:       Executing CREATE TABLE query
+2024/06/12 18:19:01 [31msorm.SUCCESS:[0m Table Item created
+2024/06/12 18:19:01 sorm.LOG:       Inserting default nil value into Item
+2024/06/12 18:19:01 [31msorm.SUCCESS:[0m Nil value inserted into Item
+2024/06/12 18:19:01 sorm.LOG:       Creating table SomeType with rows:
+2024/06/12 18:19:01 sorm.LOG:       Seppia    : TEXT
+2024/06/12 18:19:01 sorm.LOG:       CatName_nu: TEXT NOT NULL UNIQUE
+2024/06/12 18:19:01 sorm.LOG:       Cat_id    : TEXT FOREIGN KEY REFERENCES Cat
+2024/06/12 18:19:01 sorm.LOG:       Anvedi    : INTEGER
+2024/06/12 18:19:01 sorm.LOG:       Executing CREATE TABLE query
+2024/06/12 18:19:01 [31msorm.SUCCESS:[0m Table SomeType created
+2024/06/12 18:19:01 sorm.LOG:       Inserting default nil value into SomeType
+2024/06/12 18:19:01 [31msorm.SUCCESS:[0m Nil value inserted into SomeType
+2024/06/12 18:19:10 sorm.LOG:       Opening database connection...
+2024/06/12 18:19:10 sorm.LOG:       Database opened
+2024/06/12 18:19:10 sorm.LOG:       Activating Foreign Keys
+2024/06/12 18:19:10 [32msorm.SUCCESS:[0m Database opened without error
+2024/06/12 18:19:10 sorm.LOG:       Creating table Cat with rows:
+2024/06/12 18:19:10 sorm.LOG:       Id        : TEXT PRIMARY KEY
+2024/06/12 18:19:10 sorm.LOG:       CatName_u : TEXT UNIQUE
+2024/06/12 18:19:10 sorm.LOG:       CatDesc   : TEXT
+2024/06/12 18:19:10 sorm.LOG:       Executing CREATE TABLE query
+2024/06/12 18:19:10 [32msorm.SUCCESS:[0m Table Cat created
+2024/06/12 18:19:10 sorm.LOG:       Inserting default nil value into Cat
+2024/06/12 18:19:10 [32msorm.SUCCESS:[0m Nil value inserted into Cat
+2024/06/12 18:19:10 sorm.LOG:       Creating table Item with rows:
+2024/06/12 18:19:10 sorm.LOG:       Id        : TEXT PRIMARY KEY
+2024/06/12 18:19:10 sorm.LOG:       Desc      : TEXT
+2024/06/12 18:19:10 sorm.LOG:       Price     : REAL
+2024/06/12 18:19:10 sorm.LOG:       InStock   : BOOLEAN
+2024/06/12 18:19:10 sorm.LOG:       Cat_id    : TEXT FOREIGN KEY REFERENCES Cat
+2024/06/12 18:19:10 sorm.LOG:       Executing CREATE TABLE query
+2024/06/12 18:19:10 [32msorm.SUCCESS:[0m Table Item created
+2024/06/12 18:19:10 sorm.LOG:       Inserting default nil value into Item
+2024/06/12 18:19:10 [32msorm.SUCCESS:[0m Nil value inserted into Item
+2024/06/12 18:19:10 sorm.LOG:       Creating table SomeType with rows:
+2024/06/12 18:19:10 sorm.LOG:       Seppia    : TEXT
+2024/06/12 18:19:10 sorm.LOG:       CatName_nu: TEXT NOT NULL UNIQUE
+2024/06/12 18:19:10 sorm.LOG:       Cat_id    : TEXT FOREIGN KEY REFERENCES Cat
+2024/06/12 18:19:10 sorm.LOG:       Anvedi    : INTEGER
+2024/06/12 18:19:10 sorm.LOG:       Executing CREATE TABLE query
+2024/06/12 18:19:10 [32msorm.SUCCESS:[0m Table SomeType created
+2024/06/12 18:19:10 sorm.LOG:       Inserting default nil value into SomeType
+2024/06/12 18:19:10 [32msorm.SUCCESS:[0m Nil value inserted into SomeType
+2024/06/12 18:19:41 sorm.LOG:       Opening database connection...
+2024/06/12 18:19:41 sorm.LOG:       Database opened
+2024/06/12 18:19:41 sorm.LOG:       Activating Foreign Keys
+2024/06/12 18:19:41 [32msorm.SUCCESS:[0m Database opened without error
+2024/06/12 18:19:41 sorm.LOG:       Creating table Cat with rows:
+2024/06/12 18:19:41 sorm.LOG:       Id        : TEXT PRIMARY KEY
+2024/06/12 18:19:41 sorm.LOG:       CatName_u : TEXT UNIQUE
+2024/06/12 18:19:41 sorm.LOG:       CatDesc   : TEXT
+2024/06/12 18:19:41 sorm.LOG:       Executing CREATE TABLE query
+2024/06/12 18:19:41 [32msorm.SUCCESS:[0m Table Cat created
+2024/06/12 18:19:41 sorm.LOG:       Inserting default nil value into Cat
+2024/06/12 18:19:41 [32msorm.SUCCESS:[0m Nil value inserted into Cat
+2024/06/12 18:19:41 sorm.LOG:       Creating table Item with rows:
+2024/06/12 18:19:41 sorm.LOG:       Id        : TEXT PRIMARY KEY
+2024/06/12 18:19:41 sorm.LOG:       Desc      : TEXT
+2024/06/12 18:19:41 sorm.LOG:       Price     : REAL
+2024/06/12 18:19:41 sorm.LOG:       InStock   : BOOLEAN
+2024/06/12 18:19:41 sorm.LOG:       Cat_id    : TEXT FOREIGN KEY REFERENCES Cat
+2024/06/12 18:19:41 sorm.LOG:       Executing CREATE TABLE query
+2024/06/12 18:19:41 [32msorm.SUCCESS:[0m Table Item created
+2024/06/12 18:19:41 sorm.LOG:       Inserting default nil value into Item
+2024/06/12 18:19:41 [32msorm.SUCCESS:[0m Nil value inserted into Item
+2024/06/12 18:19:41 sorm.LOG:       Creating table SomeType with rows:
+2024/06/12 18:19:41 sorm.LOG:       Seppia    : TEXT
+2024/06/12 18:19:41 sorm.LOG:       CatName_nu: TEXT NOT NULL UNIQUE
+2024/06/12 18:19:41 sorm.LOG:       Cat_id    : TEXT FOREIGN KEY REFERENCES Cat
+2024/06/12 18:19:41 sorm.LOG:       Anvedi    : INTEGER
+2024/06/12 18:19:41 sorm.LOG:       Executing CREATE TABLE query
+2024/06/12 18:19:41 [32msorm.SUCCESS:[0m Table SomeType created
+2024/06/12 18:19:41 sorm.LOG:       Inserting default nil value into SomeType
+2024/06/12 18:19:41 [32msorm.SUCCESS:[0m Nil value inserted into SomeType
+2024/06/12 18:19:46 sorm.LOG:       Opening database connection...
+2024/06/12 18:19:46 sorm.LOG:       Database opened
+2024/06/12 18:19:46 sorm.LOG:       Activating Foreign Keys
+2024/06/12 18:19:46 [32msorm.SUCCESS:[0m    Database opened without error
+2024/06/12 18:19:46 sorm.LOG:       Creating table Cat with rows:
+2024/06/12 18:19:46 sorm.LOG:       Id        : TEXT PRIMARY KEY
+2024/06/12 18:19:46 sorm.LOG:       CatName_u : TEXT UNIQUE
+2024/06/12 18:19:46 sorm.LOG:       CatDesc   : TEXT
+2024/06/12 18:19:46 sorm.LOG:       Executing CREATE TABLE query
+2024/06/12 18:19:46 [32msorm.SUCCESS:[0m    Table Cat created
+2024/06/12 18:19:46 sorm.LOG:       Inserting default nil value into Cat
+2024/06/12 18:19:46 [32msorm.SUCCESS:[0m    Nil value inserted into Cat
+2024/06/12 18:19:46 sorm.LOG:       Creating table Item with rows:
+2024/06/12 18:19:46 sorm.LOG:       Id        : TEXT PRIMARY KEY
+2024/06/12 18:19:46 sorm.LOG:       Desc      : TEXT
+2024/06/12 18:19:46 sorm.LOG:       Price     : REAL
+2024/06/12 18:19:46 sorm.LOG:       InStock   : BOOLEAN
+2024/06/12 18:19:46 sorm.LOG:       Cat_id    : TEXT FOREIGN KEY REFERENCES Cat
+2024/06/12 18:19:46 sorm.LOG:       Executing CREATE TABLE query
+2024/06/12 18:19:46 [32msorm.SUCCESS:[0m    Table Item created
+2024/06/12 18:19:46 sorm.LOG:       Inserting default nil value into Item
+2024/06/12 18:19:46 [32msorm.SUCCESS:[0m    Nil value inserted into Item
+2024/06/12 18:19:46 sorm.LOG:       Creating table SomeType with rows:
+2024/06/12 18:19:46 sorm.LOG:       Seppia    : TEXT
+2024/06/12 18:19:46 sorm.LOG:       CatName_nu: TEXT NOT NULL UNIQUE
+2024/06/12 18:19:46 sorm.LOG:       Cat_id    : TEXT FOREIGN KEY REFERENCES Cat
+2024/06/12 18:19:46 sorm.LOG:       Anvedi    : INTEGER
+2024/06/12 18:19:46 sorm.LOG:       Executing CREATE TABLE query
+2024/06/12 18:19:46 [32msorm.SUCCESS:[0m    Table SomeType created
+2024/06/12 18:19:46 sorm.LOG:       Inserting default nil value into SomeType
+2024/06/12 18:19:46 [32msorm.SUCCESS:[0m    Nil value inserted into SomeType
+2024/06/12 18:19:50 sorm.LOG:       Opening database connection...
+2024/06/12 18:19:50 sorm.LOG:       Database opened
+2024/06/12 18:19:50 sorm.LOG:       Activating Foreign Keys
+2024/06/12 18:19:50 [32msorm.SUCCESS:[0m   Database opened without error
+2024/06/12 18:19:50 sorm.LOG:       Creating table Cat with rows:
+2024/06/12 18:19:50 sorm.LOG:       Id        : TEXT PRIMARY KEY
+2024/06/12 18:19:50 sorm.LOG:       CatName_u : TEXT UNIQUE
+2024/06/12 18:19:50 sorm.LOG:       CatDesc   : TEXT
+2024/06/12 18:19:50 sorm.LOG:       Executing CREATE TABLE query
+2024/06/12 18:19:50 [32msorm.SUCCESS:[0m   Table Cat created
+2024/06/12 18:19:50 sorm.LOG:       Inserting default nil value into Cat
+2024/06/12 18:19:50 [32msorm.SUCCESS:[0m   Nil value inserted into Cat
+2024/06/12 18:19:50 sorm.LOG:       Creating table Item with rows:
+2024/06/12 18:19:50 sorm.LOG:       Id        : TEXT PRIMARY KEY
+2024/06/12 18:19:50 sorm.LOG:       Desc      : TEXT
+2024/06/12 18:19:50 sorm.LOG:       Price     : REAL
+2024/06/12 18:19:50 sorm.LOG:       InStock   : BOOLEAN
+2024/06/12 18:19:50 sorm.LOG:       Cat_id    : TEXT FOREIGN KEY REFERENCES Cat
+2024/06/12 18:19:50 sorm.LOG:       Executing CREATE TABLE query
+2024/06/12 18:19:50 [32msorm.SUCCESS:[0m   Table Item created
+2024/06/12 18:19:50 sorm.LOG:       Inserting default nil value into Item
+2024/06/12 18:19:50 [32msorm.SUCCESS:[0m   Nil value inserted into Item
+2024/06/12 18:19:50 sorm.LOG:       Creating table SomeType with rows:
+2024/06/12 18:19:50 sorm.LOG:       Seppia    : TEXT
+2024/06/12 18:19:50 sorm.LOG:       CatName_nu: TEXT NOT NULL UNIQUE
+2024/06/12 18:19:50 sorm.LOG:       Cat_id    : TEXT FOREIGN KEY REFERENCES Cat
+2024/06/12 18:19:50 sorm.LOG:       Anvedi    : INTEGER
+2024/06/12 18:19:50 sorm.LOG:       Executing CREATE TABLE query
+2024/06/12 18:19:50 [32msorm.SUCCESS:[0m   Table SomeType created
+2024/06/12 18:19:50 sorm.LOG:       Inserting default nil value into SomeType
+2024/06/12 18:19:50 [32msorm.SUCCESS:[0m   Nil value inserted into SomeType
+2024/06/12 18:20:30 sorm.LOG:       Opening database connection...
+2024/06/12 18:20:30 sorm.LOG:       Database opened
+2024/06/12 18:20:30 sorm.LOG:       Activating Foreign Keys
+2024/06/12 18:20:30 [32msorm.SUCCESS:[0m   Database opened without error
+2024/06/12 18:20:30 sorm.LOG:       Creating table Cat with rows:
+2024/06/12 18:20:30 sorm.LOG:       Id        : TEXT PRIMARY KEY
+2024/06/12 18:20:30 sorm.LOG:       CatName_u : TEXT UNIQUE
+2024/06/12 18:20:30 sorm.LOG:       CatDesc   : TEXT
+2024/06/12 18:20:30 sorm.LOG:       Executing CREATE TABLE query
+2024/06/12 18:20:30 [32msorm.SUCCESS:[0m   Table Cat created
+2024/06/12 18:20:30 sorm.LOG:       Inserting default nil value into Cat
+2024/06/12 18:20:30 [32msorm.SUCCESS:[0m   Nil value inserted into Cat
+2024/06/12 18:20:30 sorm.LOG:       Creating table Item with rows:
+2024/06/12 18:20:30 sorm.LOG:       Id        : TEXT PRIMARY KEY
+2024/06/12 18:20:30 sorm.LOG:       Desc      : TEXT
+2024/06/12 18:20:30 sorm.LOG:       Price     : REAL
+2024/06/12 18:20:30 sorm.LOG:       InStock   : BOOLEAN
+2024/06/12 18:20:30 sorm.LOG:       Cat_id    : TEXT FOREIGN KEY REFERENCES Cat
+2024/06/12 18:20:30 sorm.LOG:       Executing CREATE TABLE query
+2024/06/12 18:20:30 [32msorm.SUCCESS:[0m   Table Item created
+2024/06/12 18:20:30 sorm.LOG:       Inserting default nil value into Item
+2024/06/12 18:20:30 [32msorm.SUCCESS:[0m   Nil value inserted into Item
+2024/06/12 18:20:30 sorm.LOG:       Creating table SomeType with rows:
+2024/06/12 18:20:30 sorm.LOG:       Seppia    : TEXT
+2024/06/12 18:20:30 sorm.LOG:       CatName_nu: TEXT NOT NULL UNIQUE
+2024/06/12 18:20:30 sorm.LOG:       Cat_id    : TEXT FOREIGN KEY REFERENCES Cat
+2024/06/12 18:20:30 sorm.LOG:       Anvedi    : INTEGER
+2024/06/12 18:20:30 sorm.LOG:       Executing CREATE TABLE query
+2024/06/12 18:20:30 [32msorm.SUCCESS:[0m   Table SomeType created
+2024/06/12 18:20:30 sorm.LOG:       Inserting default nil value into SomeType
+2024/06/12 18:20:30 [32msorm.SUCCESS:[0m   Nil value inserted into SomeType
+2024/06/12 18:21:04 [31msorm.LOG:[0m Opening database connection...
+2024/06/12 18:21:04 [31msorm.LOG:[0m Database opened
+2024/06/12 18:21:04 [31msorm.LOG:[0m Activating Foreign Keys
+2024/06/12 18:21:04 [32msorm.SUCCESS:[0m   Database opened without error
+2024/06/12 18:21:04 [31msorm.LOG:[0m Creating table Cat with rows:
+2024/06/12 18:21:04 [31msorm.LOG:[0m Id        : TEXT PRIMARY KEY
+2024/06/12 18:21:04 [31msorm.LOG:[0m CatName_u : TEXT UNIQUE
+2024/06/12 18:21:04 [31msorm.LOG:[0m CatDesc   : TEXT
+2024/06/12 18:21:04 [31msorm.LOG:[0m Executing CREATE TABLE query
+2024/06/12 18:21:04 [32msorm.SUCCESS:[0m   Table Cat created
+2024/06/12 18:21:04 [31msorm.LOG:[0m Inserting default nil value into Cat
+2024/06/12 18:21:04 [32msorm.SUCCESS:[0m   Nil value inserted into Cat
+2024/06/12 18:21:04 [31msorm.LOG:[0m Creating table Item with rows:
+2024/06/12 18:21:04 [31msorm.LOG:[0m Id        : TEXT PRIMARY KEY
+2024/06/12 18:21:04 [31msorm.LOG:[0m Desc      : TEXT
+2024/06/12 18:21:04 [31msorm.LOG:[0m Price     : REAL
+2024/06/12 18:21:04 [31msorm.LOG:[0m InStock   : BOOLEAN
+2024/06/12 18:21:04 [31msorm.LOG:[0m Cat_id    : TEXT FOREIGN KEY REFERENCES Cat
+2024/06/12 18:21:04 [31msorm.LOG:[0m Executing CREATE TABLE query
+2024/06/12 18:21:04 [32msorm.SUCCESS:[0m   Table Item created
+2024/06/12 18:21:04 [31msorm.LOG:[0m Inserting default nil value into Item
+2024/06/12 18:21:04 [32msorm.SUCCESS:[0m   Nil value inserted into Item
+2024/06/12 18:21:04 [31msorm.LOG:[0m Creating table SomeType with rows:
+2024/06/12 18:21:04 [31msorm.LOG:[0m Seppia    : TEXT
+2024/06/12 18:21:04 [31msorm.LOG:[0m CatName_nu: TEXT NOT NULL UNIQUE
+2024/06/12 18:21:04 [31msorm.LOG:[0m Cat_id    : TEXT FOREIGN KEY REFERENCES Cat
+2024/06/12 18:21:04 [31msorm.LOG:[0m Anvedi    : INTEGER
+2024/06/12 18:21:04 [31msorm.LOG:[0m Executing CREATE TABLE query
+2024/06/12 18:21:04 [32msorm.SUCCESS:[0m   Table SomeType created
+2024/06/12 18:21:04 [31msorm.LOG:[0m Inserting default nil value into SomeType
+2024/06/12 18:21:04 [32msorm.SUCCESS:[0m   Nil value inserted into SomeType
+2024/06/12 18:21:14 [33msorm.LOG:[0m Opening database connection...
+2024/06/12 18:21:14 [33msorm.LOG:[0m Database opened
+2024/06/12 18:21:14 [33msorm.LOG:[0m Activating Foreign Keys
+2024/06/12 18:21:14 [32msorm.SUCCESS:[0m   Database opened without error
+2024/06/12 18:21:14 [33msorm.LOG:[0m Creating table Cat with rows:
+2024/06/12 18:21:14 [33msorm.LOG:[0m Id        : TEXT PRIMARY KEY
+2024/06/12 18:21:14 [33msorm.LOG:[0m CatName_u : TEXT UNIQUE
+2024/06/12 18:21:14 [33msorm.LOG:[0m CatDesc   : TEXT
+2024/06/12 18:21:14 [33msorm.LOG:[0m Executing CREATE TABLE query
+2024/06/12 18:21:14 [32msorm.SUCCESS:[0m   Table Cat created
+2024/06/12 18:21:14 [33msorm.LOG:[0m Inserting default nil value into Cat
+2024/06/12 18:21:14 [32msorm.SUCCESS:[0m   Nil value inserted into Cat
+2024/06/12 18:21:14 [33msorm.LOG:[0m Creating table Item with rows:
+2024/06/12 18:21:14 [33msorm.LOG:[0m Id        : TEXT PRIMARY KEY
+2024/06/12 18:21:14 [33msorm.LOG:[0m Desc      : TEXT
+2024/06/12 18:21:14 [33msorm.LOG:[0m Price     : REAL
+2024/06/12 18:21:14 [33msorm.LOG:[0m InStock   : BOOLEAN
+2024/06/12 18:21:14 [33msorm.LOG:[0m Cat_id    : TEXT FOREIGN KEY REFERENCES Cat
+2024/06/12 18:21:14 [33msorm.LOG:[0m Executing CREATE TABLE query
+2024/06/12 18:21:14 [32msorm.SUCCESS:[0m   Table Item created
+2024/06/12 18:21:14 [33msorm.LOG:[0m Inserting default nil value into Item
+2024/06/12 18:21:14 [32msorm.SUCCESS:[0m   Nil value inserted into Item
+2024/06/12 18:21:14 [33msorm.LOG:[0m Creating table SomeType with rows:
+2024/06/12 18:21:14 [33msorm.LOG:[0m Seppia    : TEXT
+2024/06/12 18:21:14 [33msorm.LOG:[0m CatName_nu: TEXT NOT NULL UNIQUE
+2024/06/12 18:21:14 [33msorm.LOG:[0m Cat_id    : TEXT FOREIGN KEY REFERENCES Cat
+2024/06/12 18:21:14 [33msorm.LOG:[0m Anvedi    : INTEGER
+2024/06/12 18:21:14 [33msorm.LOG:[0m Executing CREATE TABLE query
+2024/06/12 18:21:14 [32msorm.SUCCESS:[0m   Table SomeType created
+2024/06/12 18:21:14 [33msorm.LOG:[0m Inserting default nil value into SomeType
+2024/06/12 18:21:14 [32msorm.SUCCESS:[0m   Nil value inserted into SomeType
+2024/06/12 18:21:20 [34msorm.LOG:[0m Opening database connection...
+2024/06/12 18:21:20 [34msorm.LOG:[0m Database opened
+2024/06/12 18:21:20 [34msorm.LOG:[0m Activating Foreign Keys
+2024/06/12 18:21:20 [32msorm.SUCCESS:[0m   Database opened without error
+2024/06/12 18:21:20 [34msorm.LOG:[0m Creating table Cat with rows:
+2024/06/12 18:21:20 [34msorm.LOG:[0m Id        : TEXT PRIMARY KEY
+2024/06/12 18:21:20 [34msorm.LOG:[0m CatName_u : TEXT UNIQUE
+2024/06/12 18:21:20 [34msorm.LOG:[0m CatDesc   : TEXT
+2024/06/12 18:21:20 [34msorm.LOG:[0m Executing CREATE TABLE query
+2024/06/12 18:21:20 [32msorm.SUCCESS:[0m   Table Cat created
+2024/06/12 18:21:20 [34msorm.LOG:[0m Inserting default nil value into Cat
+2024/06/12 18:21:20 [32msorm.SUCCESS:[0m   Nil value inserted into Cat
+2024/06/12 18:21:20 [34msorm.LOG:[0m Creating table Item with rows:
+2024/06/12 18:21:20 [34msorm.LOG:[0m Id        : TEXT PRIMARY KEY
+2024/06/12 18:21:20 [34msorm.LOG:[0m Desc      : TEXT
+2024/06/12 18:21:20 [34msorm.LOG:[0m Price     : REAL
+2024/06/12 18:21:20 [34msorm.LOG:[0m InStock   : BOOLEAN
+2024/06/12 18:21:20 [34msorm.LOG:[0m Cat_id    : TEXT FOREIGN KEY REFERENCES Cat
+2024/06/12 18:21:20 [34msorm.LOG:[0m Executing CREATE TABLE query
+2024/06/12 18:21:20 [32msorm.SUCCESS:[0m   Table Item created
+2024/06/12 18:21:20 [34msorm.LOG:[0m Inserting default nil value into Item
+2024/06/12 18:21:20 [32msorm.SUCCESS:[0m   Nil value inserted into Item
+2024/06/12 18:21:20 [34msorm.LOG:[0m Creating table SomeType with rows:
+2024/06/12 18:21:20 [34msorm.LOG:[0m Seppia    : TEXT
+2024/06/12 18:21:20 [34msorm.LOG:[0m CatName_nu: TEXT NOT NULL UNIQUE
+2024/06/12 18:21:20 [34msorm.LOG:[0m Cat_id    : TEXT FOREIGN KEY REFERENCES Cat
+2024/06/12 18:21:20 [34msorm.LOG:[0m Anvedi    : INTEGER
+2024/06/12 18:21:20 [34msorm.LOG:[0m Executing CREATE TABLE query
+2024/06/12 18:21:20 [32msorm.SUCCESS:[0m   Table SomeType created
+2024/06/12 18:21:20 [34msorm.LOG:[0m Inserting default nil value into SomeType
+2024/06/12 18:21:20 [32msorm.SUCCESS:[0m   Nil value inserted into SomeType
+2024/06/12 18:21:26 [35msorm.LOG:[0m Opening database connection...
+2024/06/12 18:21:26 [35msorm.LOG:[0m Database opened
+2024/06/12 18:21:26 [35msorm.LOG:[0m Activating Foreign Keys
+2024/06/12 18:21:26 [32msorm.SUCCESS:[0m   Database opened without error
+2024/06/12 18:21:26 [35msorm.LOG:[0m Creating table Cat with rows:
+2024/06/12 18:21:26 [35msorm.LOG:[0m Id        : TEXT PRIMARY KEY
+2024/06/12 18:21:26 [35msorm.LOG:[0m CatName_u : TEXT UNIQUE
+2024/06/12 18:21:26 [35msorm.LOG:[0m CatDesc   : TEXT
+2024/06/12 18:21:26 [35msorm.LOG:[0m Executing CREATE TABLE query
+2024/06/12 18:21:26 [32msorm.SUCCESS:[0m   Table Cat created
+2024/06/12 18:21:26 [35msorm.LOG:[0m Inserting default nil value into Cat
+2024/06/12 18:21:26 [32msorm.SUCCESS:[0m   Nil value inserted into Cat
+2024/06/12 18:21:26 [35msorm.LOG:[0m Creating table Item with rows:
+2024/06/12 18:21:26 [35msorm.LOG:[0m Id        : TEXT PRIMARY KEY
+2024/06/12 18:21:26 [35msorm.LOG:[0m Desc      : TEXT
+2024/06/12 18:21:26 [35msorm.LOG:[0m Price     : REAL
+2024/06/12 18:21:26 [35msorm.LOG:[0m InStock   : BOOLEAN
+2024/06/12 18:21:26 [35msorm.LOG:[0m Cat_id    : TEXT FOREIGN KEY REFERENCES Cat
+2024/06/12 18:21:26 [35msorm.LOG:[0m Executing CREATE TABLE query
+2024/06/12 18:21:26 [32msorm.SUCCESS:[0m   Table Item created
+2024/06/12 18:21:26 [35msorm.LOG:[0m Inserting default nil value into Item
+2024/06/12 18:21:26 [32msorm.SUCCESS:[0m   Nil value inserted into Item
+2024/06/12 18:21:26 [35msorm.LOG:[0m Creating table SomeType with rows:
+2024/06/12 18:21:26 [35msorm.LOG:[0m Seppia    : TEXT
+2024/06/12 18:21:26 [35msorm.LOG:[0m CatName_nu: TEXT NOT NULL UNIQUE
+2024/06/12 18:21:26 [35msorm.LOG:[0m Cat_id    : TEXT FOREIGN KEY REFERENCES Cat
+2024/06/12 18:21:26 [35msorm.LOG:[0m Anvedi    : INTEGER
+2024/06/12 18:21:26 [35msorm.LOG:[0m Executing CREATE TABLE query
+2024/06/12 18:21:26 [32msorm.SUCCESS:[0m   Table SomeType created
+2024/06/12 18:21:26 [35msorm.LOG:[0m Inserting default nil value into SomeType
+2024/06/12 18:21:26 [32msorm.SUCCESS:[0m   Nil value inserted into SomeType
+2024/06/12 18:21:44 sorm.LOG:       Opening database connection...
+2024/06/12 18:21:44 sorm.LOG:       Database opened
+2024/06/12 18:21:44 sorm.LOG:       Activating Foreign Keys
+2024/06/12 18:21:44 [32msorm.SUCCESS:[0m   Database opened without error
+2024/06/12 18:21:44 sorm.LOG:       Creating table Cat with rows:
+2024/06/12 18:21:44 sorm.LOG:       Id        : TEXT PRIMARY KEY
+2024/06/12 18:21:44 sorm.LOG:       CatName_u : TEXT UNIQUE
+2024/06/12 18:21:44 sorm.LOG:       CatDesc   : TEXT
+2024/06/12 18:21:44 sorm.LOG:       Executing CREATE TABLE query
+2024/06/12 18:21:44 [32msorm.SUCCESS:[0m   Table Cat created
+2024/06/12 18:21:44 sorm.LOG:       Inserting default nil value into Cat
+2024/06/12 18:21:44 [32msorm.SUCCESS:[0m   Nil value inserted into Cat
+2024/06/12 18:21:44 sorm.LOG:       Creating table Item with rows:
+2024/06/12 18:21:44 sorm.LOG:       Id        : TEXT PRIMARY KEY
+2024/06/12 18:21:44 sorm.LOG:       Desc      : TEXT
+2024/06/12 18:21:44 sorm.LOG:       Price     : REAL
+2024/06/12 18:21:44 sorm.LOG:       InStock   : BOOLEAN
+2024/06/12 18:21:44 sorm.LOG:       Cat_id    : TEXT FOREIGN KEY REFERENCES Cat
+2024/06/12 18:21:44 sorm.LOG:       Executing CREATE TABLE query
+2024/06/12 18:21:44 [32msorm.SUCCESS:[0m   Table Item created
+2024/06/12 18:21:44 sorm.LOG:       Inserting default nil value into Item
+2024/06/12 18:21:44 [32msorm.SUCCESS:[0m   Nil value inserted into Item
+2024/06/12 18:21:44 sorm.LOG:       Creating table SomeType with rows:
+2024/06/12 18:21:44 sorm.LOG:       Seppia    : TEXT
+2024/06/12 18:21:44 sorm.LOG:       CatName_nu: TEXT NOT NULL UNIQUE
+2024/06/12 18:21:44 sorm.LOG:       Cat_id    : TEXT FOREIGN KEY REFERENCES Cat
+2024/06/12 18:21:44 sorm.LOG:       Anvedi    : INTEGER
+2024/06/12 18:21:44 sorm.LOG:       Executing CREATE TABLE query
+2024/06/12 18:21:44 [32msorm.SUCCESS:[0m   Table SomeType created
+2024/06/12 18:21:44 sorm.LOG:       Inserting default nil value into SomeType
+2024/06/12 18:21:44 [32msorm.SUCCESS:[0m   Nil value inserted into SomeType
+2024/06/12 18:22:04 sorm.LOG:       Opening database connection...
+2024/06/12 18:22:04 sorm.LOG:       Database opened
+2024/06/12 18:22:04 sorm.LOG:       Activating Foreign Keys
+2024/06/12 18:22:04 [32msorm.SUCCESS:[0m   Database opened without error
+2024/06/12 18:22:04 sorm.LOG:       Creating table Cat with rows:
+2024/06/12 18:22:04 sorm.LOG:       Id        : TEXT PRIMARY KEY
+2024/06/12 18:22:04 sorm.LOG:       CatName_u : TEXT UNIQUE
+2024/06/12 18:22:04 sorm.LOG:       CatDesc   : TEXT
+2024/06/12 18:22:04 sorm.LOG:       Executing CREATE TABLE query
+2024/06/12 18:22:04 [32msorm.SUCCESS:[0m   Table Cat created
+2024/06/12 18:22:04 sorm.LOG:       Inserting default nil value into Cat
+2024/06/12 18:22:04 [32msorm.SUCCESS:[0m   Nil value inserted into Cat
+2024/06/12 18:22:04 sorm.LOG:       Creating table Item with rows:
+2024/06/12 18:22:04 sorm.LOG:       Id        : TEXT PRIMARY KEY
+2024/06/12 18:22:04 sorm.LOG:       Desc      : TEXT
+2024/06/12 18:22:04 sorm.LOG:       Price     : REAL
+2024/06/12 18:22:04 sorm.LOG:       InStock   : BOOLEAN
+2024/06/12 18:22:04 sorm.LOG:       Cat_id    : TEXT FOREIGN KEY REFERENCES Cat
+2024/06/12 18:22:04 sorm.LOG:       Executing CREATE TABLE query
+2024/06/12 18:22:04 [32msorm.SUCCESS:[0m   Table Item created
+2024/06/12 18:22:04 sorm.LOG:       Inserting default nil value into Item
+2024/06/12 18:22:04 [32msorm.SUCCESS:[0m   Nil value inserted into Item
+2024/06/12 18:22:04 sorm.LOG:       Creating table SomeType with rows:
+2024/06/12 18:22:04 sorm.LOG:       Seppia    : TEXT
+2024/06/12 18:22:04 sorm.LOG:       CatName_nu: TEXT NOT NULL UNIQUE
+2024/06/12 18:22:04 sorm.LOG:       Cata_id   : TEXT FOREIGN KEY REFERENCES Cata
+2024/06/12 18:22:04 sorm.LOG:       Anvedi    : INTEGER
+2024/06/12 18:22:04 sorm.LOG:       Executing CREATE TABLE query
+2024/06/12 18:22:04 [32msorm.SUCCESS:[0m   Table SomeType created
+2024/06/12 18:22:04 sorm.LOG:       Inserting default nil value into SomeType
+2024/06/12 18:22:04 [31msorm.ERROR:[0m db.InsertNil, no such table: main.Cata
+2024/06/12 18:22:17 sorm.LOG:       Opening database connection...
+2024/06/12 18:22:17 sorm.LOG:       Database opened
+2024/06/12 18:22:17 sorm.LOG:       Activating Foreign Keys
+2024/06/12 18:22:17 [32msorm.SUCCESS:[0m   Database opened without error
+2024/06/12 18:22:17 sorm.LOG:       Creating table Cat with rows:
+2024/06/12 18:22:17 sorm.LOG:       Id        : TEXT PRIMARY KEY
+2024/06/12 18:22:17 sorm.LOG:       CatName_u : TEXT UNIQUE
+2024/06/12 18:22:17 sorm.LOG:       CatDesc   : TEXT
+2024/06/12 18:22:17 sorm.LOG:       Executing CREATE TABLE query
+2024/06/12 18:22:17 [32msorm.SUCCESS:[0m   Table Cat created
+2024/06/12 18:22:17 sorm.LOG:       Inserting default nil value into Cat
+2024/06/12 18:22:17 [32msorm.SUCCESS:[0m   Nil value inserted into Cat
+2024/06/12 18:22:17 sorm.LOG:       Creating table Item with rows:
+2024/06/12 18:22:17 sorm.LOG:       Id        : TEXT PRIMARY KEY
+2024/06/12 18:22:17 sorm.LOG:       Desc      : TEXT
+2024/06/12 18:22:17 sorm.LOG:       Price     : REAL
+2024/06/12 18:22:17 sorm.LOG:       InStock   : BOOLEAN
+2024/06/12 18:22:17 sorm.LOG:       Cat_id    : TEXT FOREIGN KEY REFERENCES Cat
+2024/06/12 18:22:17 sorm.LOG:       Executing CREATE TABLE query
+2024/06/12 18:22:17 [32msorm.SUCCESS:[0m   Table Item created
+2024/06/12 18:22:17 sorm.LOG:       Inserting default nil value into Item
+2024/06/12 18:22:17 [32msorm.SUCCESS:[0m   Nil value inserted into Item
+2024/06/12 18:22:17 sorm.LOG:       Creating table SomeType with rows:
+2024/06/12 18:22:17 sorm.LOG:       Seppia    : TEXT
+2024/06/12 18:22:17 sorm.LOG:       CatName_nu: TEXT NOT NULL UNIQUE
+2024/06/12 18:22:17 sorm.LOG:       Cata_id   : TEXT FOREIGN KEY REFERENCES Cata
+2024/06/12 18:22:17 sorm.LOG:       Anvedi    : INTEGER
+2024/06/12 18:22:17 sorm.LOG:       Executing CREATE TABLE query
+2024/06/12 18:22:17 [32msorm.SUCCESS:[0m   Table SomeType created
+2024/06/12 18:22:17 sorm.LOG:       Inserting default nil value into SomeType
+2024/06/12 18:22:17 [31msorm.ERROR:[0m    db.InsertNil, no such table: main.Cata
+2024/06/12 18:22:22 sorm.LOG:       Opening database connection...
+2024/06/12 18:22:22 sorm.LOG:       Database opened
+2024/06/12 18:22:22 sorm.LOG:       Activating Foreign Keys
+2024/06/12 18:22:22 [32msorm.SUCCESS:[0m   Database opened without error
+2024/06/12 18:22:22 sorm.LOG:       Creating table Cat with rows:
+2024/06/12 18:22:22 sorm.LOG:       Id        : TEXT PRIMARY KEY
+2024/06/12 18:22:22 sorm.LOG:       CatName_u : TEXT UNIQUE
+2024/06/12 18:22:22 sorm.LOG:       CatDesc   : TEXT
+2024/06/12 18:22:22 sorm.LOG:       Executing CREATE TABLE query
+2024/06/12 18:22:22 [32msorm.SUCCESS:[0m   Table Cat created
+2024/06/12 18:22:22 sorm.LOG:       Inserting default nil value into Cat
+2024/06/12 18:22:22 [32msorm.SUCCESS:[0m   Nil value inserted into Cat
+2024/06/12 18:22:22 sorm.LOG:       Creating table Item with rows:
+2024/06/12 18:22:22 sorm.LOG:       Id        : TEXT PRIMARY KEY
+2024/06/12 18:22:22 sorm.LOG:       Desc      : TEXT
+2024/06/12 18:22:22 sorm.LOG:       Price     : REAL
+2024/06/12 18:22:22 sorm.LOG:       InStock   : BOOLEAN
+2024/06/12 18:22:22 sorm.LOG:       Cat_id    : TEXT FOREIGN KEY REFERENCES Cat
+2024/06/12 18:22:22 sorm.LOG:       Executing CREATE TABLE query
+2024/06/12 18:22:22 [32msorm.SUCCESS:[0m   Table Item created
+2024/06/12 18:22:22 sorm.LOG:       Inserting default nil value into Item
+2024/06/12 18:22:22 [32msorm.SUCCESS:[0m   Nil value inserted into Item
+2024/06/12 18:22:22 sorm.LOG:       Creating table SomeType with rows:
+2024/06/12 18:22:22 sorm.LOG:       Seppia    : TEXT
+2024/06/12 18:22:22 sorm.LOG:       CatName_nu: TEXT NOT NULL UNIQUE
+2024/06/12 18:22:22 sorm.LOG:       Cata_id   : TEXT FOREIGN KEY REFERENCES Cata
+2024/06/12 18:22:22 sorm.LOG:       Anvedi    : INTEGER
+2024/06/12 18:22:22 sorm.LOG:       Executing CREATE TABLE query
+2024/06/12 18:22:22 [32msorm.SUCCESS:[0m   Table SomeType created
+2024/06/12 18:22:22 sorm.LOG:       Inserting default nil value into SomeType
+2024/06/12 18:22:22 [31msorm.ERROR:[0m     db.InsertNil, no such table: main.Cata
+2024/06/12 18:23:09 sorm.LOG:       Opening database connection...
+2024/06/12 18:23:09 sorm.LOG:       Database opened
+2024/06/12 18:23:09 sorm.LOG:       Activating Foreign Keys
+2024/06/12 18:23:09 [32msorm.SUCCESS:[0m   Database opened without error
+2024/06/12 18:23:09 sorm.LOG:       Creating table Cat with rows:
+2024/06/12 18:23:09 sorm.LOG:       Id        : TEXT PRIMARY KEY
+2024/06/12 18:23:09 sorm.LOG:       CatName_u : TEXT UNIQUE
+2024/06/12 18:23:09 sorm.LOG:       CatDesc   : TEXT
+2024/06/12 18:23:09 sorm.LOG:       Executing CREATE TABLE query
+2024/06/12 18:23:09 [32msorm.SUCCESS:[0m   Table Cat created
+2024/06/12 18:23:09 sorm.LOG:       Inserting default nil value into Cat
+2024/06/12 18:23:09 [32msorm.SUCCESS:[0m   Nil value inserted into Cat
+2024/06/12 18:23:09 sorm.LOG:       Creating table Item with rows:
+2024/06/12 18:23:09 sorm.LOG:       Id        : TEXT PRIMARY KEY
+2024/06/12 18:23:09 sorm.LOG:       Desc      : TEXT
+2024/06/12 18:23:09 sorm.LOG:       Price     : REAL
+2024/06/12 18:23:09 sorm.LOG:       InStock   : BOOLEAN
+2024/06/12 18:23:09 sorm.LOG:       Cat_id    : TEXT FOREIGN KEY REFERENCES Cat
+2024/06/12 18:23:09 sorm.LOG:       Executing CREATE TABLE query
+2024/06/12 18:23:09 [32msorm.SUCCESS:[0m   Table Item created
+2024/06/12 18:23:09 sorm.LOG:       Inserting default nil value into Item
+2024/06/12 18:23:09 [32msorm.SUCCESS:[0m   Nil value inserted into Item
+2024/06/12 18:23:09 sorm.LOG:       Creating table SomeType with rows:
+2024/06/12 18:23:09 sorm.LOG:       Seppia    : TEXT
+2024/06/12 18:23:09 sorm.LOG:       CatName_nu: TEXT NOT NULL UNIQUE
+2024/06/12 18:23:09 sorm.LOG:       Cat_id    : TEXT FOREIGN KEY REFERENCES Cat
+2024/06/12 18:23:09 sorm.LOG:       Anvedi    : INTEGER
+2024/06/12 18:23:09 sorm.LOG:       Executing CREATE TABLE query
+2024/06/12 18:23:09 [32msorm.SUCCESS:[0m   Table SomeType created
+2024/06/12 18:23:09 sorm.LOG:       Inserting default nil value into SomeType
+2024/06/12 18:23:09 [32msorm.SUCCESS:[0m   Nil value inserted into SomeType
+2024/06/12 18:58:07 sorm.LOG:       Opening database connection...
+2024/06/12 18:58:07 sorm.LOG:       Database opened
+2024/06/12 18:58:07 sorm.LOG:       Activating Foreign Keys
+2024/06/12 18:58:07 [32msorm.SUCCESS:[0m   Database opened without error
+2024/06/12 18:58:07 sorm.LOG:       Creating table Cat with rows:
+2024/06/12 18:58:07 sorm.LOG:       Id        : TEXT PRIMARY KEY
+2024/06/12 18:58:07 sorm.LOG:       CatName_u : TEXT UNIQUE
+2024/06/12 18:58:07 sorm.LOG:       CatDesc   : TEXT
+2024/06/12 18:58:07 sorm.LOG:       Executing CREATE TABLE query
+2024/06/12 18:58:07 [32msorm.SUCCESS:[0m   Table Cat created
+2024/06/12 18:58:07 sorm.LOG:       Inserting default nil value into Cat
+2024/06/12 18:58:07 [32msorm.SUCCESS:[0m   Nil value inserted into Cat
+2024/06/12 18:58:07 sorm.LOG:       Creating table Item with rows:
+2024/06/12 18:58:07 sorm.LOG:       Id        : TEXT PRIMARY KEY
+2024/06/12 18:58:07 sorm.LOG:       Desc      : TEXT
+2024/06/12 18:58:07 sorm.LOG:       Price     : REAL
+2024/06/12 18:58:07 sorm.LOG:       InStock   : BOOLEAN
+2024/06/12 18:58:07 sorm.LOG:       Cat_id    : TEXT FOREIGN KEY REFERENCES Cat
+2024/06/12 18:58:07 sorm.LOG:       Executing CREATE TABLE query
+2024/06/12 18:58:07 [32msorm.SUCCESS:[0m   Table Item created
+2024/06/12 18:58:07 sorm.LOG:       Inserting default nil value into Item
+2024/06/12 18:58:07 [32msorm.SUCCESS:[0m   Nil value inserted into Item
+2024/06/12 18:58:07 sorm.LOG:       Creating table SomeType with rows:
+2024/06/12 18:58:07 sorm.LOG:       Seppia    : TEXT
+2024/06/12 18:58:07 sorm.LOG:       CatName_nu: TEXT NOT NULL UNIQUE
+2024/06/12 18:58:07 sorm.LOG:       Cat_id    : TEXT FOREIGN KEY REFERENCES Cat
+2024/06/12 18:58:07 sorm.LOG:       Anvedi    : INTEGER
+2024/06/12 18:58:07 sorm.LOG:       Executing CREATE TABLE query
+2024/06/12 18:58:07 [32msorm.SUCCESS:[0m   Table SomeType created
+2024/06/12 18:58:07 sorm.LOG:       Inserting default nil value into SomeType
+2024/06/12 18:58:07 [32msorm.SUCCESS:[0m   Nil value inserted into SomeType
+2024/06/12 18:58:50 sorm.LOG:       Opening database connection...
+2024/06/12 18:58:50 sorm.LOG:       Database opened
+2024/06/12 18:58:50 sorm.LOG:       Activating Foreign Keys
+2024/06/12 18:58:50 [32msorm.SUCCESS:[0m   Database opened without error
+2024/06/12 18:58:50 sorm.LOG:       Creating table Cat with rows:
+2024/06/12 18:58:50 sorm.LOG:       | Id        : TEXT PRIMARY KEY
+2024/06/12 18:58:50 sorm.LOG:       | CatName_u : TEXT UNIQUE
+2024/06/12 18:58:50 sorm.LOG:       | CatDesc   : TEXT
+2024/06/12 18:58:50 sorm.LOG:       Executing CREATE TABLE query
+2024/06/12 18:58:50 [32msorm.SUCCESS:[0m   Table Cat created
+2024/06/12 18:58:50 sorm.LOG:       Inserting default nil value into Cat
+2024/06/12 18:58:50 [32msorm.SUCCESS:[0m   Nil value inserted into Cat
+2024/06/12 18:58:50 sorm.LOG:       Creating table Item with rows:
+2024/06/12 18:58:50 sorm.LOG:       | Id        : TEXT PRIMARY KEY
+2024/06/12 18:58:50 sorm.LOG:       | Desc      : TEXT
+2024/06/12 18:58:50 sorm.LOG:       | Price     : REAL
+2024/06/12 18:58:50 sorm.LOG:       | InStock   : BOOLEAN
+2024/06/12 18:58:50 sorm.LOG:       | Cat_id    : TEXT FOREIGN KEY REFERENCES Cat
+2024/06/12 18:58:50 sorm.LOG:       Executing CREATE TABLE query
+2024/06/12 18:58:50 [32msorm.SUCCESS:[0m   Table Item created
+2024/06/12 18:58:50 sorm.LOG:       Inserting default nil value into Item
+2024/06/12 18:58:50 [32msorm.SUCCESS:[0m   Nil value inserted into Item
+2024/06/12 18:58:50 sorm.LOG:       Creating table SomeType with rows:
+2024/06/12 18:58:50 sorm.LOG:       | Seppia    : TEXT
+2024/06/12 18:58:50 sorm.LOG:       | CatName_nu: TEXT NOT NULL UNIQUE
+2024/06/12 18:58:50 sorm.LOG:       | Cat_id    : TEXT FOREIGN KEY REFERENCES Cat
+2024/06/12 18:58:50 sorm.LOG:       | Anvedi    : INTEGER
+2024/06/12 18:58:50 sorm.LOG:       Executing CREATE TABLE query
+2024/06/12 18:58:50 [32msorm.SUCCESS:[0m   Table SomeType created
+2024/06/12 18:58:50 sorm.LOG:       Inserting default nil value into SomeType
+2024/06/12 18:58:50 [32msorm.SUCCESS:[0m   Nil value inserted into SomeType
+2024/06/12 19:00:12 sorm.LOG:       Opening database connection...
+2024/06/12 19:00:12 sorm.LOG:       Database opened
+2024/06/12 19:00:12 sorm.LOG:       Activating Foreign Keys
+2024/06/12 19:00:12 [32msorm.SUCCESS:[0m   Database opened without error
+2024/06/12 19:00:12 sorm.LOG:       Creating table Cat with rows:
+2024/06/12 19:00:12 sorm.LOG:       | Id                   | TEXT PRIMARY KEY
+2024/06/12 19:00:12 sorm.LOG:       | CatName_u            | TEXT UNIQUE
+2024/06/12 19:00:12 sorm.LOG:       | CatDesc              | TEXT
+2024/06/12 19:00:12 sorm.LOG:       Executing CREATE TABLE query
+2024/06/12 19:00:12 [32msorm.SUCCESS:[0m   Table Cat created
+2024/06/12 19:00:12 sorm.LOG:       Inserting default nil value into Cat
+2024/06/12 19:00:12 [32msorm.SUCCESS:[0m   Nil value inserted into Cat
+2024/06/12 19:00:12 sorm.LOG:       Creating table Item with rows:
+2024/06/12 19:00:12 sorm.LOG:       | Id                   | TEXT PRIMARY KEY
+2024/06/12 19:00:12 sorm.LOG:       | Desc                 | TEXT
+2024/06/12 19:00:12 sorm.LOG:       | Price                | REAL
+2024/06/12 19:00:12 sorm.LOG:       | InStock              | BOOLEAN
+2024/06/12 19:00:12 sorm.LOG:       | Cat_id               | TEXT FOREIGN KEY REFERENCES Cat
+2024/06/12 19:00:12 sorm.LOG:       Executing CREATE TABLE query
+2024/06/12 19:00:12 [32msorm.SUCCESS:[0m   Table Item created
+2024/06/12 19:00:12 sorm.LOG:       Inserting default nil value into Item
+2024/06/12 19:00:12 [32msorm.SUCCESS:[0m   Nil value inserted into Item
+2024/06/12 19:00:12 sorm.LOG:       Creating table SomeType with rows:
+2024/06/12 19:00:12 sorm.LOG:       | Seppia               | TEXT
+2024/06/12 19:00:12 sorm.LOG:       | CatName_nu           | TEXT NOT NULL UNIQUE
+2024/06/12 19:00:12 sorm.LOG:       | Cat_id               | TEXT FOREIGN KEY REFERENCES Cat
+2024/06/12 19:00:12 sorm.LOG:       | Anvedi               | INTEGER
+2024/06/12 19:00:12 sorm.LOG:       Executing CREATE TABLE query
+2024/06/12 19:00:12 [32msorm.SUCCESS:[0m   Table SomeType created
+2024/06/12 19:00:12 sorm.LOG:       Inserting default nil value into SomeType
+2024/06/12 19:00:12 [32msorm.SUCCESS:[0m   Nil value inserted into SomeType
+2024/06/12 19:02:36 sorm.LOG:       Opening database connection...
+2024/06/12 19:02:36 sorm.LOG:       Database opened
+2024/06/12 19:02:36 sorm.LOG:       Activating Foreign Keys
+2024/06/12 19:02:36 [32msorm.SUCCESS:[0m   Database opened without error
+2024/06/12 19:02:36 sorm.LOG:       Creating table Cat with rows:
+2024/06/12 19:02:36 sorm.LOG:       ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2024/06/12 19:02:36 sorm.LOG:       | Id                   | TEXT PRIMARY KEY
+2024/06/12 19:02:36 sorm.LOG:       | CatName_u            | TEXT UNIQUE
+2024/06/12 19:02:36 sorm.LOG:       | CatDesc              | TEXT
+2024/06/12 19:02:36 sorm.LOG:       Executing CREATE TABLE query
+2024/06/12 19:02:36 [32msorm.SUCCESS:[0m   Table Cat created
+2024/06/12 19:02:36 sorm.LOG:       Inserting default nil value into Cat
+2024/06/12 19:02:36 [32msorm.SUCCESS:[0m   Nil value inserted into Cat
+2024/06/12 19:02:36 sorm.LOG:       Creating table Item with rows:
+2024/06/12 19:02:36 sorm.LOG:       ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2024/06/12 19:02:36 sorm.LOG:       | Id                   | TEXT PRIMARY KEY
+2024/06/12 19:02:36 sorm.LOG:       | Desc                 | TEXT
+2024/06/12 19:02:36 sorm.LOG:       | Price                | REAL
+2024/06/12 19:02:36 sorm.LOG:       | InStock              | BOOLEAN
+2024/06/12 19:02:36 sorm.LOG:       | Cat_id               | TEXT FOREIGN KEY REFERENCES Cat
+2024/06/12 19:02:36 sorm.LOG:       Executing CREATE TABLE query
+2024/06/12 19:02:36 [32msorm.SUCCESS:[0m   Table Item created
+2024/06/12 19:02:36 sorm.LOG:       Inserting default nil value into Item
+2024/06/12 19:02:36 [32msorm.SUCCESS:[0m   Nil value inserted into Item
+2024/06/12 19:02:36 sorm.LOG:       Creating table SomeType with rows:
+2024/06/12 19:02:36 sorm.LOG:       ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2024/06/12 19:02:36 sorm.LOG:       | Seppia               | TEXT
+2024/06/12 19:02:36 sorm.LOG:       | CatName_nu           | TEXT NOT NULL UNIQUE
+2024/06/12 19:02:36 sorm.LOG:       | Cat_id               | TEXT FOREIGN KEY REFERENCES Cat
+2024/06/12 19:02:36 sorm.LOG:       | Anvedi               | INTEGER
+2024/06/12 19:02:36 sorm.LOG:       Executing CREATE TABLE query
+2024/06/12 19:02:36 [32msorm.SUCCESS:[0m   Table SomeType created
+2024/06/12 19:02:36 sorm.LOG:       Inserting default nil value into SomeType
+2024/06/12 19:02:36 [32msorm.SUCCESS:[0m   Nil value inserted into SomeType
+2024/06/12 19:03:05 sorm.LOG:       Opening database connection...
+2024/06/12 19:03:05 sorm.LOG:       Database opened
+2024/06/12 19:03:05 sorm.LOG:       Activating Foreign Keys
+2024/06/12 19:03:05 [32msorm.SUCCESS:[0m   Database opened without error
+2024/06/12 19:03:05 sorm.LOG:       Creating table Cat with rows:
+2024/06/12 19:03:05 sorm.LOG:       ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2024/06/12 19:03:05 sorm.LOG:       | Id                   | TEXT PRIMARY KEY
+2024/06/12 19:03:05 sorm.LOG:       | CatName_u            | TEXT UNIQUE
+2024/06/12 19:03:05 sorm.LOG:       | CatDesc              | TEXT
+2024/06/12 19:03:05 sorm.LOG:       Executing CREATE TABLE query
+2024/06/12 19:03:05 [32msorm.SUCCESS:[0m   Table Cat created
+2024/06/12 19:03:05 sorm.LOG:       Inserting default nil value into Cat
+2024/06/12 19:03:05 [32msorm.SUCCESS:[0m   Nil value inserted into Cat
+2024/06/12 19:03:05 sorm.LOG:       Creating table Item with rows:
+2024/06/12 19:03:05 sorm.LOG:       ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2024/06/12 19:03:05 sorm.LOG:       | Id                   | TEXT PRIMARY KEY
+2024/06/12 19:03:05 sorm.LOG:       | Desc                 | TEXT
+2024/06/12 19:03:05 sorm.LOG:       | Price                | REAL
+2024/06/12 19:03:05 sorm.LOG:       | InStock              | BOOLEAN
+2024/06/12 19:03:05 sorm.LOG:       | Cat_id               | TEXT FOREIGN KEY REFERENCES Cat
+2024/06/12 19:03:05 sorm.LOG:       Executing CREATE TABLE query
+2024/06/12 19:03:05 [32msorm.SUCCESS:[0m   Table Item created
+2024/06/12 19:03:05 sorm.LOG:       Inserting default nil value into Item
+2024/06/12 19:03:05 [32msorm.SUCCESS:[0m   Nil value inserted into Item
+2024/06/12 19:03:05 sorm.LOG:       Creating table SomeType with rows:
+2024/06/12 19:03:05 sorm.LOG:       ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2024/06/12 19:03:05 sorm.LOG:       | Seppia               | TEXT
+2024/06/12 19:03:05 sorm.LOG:       | CatName_nu           | TEXT NOT NULL UNIQUE
+2024/06/12 19:03:05 sorm.LOG:       | Cat_id               | TEXT FOREIGN KEY REFERENCES Cat
+2024/06/12 19:03:05 sorm.LOG:       | Anvedi               | INTEGER
+2024/06/12 19:03:05 sorm.LOG:       Executing CREATE TABLE query
+2024/06/12 19:03:05 [32msorm.SUCCESS:[0m   Table SomeType created
+2024/06/12 19:03:05 sorm.LOG:       Inserting default nil value into SomeType
+2024/06/12 19:03:05 [32msorm.SUCCESS:[0m   Nil value inserted into SomeType
+2024/06/12 19:03:15 sorm.LOG:       Opening database connection...
+2024/06/12 19:03:15 sorm.LOG:       Database opened
+2024/06/12 19:03:15 sorm.LOG:       Activating Foreign Keys
+2024/06/12 19:03:15 [32msorm.SUCCESS:[0m   Database opened without error
+2024/06/12 19:03:15 sorm.LOG:       Creating table Cat with rows:
+2024/06/12 19:03:15 sorm.LOG:       ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2024/06/12 19:03:15 sorm.LOG:       | Id                   | TEXT PRIMARY KEY
+2024/06/12 19:03:15 sorm.LOG:       | CatName_u            | TEXT UNIQUE
+2024/06/12 19:03:15 sorm.LOG:       | CatDesc              | TEXT
+2024/06/12 19:03:15 sorm.LOG:       Executing CREATE TABLE query
+2024/06/12 19:03:15 [32msorm.SUCCESS:[0m   Table Cat created
+2024/06/12 19:03:15 sorm.LOG:       Inserting default nil value into Cat
+2024/06/12 19:03:15 [32msorm.SUCCESS:[0m   Nil value inserted into Cat
+2024/06/12 19:03:15 sorm.LOG:       Creating table Item with rows:
+2024/06/12 19:03:15 sorm.LOG:       ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2024/06/12 19:03:15 sorm.LOG:       | Id                   | TEXT PRIMARY KEY
+2024/06/12 19:03:15 sorm.LOG:       | Desc                 | TEXT
+2024/06/12 19:03:15 sorm.LOG:       | Price                | REAL
+2024/06/12 19:03:15 sorm.LOG:       | InStock              | BOOLEAN
+2024/06/12 19:03:15 sorm.LOG:       | Cat_id               | TEXT FOREIGN KEY REFERENCES Cat
+2024/06/12 19:03:15 sorm.LOG:       Executing CREATE TABLE query
+2024/06/12 19:03:15 [32msorm.SUCCESS:[0m   Table Item created
+2024/06/12 19:03:15 sorm.LOG:       Inserting default nil value into Item
+2024/06/12 19:03:15 [32msorm.SUCCESS:[0m   Nil value inserted into Item
+2024/06/12 19:03:15 sorm.LOG:       Creating table SomeType with rows:
+2024/06/12 19:03:15 sorm.LOG:       ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2024/06/12 19:03:15 sorm.LOG:       | Seppia               | TEXT
+2024/06/12 19:03:15 sorm.LOG:       | CatName_nu           | TEXT NOT NULL UNIQUE
+2024/06/12 19:03:15 sorm.LOG:       | Cat_id               | TEXT FOREIGN KEY REFERENCES Cat
+2024/06/12 19:03:15 sorm.LOG:       | Anvedi               | INTEGER
+2024/06/12 19:03:15 sorm.LOG:       Executing CREATE TABLE query
+2024/06/12 19:03:15 [32msorm.SUCCESS:[0m   Table SomeType created
+2024/06/12 19:03:15 sorm.LOG:       Inserting default nil value into SomeType
+2024/06/12 19:03:15 [32msorm.SUCCESS:[0m   Nil value inserted into SomeType
+2024/06/12 19:03:25 sorm.LOG:       Opening database connection...
+2024/06/12 19:03:25 sorm.LOG:       Database opened
+2024/06/12 19:03:25 sorm.LOG:       Activating Foreign Keys
+2024/06/12 19:03:25 [32msorm.SUCCESS:[0m   Database opened without error
+2024/06/12 19:03:25 sorm.LOG:       Creating table Cat with rows:
+2024/06/12 19:03:25 sorm.LOG:       ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2024/06/12 19:03:25 sorm.LOG:       | Id                   | TEXT PRIMARY KEY
+2024/06/12 19:03:25 sorm.LOG:       | CatName_u            | TEXT UNIQUE
+2024/06/12 19:03:25 sorm.LOG:       | CatDesc              | TEXT
+2024/06/12 19:03:25 sorm.LOG:       Executing CREATE TABLE query
+2024/06/12 19:03:26 [32msorm.SUCCESS:[0m   Table Cat created
+2024/06/12 19:03:26 sorm.LOG:       Inserting default nil value into Cat
+2024/06/12 19:03:26 [32msorm.SUCCESS:[0m   Nil value inserted into Cat
+2024/06/12 19:03:26 sorm.LOG:       Creating table Item with rows:
+2024/06/12 19:03:26 sorm.LOG:       ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2024/06/12 19:03:26 sorm.LOG:       | Id                   | TEXT PRIMARY KEY
+2024/06/12 19:03:26 sorm.LOG:       | Desc                 | TEXT
+2024/06/12 19:03:26 sorm.LOG:       | Price                | REAL
+2024/06/12 19:03:26 sorm.LOG:       | InStock              | BOOLEAN
+2024/06/12 19:03:26 sorm.LOG:       | Cat_id               | TEXT FOREIGN KEY REFERENCES Cat
+2024/06/12 19:03:26 sorm.LOG:       Executing CREATE TABLE query
+2024/06/12 19:03:26 [32msorm.SUCCESS:[0m   Table Item created
+2024/06/12 19:03:26 sorm.LOG:       Inserting default nil value into Item
+2024/06/12 19:03:26 [32msorm.SUCCESS:[0m   Nil value inserted into Item
+2024/06/12 19:03:26 sorm.LOG:       Creating table SomeType with rows:
+2024/06/12 19:03:26 sorm.LOG:       ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2024/06/12 19:03:26 sorm.LOG:       | Seppia               | TEXT
+2024/06/12 19:03:26 sorm.LOG:       | CatName_nu           | TEXT NOT NULL UNIQUE
+2024/06/12 19:03:26 sorm.LOG:       | Cat_id               | TEXT FOREIGN KEY REFERENCES Cat
+2024/06/12 19:03:26 sorm.LOG:       | Anvedi               | INTEGER
+2024/06/12 19:03:26 sorm.LOG:       Executing CREATE TABLE query
+2024/06/12 19:03:26 [32msorm.SUCCESS:[0m   Table SomeType created
+2024/06/12 19:03:26 sorm.LOG:       Inserting default nil value into SomeType
+2024/06/12 19:03:26 [32msorm.SUCCESS:[0m   Nil value inserted into SomeType
+2024/06/12 19:03:40 sorm.LOG:       Opening database connection...
+2024/06/12 19:03:40 sorm.LOG:       Database opened
+2024/06/12 19:03:40 sorm.LOG:       Activating Foreign Keys
+2024/06/12 19:03:40 [32msorm.SUCCESS:[0m   Database opened without error
+2024/06/12 19:03:40 sorm.LOG:       Creating table Cat with rows:
+2024/06/12 19:03:40 sorm.LOG:       ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2024/06/12 19:03:40 sorm.LOG:       | Id                   | TEXT PRIMARY KEY
+2024/06/12 19:03:40 sorm.LOG:       | CatName_u            | TEXT UNIQUE
+2024/06/12 19:03:40 sorm.LOG:       | CatDesc              | TEXT
+2024/06/12 19:03:40 sorm.LOG:       ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2024/06/12 19:03:40 sorm.LOG:       Executing CREATE TABLE query
+2024/06/12 19:03:40 [32msorm.SUCCESS:[0m   Table Cat created
+2024/06/12 19:03:40 sorm.LOG:       Inserting default nil value into Cat
+2024/06/12 19:03:40 [32msorm.SUCCESS:[0m   Nil value inserted into Cat
+2024/06/12 19:03:40 sorm.LOG:       Creating table Item with rows:
+2024/06/12 19:03:40 sorm.LOG:       ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2024/06/12 19:03:40 sorm.LOG:       | Id                   | TEXT PRIMARY KEY
+2024/06/12 19:03:40 sorm.LOG:       | Desc                 | TEXT
+2024/06/12 19:03:40 sorm.LOG:       | Price                | REAL
+2024/06/12 19:03:40 sorm.LOG:       | InStock              | BOOLEAN
+2024/06/12 19:03:40 sorm.LOG:       | Cat_id               | TEXT FOREIGN KEY REFERENCES Cat
+2024/06/12 19:03:40 sorm.LOG:       ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2024/06/12 19:03:40 sorm.LOG:       Executing CREATE TABLE query
+2024/06/12 19:03:40 [32msorm.SUCCESS:[0m   Table Item created
+2024/06/12 19:03:40 sorm.LOG:       Inserting default nil value into Item
+2024/06/12 19:03:40 [32msorm.SUCCESS:[0m   Nil value inserted into Item
+2024/06/12 19:03:40 sorm.LOG:       Creating table SomeType with rows:
+2024/06/12 19:03:40 sorm.LOG:       ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2024/06/12 19:03:40 sorm.LOG:       | Seppia               | TEXT
+2024/06/12 19:03:40 sorm.LOG:       | CatName_nu           | TEXT NOT NULL UNIQUE
+2024/06/12 19:03:40 sorm.LOG:       | Cat_id               | TEXT FOREIGN KEY REFERENCES Cat
+2024/06/12 19:03:40 sorm.LOG:       | Anvedi               | INTEGER
+2024/06/12 19:03:40 sorm.LOG:       ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2024/06/12 19:03:40 sorm.LOG:       Executing CREATE TABLE query
+2024/06/12 19:03:40 [32msorm.SUCCESS:[0m   Table SomeType created
+2024/06/12 19:03:40 sorm.LOG:       Inserting default nil value into SomeType
+2024/06/12 19:03:40 [32msorm.SUCCESS:[0m   Nil value inserted into SomeType
+2024/06/12 19:04:39 sorm.LOG:       Opening database connection...
+2024/06/12 19:04:39 sorm.LOG:       Database opened
+2024/06/12 19:04:39 sorm.LOG:       Activating Foreign Keys
+2024/06/12 19:04:39 [32msorm.SUCCESS:[0m   Database opened without error
+2024/06/12 19:04:39 sorm.LOG:       Creating table Cat with rows:
+2024/06/12 19:04:39 sorm.LOG:       ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2024/06/12 19:04:39 sorm.LOG:       ┃ Id                   | TEXT PRIMARY KEY
+2024/06/12 19:04:39 sorm.LOG:       ┃ CatName_u            | TEXT UNIQUE
+2024/06/12 19:04:39 sorm.LOG:       ┃ CatDesc              | TEXT
+2024/06/12 19:04:39 sorm.LOG:       ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2024/06/12 19:04:39 sorm.LOG:       Executing CREATE TABLE query
+2024/06/12 19:04:39 [32msorm.SUCCESS:[0m   Table Cat created
+2024/06/12 19:04:39 sorm.LOG:       Inserting default nil value into Cat
+2024/06/12 19:04:39 [32msorm.SUCCESS:[0m   Nil value inserted into Cat
+2024/06/12 19:04:39 sorm.LOG:       Creating table Item with rows:
+2024/06/12 19:04:39 sorm.LOG:       ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2024/06/12 19:04:39 sorm.LOG:       ┃ Id                   | TEXT PRIMARY KEY
+2024/06/12 19:04:39 sorm.LOG:       ┃ Desc                 | TEXT
+2024/06/12 19:04:39 sorm.LOG:       ┃ Price                | REAL
+2024/06/12 19:04:39 sorm.LOG:       ┃ InStock              | BOOLEAN
+2024/06/12 19:04:39 sorm.LOG:       ┃ Cat_id               | TEXT FOREIGN KEY REFERENCES Cat
+2024/06/12 19:04:39 sorm.LOG:       ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2024/06/12 19:04:39 sorm.LOG:       Executing CREATE TABLE query
+2024/06/12 19:04:39 [32msorm.SUCCESS:[0m   Table Item created
+2024/06/12 19:04:39 sorm.LOG:       Inserting default nil value into Item
+2024/06/12 19:04:39 [32msorm.SUCCESS:[0m   Nil value inserted into Item
+2024/06/12 19:04:39 sorm.LOG:       Creating table SomeType with rows:
+2024/06/12 19:04:39 sorm.LOG:       ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2024/06/12 19:04:39 sorm.LOG:       ┃ Seppia               | TEXT
+2024/06/12 19:04:39 sorm.LOG:       ┃ CatName_nu           | TEXT NOT NULL UNIQUE
+2024/06/12 19:04:39 sorm.LOG:       ┃ Cat_id               | TEXT FOREIGN KEY REFERENCES Cat
+2024/06/12 19:04:39 sorm.LOG:       ┃ Anvedi               | INTEGER
+2024/06/12 19:04:39 sorm.LOG:       ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2024/06/12 19:04:39 sorm.LOG:       Executing CREATE TABLE query
+2024/06/12 19:04:39 [32msorm.SUCCESS:[0m   Table SomeType created
+2024/06/12 19:04:39 sorm.LOG:       Inserting default nil value into SomeType
+2024/06/12 19:04:39 [32msorm.SUCCESS:[0m   Nil value inserted into SomeType
+2024/06/12 19:05:14 sorm.LOG:       Opening database connection...
+2024/06/12 19:05:14 sorm.LOG:       Database opened
+2024/06/12 19:05:14 sorm.LOG:       Activating Foreign Keys
+2024/06/12 19:05:14 [32msorm.SUCCESS:[0m   Database opened without error
+2024/06/12 19:05:14 sorm.LOG:       Creating table Cat with rows:
+2024/06/12 19:05:14 sorm.LOG:       ┌━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┐
+2024/06/12 19:05:14 sorm.LOG:       ┃ Id                   | TEXT PRIMARY KEY
+2024/06/12 19:05:14 sorm.LOG:       ┃ CatName_u            | TEXT UNIQUE
+2024/06/12 19:05:14 sorm.LOG:       ┃ CatDesc              | TEXT
+2024/06/12 19:05:14 sorm.LOG:       ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2024/06/12 19:05:14 sorm.LOG:       Executing CREATE TABLE query
+2024/06/12 19:05:14 [32msorm.SUCCESS:[0m   Table Cat created
+2024/06/12 19:05:14 sorm.LOG:       Inserting default nil value into Cat
+2024/06/12 19:05:14 [32msorm.SUCCESS:[0m   Nil value inserted into Cat
+2024/06/12 19:05:14 sorm.LOG:       Creating table Item with rows:
+2024/06/12 19:05:14 sorm.LOG:       ┌━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┐
+2024/06/12 19:05:14 sorm.LOG:       ┃ Id                   | TEXT PRIMARY KEY
+2024/06/12 19:05:14 sorm.LOG:       ┃ Desc                 | TEXT
+2024/06/12 19:05:14 sorm.LOG:       ┃ Price                | REAL
+2024/06/12 19:05:14 sorm.LOG:       ┃ InStock              | BOOLEAN
+2024/06/12 19:05:14 sorm.LOG:       ┃ Cat_id               | TEXT FOREIGN KEY REFERENCES Cat
+2024/06/12 19:05:14 sorm.LOG:       ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2024/06/12 19:05:14 sorm.LOG:       Executing CREATE TABLE query
+2024/06/12 19:05:14 [32msorm.SUCCESS:[0m   Table Item created
+2024/06/12 19:05:14 sorm.LOG:       Inserting default nil value into Item
+2024/06/12 19:05:14 [32msorm.SUCCESS:[0m   Nil value inserted into Item
+2024/06/12 19:05:14 sorm.LOG:       Creating table SomeType with rows:
+2024/06/12 19:05:14 sorm.LOG:       ┌━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┐
+2024/06/12 19:05:14 sorm.LOG:       ┃ Seppia               | TEXT
+2024/06/12 19:05:14 sorm.LOG:       ┃ CatName_nu           | TEXT NOT NULL UNIQUE
+2024/06/12 19:05:14 sorm.LOG:       ┃ Cat_id               | TEXT FOREIGN KEY REFERENCES Cat
+2024/06/12 19:05:14 sorm.LOG:       ┃ Anvedi               | INTEGER
+2024/06/12 19:05:14 sorm.LOG:       ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2024/06/12 19:05:14 sorm.LOG:       Executing CREATE TABLE query
+2024/06/12 19:05:14 [32msorm.SUCCESS:[0m   Table SomeType created
+2024/06/12 19:05:14 sorm.LOG:       Inserting default nil value into SomeType
+2024/06/12 19:05:14 [32msorm.SUCCESS:[0m   Nil value inserted into SomeType
+2024/06/12 19:05:51 sorm.LOG:       Opening database connection...
+2024/06/12 19:05:51 sorm.LOG:       Database opened
+2024/06/12 19:05:51 sorm.LOG:       Activating Foreign Keys
+2024/06/12 19:05:51 [32msorm.SUCCESS:[0m   Database opened without error
+2024/06/12 19:05:51 sorm.LOG:       Creating table Cat with rows:
+2024/06/12 19:05:51 sorm.LOG:       ┌─────────────────────────────────────────────────┐
+2024/06/12 19:05:51 sorm.LOG:       ┃ Id                   | TEXT PRIMARY KEY
+2024/06/12 19:05:51 sorm.LOG:       ┃ CatName_u            | TEXT UNIQUE
+2024/06/12 19:05:51 sorm.LOG:       ┃ CatDesc              | TEXT
+2024/06/12 19:05:51 sorm.LOG:       ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2024/06/12 19:05:51 sorm.LOG:       Executing CREATE TABLE query
+2024/06/12 19:05:51 [32msorm.SUCCESS:[0m   Table Cat created
+2024/06/12 19:05:51 sorm.LOG:       Inserting default nil value into Cat
+2024/06/12 19:05:51 [32msorm.SUCCESS:[0m   Nil value inserted into Cat
+2024/06/12 19:05:51 sorm.LOG:       Creating table Item with rows:
+2024/06/12 19:05:51 sorm.LOG:       ┌─────────────────────────────────────────────────┐
+2024/06/12 19:05:51 sorm.LOG:       ┃ Id                   | TEXT PRIMARY KEY
+2024/06/12 19:05:51 sorm.LOG:       ┃ Desc                 | TEXT
+2024/06/12 19:05:51 sorm.LOG:       ┃ Price                | REAL
+2024/06/12 19:05:51 sorm.LOG:       ┃ InStock              | BOOLEAN
+2024/06/12 19:05:51 sorm.LOG:       ┃ Cat_id               | TEXT FOREIGN KEY REFERENCES Cat
+2024/06/12 19:05:51 sorm.LOG:       ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2024/06/12 19:05:51 sorm.LOG:       Executing CREATE TABLE query
+2024/06/12 19:05:51 [32msorm.SUCCESS:[0m   Table Item created
+2024/06/12 19:05:51 sorm.LOG:       Inserting default nil value into Item
+2024/06/12 19:05:51 [32msorm.SUCCESS:[0m   Nil value inserted into Item
+2024/06/12 19:05:51 sorm.LOG:       Creating table SomeType with rows:
+2024/06/12 19:05:51 sorm.LOG:       ┌─────────────────────────────────────────────────┐
+2024/06/12 19:05:51 sorm.LOG:       ┃ Seppia               | TEXT
+2024/06/12 19:05:51 sorm.LOG:       ┃ CatName_nu           | TEXT NOT NULL UNIQUE
+2024/06/12 19:05:51 sorm.LOG:       ┃ Cat_id               | TEXT FOREIGN KEY REFERENCES Cat
+2024/06/12 19:05:51 sorm.LOG:       ┃ Anvedi               | INTEGER
+2024/06/12 19:05:51 sorm.LOG:       ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2024/06/12 19:05:51 sorm.LOG:       Executing CREATE TABLE query
+2024/06/12 19:05:51 [32msorm.SUCCESS:[0m   Table SomeType created
+2024/06/12 19:05:51 sorm.LOG:       Inserting default nil value into SomeType
+2024/06/12 19:05:51 [32msorm.SUCCESS:[0m   Nil value inserted into SomeType
+2024/06/12 19:05:58 sorm.LOG:       Opening database connection...
+2024/06/12 19:05:58 sorm.LOG:       Database opened
+2024/06/12 19:05:58 sorm.LOG:       Activating Foreign Keys
+2024/06/12 19:05:58 [32msorm.SUCCESS:[0m   Database opened without error
+2024/06/12 19:05:58 sorm.LOG:       Creating table Cat with rows:
+2024/06/12 19:05:58 sorm.LOG:       ┌───────────────────────────────────────────────────────────┐
+2024/06/12 19:05:58 sorm.LOG:       ┃ Id                   | TEXT PRIMARY KEY
+2024/06/12 19:05:58 sorm.LOG:       ┃ CatName_u            | TEXT UNIQUE
+2024/06/12 19:05:58 sorm.LOG:       ┃ CatDesc              | TEXT
+2024/06/12 19:05:58 sorm.LOG:       ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2024/06/12 19:05:58 sorm.LOG:       Executing CREATE TABLE query
+2024/06/12 19:05:58 [32msorm.SUCCESS:[0m   Table Cat created
+2024/06/12 19:05:58 sorm.LOG:       Inserting default nil value into Cat
+2024/06/12 19:05:58 [32msorm.SUCCESS:[0m   Nil value inserted into Cat
+2024/06/12 19:05:58 sorm.LOG:       Creating table Item with rows:
+2024/06/12 19:05:58 sorm.LOG:       ┌───────────────────────────────────────────────────────────┐
+2024/06/12 19:05:58 sorm.LOG:       ┃ Id                   | TEXT PRIMARY KEY
+2024/06/12 19:05:58 sorm.LOG:       ┃ Desc                 | TEXT
+2024/06/12 19:05:58 sorm.LOG:       ┃ Price                | REAL
+2024/06/12 19:05:58 sorm.LOG:       ┃ InStock              | BOOLEAN
+2024/06/12 19:05:58 sorm.LOG:       ┃ Cat_id               | TEXT FOREIGN KEY REFERENCES Cat
+2024/06/12 19:05:58 sorm.LOG:       ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2024/06/12 19:05:58 sorm.LOG:       Executing CREATE TABLE query
+2024/06/12 19:05:58 [32msorm.SUCCESS:[0m   Table Item created
+2024/06/12 19:05:58 sorm.LOG:       Inserting default nil value into Item
+2024/06/12 19:05:58 [32msorm.SUCCESS:[0m   Nil value inserted into Item
+2024/06/12 19:05:58 sorm.LOG:       Creating table SomeType with rows:
+2024/06/12 19:05:58 sorm.LOG:       ┌───────────────────────────────────────────────────────────┐
+2024/06/12 19:05:58 sorm.LOG:       ┃ Seppia               | TEXT
+2024/06/12 19:05:58 sorm.LOG:       ┃ CatName_nu           | TEXT NOT NULL UNIQUE
+2024/06/12 19:05:58 sorm.LOG:       ┃ Cat_id               | TEXT FOREIGN KEY REFERENCES Cat
+2024/06/12 19:05:58 sorm.LOG:       ┃ Anvedi               | INTEGER
+2024/06/12 19:05:58 sorm.LOG:       ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2024/06/12 19:05:58 sorm.LOG:       Executing CREATE TABLE query
+2024/06/12 19:05:58 [32msorm.SUCCESS:[0m   Table SomeType created
+2024/06/12 19:05:58 sorm.LOG:       Inserting default nil value into SomeType
+2024/06/12 19:05:58 [32msorm.SUCCESS:[0m   Nil value inserted into SomeType
+2024/06/12 19:06:28 sorm.LOG:       Opening database connection...
+2024/06/12 19:06:28 sorm.LOG:       Database opened
+2024/06/12 19:06:28 sorm.LOG:       Activating Foreign Keys
+2024/06/12 19:06:28 [32msorm.SUCCESS:[0m   Database opened without error
+2024/06/12 19:06:28 sorm.LOG:       Creating table Cat with rows:
+2024/06/12 19:06:28 sorm.LOG:       ┌───────────────────────────────────────────────────────────┐
+2024/06/12 19:06:28 sorm.LOG:       ┃ Id                   | TEXT PRIMARY KEY
+2024/06/12 19:06:28 sorm.LOG:       ┃ CatName_u            | TEXT UNIQUE
+2024/06/12 19:06:28 sorm.LOG:       ┃ CatDesc              | TEXT
+2024/06/12 19:06:28 sorm.LOG:       └───────────────────────────────────────────────────────────┘
+2024/06/12 19:06:28 sorm.LOG:       Executing CREATE TABLE query
+2024/06/12 19:06:28 [32msorm.SUCCESS:[0m   Table Cat created
+2024/06/12 19:06:28 sorm.LOG:       Inserting default nil value into Cat
+2024/06/12 19:06:28 [32msorm.SUCCESS:[0m   Nil value inserted into Cat
+2024/06/12 19:06:28 sorm.LOG:       Creating table Item with rows:
+2024/06/12 19:06:28 sorm.LOG:       ┌───────────────────────────────────────────────────────────┐
+2024/06/12 19:06:28 sorm.LOG:       ┃ Id                   | TEXT PRIMARY KEY
+2024/06/12 19:06:28 sorm.LOG:       ┃ Desc                 | TEXT
+2024/06/12 19:06:28 sorm.LOG:       ┃ Price                | REAL
+2024/06/12 19:06:28 sorm.LOG:       ┃ InStock              | BOOLEAN
+2024/06/12 19:06:28 sorm.LOG:       ┃ Cat_id               | TEXT FOREIGN KEY REFERENCES Cat
+2024/06/12 19:06:28 sorm.LOG:       └───────────────────────────────────────────────────────────┘
+2024/06/12 19:06:28 sorm.LOG:       Executing CREATE TABLE query
+2024/06/12 19:06:28 [32msorm.SUCCESS:[0m   Table Item created
+2024/06/12 19:06:28 sorm.LOG:       Inserting default nil value into Item
+2024/06/12 19:06:28 [32msorm.SUCCESS:[0m   Nil value inserted into Item
+2024/06/12 19:06:28 sorm.LOG:       Creating table SomeType with rows:
+2024/06/12 19:06:28 sorm.LOG:       ┌───────────────────────────────────────────────────────────┐
+2024/06/12 19:06:28 sorm.LOG:       ┃ Seppia               | TEXT
+2024/06/12 19:06:28 sorm.LOG:       ┃ CatName_nu           | TEXT NOT NULL UNIQUE
+2024/06/12 19:06:28 sorm.LOG:       ┃ Cat_id               | TEXT FOREIGN KEY REFERENCES Cat
+2024/06/12 19:06:28 sorm.LOG:       ┃ Anvedi               | INTEGER
+2024/06/12 19:06:28 sorm.LOG:       └───────────────────────────────────────────────────────────┘
+2024/06/12 19:06:28 sorm.LOG:       Executing CREATE TABLE query
+2024/06/12 19:06:28 [32msorm.SUCCESS:[0m   Table SomeType created
+2024/06/12 19:06:28 sorm.LOG:       Inserting default nil value into SomeType
+2024/06/12 19:06:28 [32msorm.SUCCESS:[0m   Nil value inserted into SomeType
+2024/06/12 19:07:29 sorm.LOG:       Opening database connection...
+2024/06/12 19:07:29 sorm.LOG:       Database opened
+2024/06/12 19:07:29 sorm.LOG:       Activating Foreign Keys
+2024/06/12 19:07:29 [32msorm.SUCCESS:[0m   Database opened without error
+2024/06/12 19:07:29 sorm.LOG:       Creating table Cat with rows:
+2024/06/12 19:07:29 sorm.LOG:       ┌───────────────────────────────────────────────────────────┐
+2024/06/12 19:07:29 sorm.LOG:       │ Id                   │ TEXT PRIMARY KEY
+2024/06/12 19:07:29 sorm.LOG:       │ CatName_u            │ TEXT UNIQUE
+2024/06/12 19:07:29 sorm.LOG:       │ CatDesc              │ TEXT
+2024/06/12 19:07:29 sorm.LOG:       └───────────────────────────────────────────────────────────┘
+2024/06/12 19:07:29 sorm.LOG:       Executing CREATE TABLE query
+2024/06/12 19:07:29 [32msorm.SUCCESS:[0m   Table Cat created
+2024/06/12 19:07:29 sorm.LOG:       Inserting default nil value into Cat
+2024/06/12 19:07:29 [32msorm.SUCCESS:[0m   Nil value inserted into Cat
+2024/06/12 19:07:29 sorm.LOG:       Creating table Item with rows:
+2024/06/12 19:07:29 sorm.LOG:       ┌───────────────────────────────────────────────────────────┐
+2024/06/12 19:07:29 sorm.LOG:       │ Id                   │ TEXT PRIMARY KEY
+2024/06/12 19:07:29 sorm.LOG:       │ Desc                 │ TEXT
+2024/06/12 19:07:29 sorm.LOG:       │ Price                │ REAL
+2024/06/12 19:07:29 sorm.LOG:       │ InStock              │ BOOLEAN
+2024/06/12 19:07:29 sorm.LOG:       │ Cat_id               │ TEXT FOREIGN KEY REFERENCES Cat
+2024/06/12 19:07:29 sorm.LOG:       └───────────────────────────────────────────────────────────┘
+2024/06/12 19:07:29 sorm.LOG:       Executing CREATE TABLE query
+2024/06/12 19:07:29 [32msorm.SUCCESS:[0m   Table Item created
+2024/06/12 19:07:29 sorm.LOG:       Inserting default nil value into Item
+2024/06/12 19:07:29 [32msorm.SUCCESS:[0m   Nil value inserted into Item
+2024/06/12 19:07:29 sorm.LOG:       Creating table SomeType with rows:
+2024/06/12 19:07:29 sorm.LOG:       ┌───────────────────────────────────────────────────────────┐
+2024/06/12 19:07:29 sorm.LOG:       │ Seppia               │ TEXT
+2024/06/12 19:07:29 sorm.LOG:       │ CatName_nu           │ TEXT NOT NULL UNIQUE
+2024/06/12 19:07:29 sorm.LOG:       │ Cat_id               │ TEXT FOREIGN KEY REFERENCES Cat
+2024/06/12 19:07:29 sorm.LOG:       │ Anvedi               │ INTEGER
+2024/06/12 19:07:29 sorm.LOG:       └───────────────────────────────────────────────────────────┘
+2024/06/12 19:07:29 sorm.LOG:       Executing CREATE TABLE query
+2024/06/12 19:07:29 [32msorm.SUCCESS:[0m   Table SomeType created
+2024/06/12 19:07:29 sorm.LOG:       Inserting default nil value into SomeType
+2024/06/12 19:07:29 [32msorm.SUCCESS:[0m   Nil value inserted into SomeType
+2024/06/12 19:07:56 sorm.LOG:       Opening database connection...
+2024/06/12 19:07:56 sorm.LOG:       Database opened
+2024/06/12 19:07:56 sorm.LOG:       Activating Foreign Keys
+2024/06/12 19:07:56 [32msorm.SUCCESS:[0m   Database opened without error
+2024/06/12 19:07:56 sorm.LOG:       Creating table Cat with rows:
+2024/06/12 19:07:56 sorm.LOG:       ┌───────────────────────────────────────────────────────────┐
+2024/06/12 19:07:56 sorm.LOG:       │ Id                   │ TEXT PRIMARY KEY
+2024/06/12 19:07:56 sorm.LOG:       │ CatName_u            │ TEXT UNIQUE
+2024/06/12 19:07:56 sorm.LOG:       │ CatDesc              │ TEXT
+2024/06/12 19:07:56 sorm.LOG:       └───────────────────────────────────────────────────────────┘
+2024/06/12 19:07:56 sorm.LOG:       Executing CREATE TABLE query
+2024/06/12 19:07:56 [32msorm.SUCCESS:[0m   Table Cat created
+2024/06/12 19:07:56 sorm.LOG:       Inserting default nil value into Cat
+2024/06/12 19:07:56 [32msorm.SUCCESS:[0m   Nil value inserted into Cat
+2024/06/12 19:07:56 sorm.LOG:       Creating table Item with rows:
+2024/06/12 19:07:56 sorm.LOG:       ┌───────────────────────────────────────────────────────────┐
+2024/06/12 19:07:56 sorm.LOG:       │ Id                   │ TEXT PRIMARY KEY
+2024/06/12 19:07:56 sorm.LOG:       │ Desc                 │ TEXT
+2024/06/12 19:07:56 sorm.LOG:       │ Price                │ REAL
+2024/06/12 19:07:56 sorm.LOG:       │ InStock              │ BOOLEAN
+2024/06/12 19:07:56 sorm.LOG:       │ Cat_id               │ TEXT FOREIGN KEY REFERENCES Cat
+2024/06/12 19:07:56 sorm.LOG:       └───────────────────────────────────────────────────────────┘
+2024/06/12 19:07:56 sorm.LOG:       Executing CREATE TABLE query
+2024/06/12 19:07:56 [32msorm.SUCCESS:[0m   Table Item created
+2024/06/12 19:07:56 sorm.LOG:       Inserting default nil value into Item
+2024/06/12 19:07:56 [32msorm.SUCCESS:[0m   Nil value inserted into Item
+2024/06/12 19:07:56 sorm.LOG:       Creating table SomeType with rows:
+2024/06/12 19:07:56 sorm.LOG:       ┌───────────────────────────────────────────────────────────┐
+2024/06/12 19:07:56 sorm.LOG:       │ Seppia               │ TEXT
+2024/06/12 19:07:56 sorm.LOG:       │ CatName_nu           │ TEXT NOT NULL UNIQUE
+2024/06/12 19:07:56 sorm.LOG:       │ Cat_id               │ TEXT FOREIGN KEY REFERENCES Cat
+2024/06/12 19:07:56 sorm.LOG:       │ Anvedi               │ INTEGER
+2024/06/12 19:07:56 sorm.LOG:       └───────────────────────────────────────────────────────────┘
+2024/06/12 19:07:56 sorm.LOG:       Executing CREATE TABLE query
+2024/06/12 19:07:56 [32msorm.SUCCESS:[0m   Table SomeType created
+2024/06/12 19:07:56 sorm.LOG:       Inserting default nil value into SomeType
+2024/06/12 19:07:56 [32msorm.SUCCESS:[0m   Nil value inserted into SomeType
+2024/06/12 19:08:30 sorm.LOG:       Opening database connection...
+2024/06/12 19:08:30 sorm.LOG:       Database opened
+2024/06/12 19:08:30 sorm.LOG:       Activating Foreign Keys
+2024/06/12 19:08:30 [32msorm.SUCCESS:[0m   Database opened without error
+2024/06/12 19:08:30 sorm.LOG:       Creating table Cat with rows:
+2024/06/12 19:08:30 sorm.LOG:       ┌───────────────────────────────────────────────────────────
+2024/06/12 19:08:30 sorm.LOG:       │ Id                   │ TEXT PRIMARY KEY
+2024/06/12 19:08:30 sorm.LOG:       │ CatName_u            │ TEXT UNIQUE
+2024/06/12 19:08:30 sorm.LOG:       │ CatDesc              │ TEXT
+2024/06/12 19:08:30 sorm.LOG:       └───────────────────────────────────────────────────────────
+2024/06/12 19:08:30 sorm.LOG:       Executing CREATE TABLE query
+2024/06/12 19:08:30 [32msorm.SUCCESS:[0m   Table Cat created
+2024/06/12 19:08:30 sorm.LOG:       Inserting default nil value into Cat
+2024/06/12 19:08:30 [32msorm.SUCCESS:[0m   Nil value inserted into Cat
+2024/06/12 19:08:30 sorm.LOG:       Creating table Item with rows:
+2024/06/12 19:08:30 sorm.LOG:       ┌───────────────────────────────────────────────────────────
+2024/06/12 19:08:30 sorm.LOG:       │ Id                   │ TEXT PRIMARY KEY
+2024/06/12 19:08:30 sorm.LOG:       │ Desc                 │ TEXT
+2024/06/12 19:08:30 sorm.LOG:       │ Price                │ REAL
+2024/06/12 19:08:30 sorm.LOG:       │ InStock              │ BOOLEAN
+2024/06/12 19:08:30 sorm.LOG:       │ Cat_id               │ TEXT FOREIGN KEY REFERENCES Cat
+2024/06/12 19:08:30 sorm.LOG:       └───────────────────────────────────────────────────────────
+2024/06/12 19:08:30 sorm.LOG:       Executing CREATE TABLE query
+2024/06/12 19:08:30 [32msorm.SUCCESS:[0m   Table Item created
+2024/06/12 19:08:30 sorm.LOG:       Inserting default nil value into Item
+2024/06/12 19:08:30 [32msorm.SUCCESS:[0m   Nil value inserted into Item
+2024/06/12 19:08:30 sorm.LOG:       Creating table SomeType with rows:
+2024/06/12 19:08:30 sorm.LOG:       ┌───────────────────────────────────────────────────────────
+2024/06/12 19:08:30 sorm.LOG:       │ Seppia               │ TEXT
+2024/06/12 19:08:30 sorm.LOG:       │ CatName_nu           │ TEXT NOT NULL UNIQUE
+2024/06/12 19:08:30 sorm.LOG:       │ Cat_id               │ TEXT FOREIGN KEY REFERENCES Cat
+2024/06/12 19:08:30 sorm.LOG:       │ Anvedi               │ INTEGER
+2024/06/12 19:08:30 sorm.LOG:       └───────────────────────────────────────────────────────────
+2024/06/12 19:08:30 sorm.LOG:       Executing CREATE TABLE query
+2024/06/12 19:08:30 [32msorm.SUCCESS:[0m   Table SomeType created
+2024/06/12 19:08:30 sorm.LOG:       Inserting default nil value into SomeType
+2024/06/12 19:08:30 [32msorm.SUCCESS:[0m   Nil value inserted into SomeType
+2024/06/12 19:08:54 sorm.LOG:       Opening database connection...
+2024/06/12 19:08:54 sorm.LOG:       Database opened
+2024/06/12 19:08:54 sorm.LOG:       Activating Foreign Keys
+2024/06/12 19:08:54 [32msorm.SUCCESS:[0m   Database opened without error
+2024/06/12 19:08:54 sorm.LOG:       Creating table Cat with rows:
+2024/06/12 19:08:54 sorm.LOG:       ┌────────────────────┬──────────────────────────────────────
+2024/06/12 19:08:54 sorm.LOG:       │ Id                   │ TEXT PRIMARY KEY
+2024/06/12 19:08:54 sorm.LOG:       │ CatName_u            │ TEXT UNIQUE
+2024/06/12 19:08:54 sorm.LOG:       │ CatDesc              │ TEXT
+2024/06/12 19:08:54 sorm.LOG:       └───────────────────────────────────────────────────────────
+2024/06/12 19:08:54 sorm.LOG:       Executing CREATE TABLE query
+2024/06/12 19:08:54 [32msorm.SUCCESS:[0m   Table Cat created
+2024/06/12 19:08:54 sorm.LOG:       Inserting default nil value into Cat
+2024/06/12 19:08:54 [32msorm.SUCCESS:[0m   Nil value inserted into Cat
+2024/06/12 19:08:54 sorm.LOG:       Creating table Item with rows:
+2024/06/12 19:08:54 sorm.LOG:       ┌────────────────────┬──────────────────────────────────────
+2024/06/12 19:08:54 sorm.LOG:       │ Id                   │ TEXT PRIMARY KEY
+2024/06/12 19:08:54 sorm.LOG:       │ Desc                 │ TEXT
+2024/06/12 19:08:54 sorm.LOG:       │ Price                │ REAL
+2024/06/12 19:08:54 sorm.LOG:       │ InStock              │ BOOLEAN
+2024/06/12 19:08:54 sorm.LOG:       │ Cat_id               │ TEXT FOREIGN KEY REFERENCES Cat
+2024/06/12 19:08:54 sorm.LOG:       └───────────────────────────────────────────────────────────
+2024/06/12 19:08:54 sorm.LOG:       Executing CREATE TABLE query
+2024/06/12 19:08:54 [32msorm.SUCCESS:[0m   Table Item created
+2024/06/12 19:08:54 sorm.LOG:       Inserting default nil value into Item
+2024/06/12 19:08:54 [32msorm.SUCCESS:[0m   Nil value inserted into Item
+2024/06/12 19:08:54 sorm.LOG:       Creating table SomeType with rows:
+2024/06/12 19:08:54 sorm.LOG:       ┌────────────────────┬──────────────────────────────────────
+2024/06/12 19:08:54 sorm.LOG:       │ Seppia               │ TEXT
+2024/06/12 19:08:54 sorm.LOG:       │ CatName_nu           │ TEXT NOT NULL UNIQUE
+2024/06/12 19:08:54 sorm.LOG:       │ Cat_id               │ TEXT FOREIGN KEY REFERENCES Cat
+2024/06/12 19:08:54 sorm.LOG:       │ Anvedi               │ INTEGER
+2024/06/12 19:08:54 sorm.LOG:       └───────────────────────────────────────────────────────────
+2024/06/12 19:08:54 sorm.LOG:       Executing CREATE TABLE query
+2024/06/12 19:08:54 [32msorm.SUCCESS:[0m   Table SomeType created
+2024/06/12 19:08:54 sorm.LOG:       Inserting default nil value into SomeType
+2024/06/12 19:08:54 [32msorm.SUCCESS:[0m   Nil value inserted into SomeType
+2024/06/12 19:08:59 sorm.LOG:       Opening database connection...
+2024/06/12 19:08:59 sorm.LOG:       Database opened
+2024/06/12 19:08:59 sorm.LOG:       Activating Foreign Keys
+2024/06/12 19:08:59 [32msorm.SUCCESS:[0m   Database opened without error
+2024/06/12 19:08:59 sorm.LOG:       Creating table Cat with rows:
+2024/06/12 19:08:59 sorm.LOG:       ┌────────────────────────┬──────────────────────────────────
+2024/06/12 19:08:59 sorm.LOG:       │ Id                   │ TEXT PRIMARY KEY
+2024/06/12 19:08:59 sorm.LOG:       │ CatName_u            │ TEXT UNIQUE
+2024/06/12 19:08:59 sorm.LOG:       │ CatDesc              │ TEXT
+2024/06/12 19:08:59 sorm.LOG:       └───────────────────────────────────────────────────────────
+2024/06/12 19:08:59 sorm.LOG:       Executing CREATE TABLE query
+2024/06/12 19:08:59 [32msorm.SUCCESS:[0m   Table Cat created
+2024/06/12 19:08:59 sorm.LOG:       Inserting default nil value into Cat
+2024/06/12 19:08:59 [32msorm.SUCCESS:[0m   Nil value inserted into Cat
+2024/06/12 19:08:59 sorm.LOG:       Creating table Item with rows:
+2024/06/12 19:08:59 sorm.LOG:       ┌────────────────────────┬──────────────────────────────────
+2024/06/12 19:08:59 sorm.LOG:       │ Id                   │ TEXT PRIMARY KEY
+2024/06/12 19:08:59 sorm.LOG:       │ Desc                 │ TEXT
+2024/06/12 19:08:59 sorm.LOG:       │ Price                │ REAL
+2024/06/12 19:08:59 sorm.LOG:       │ InStock              │ BOOLEAN
+2024/06/12 19:08:59 sorm.LOG:       │ Cat_id               │ TEXT FOREIGN KEY REFERENCES Cat
+2024/06/12 19:08:59 sorm.LOG:       └───────────────────────────────────────────────────────────
+2024/06/12 19:08:59 sorm.LOG:       Executing CREATE TABLE query
+2024/06/12 19:08:59 [32msorm.SUCCESS:[0m   Table Item created
+2024/06/12 19:08:59 sorm.LOG:       Inserting default nil value into Item
+2024/06/12 19:08:59 [32msorm.SUCCESS:[0m   Nil value inserted into Item
+2024/06/12 19:08:59 sorm.LOG:       Creating table SomeType with rows:
+2024/06/12 19:08:59 sorm.LOG:       ┌────────────────────────┬──────────────────────────────────
+2024/06/12 19:08:59 sorm.LOG:       │ Seppia               │ TEXT
+2024/06/12 19:08:59 sorm.LOG:       │ CatName_nu           │ TEXT NOT NULL UNIQUE
+2024/06/12 19:08:59 sorm.LOG:       │ Cat_id               │ TEXT FOREIGN KEY REFERENCES Cat
+2024/06/12 19:08:59 sorm.LOG:       │ Anvedi               │ INTEGER
+2024/06/12 19:08:59 sorm.LOG:       └───────────────────────────────────────────────────────────
+2024/06/12 19:08:59 sorm.LOG:       Executing CREATE TABLE query
+2024/06/12 19:08:59 [32msorm.SUCCESS:[0m   Table SomeType created
+2024/06/12 19:08:59 sorm.LOG:       Inserting default nil value into SomeType
+2024/06/12 19:08:59 [32msorm.SUCCESS:[0m   Nil value inserted into SomeType
+2024/06/12 19:09:05 sorm.LOG:       Opening database connection...
+2024/06/12 19:09:05 sorm.LOG:       Database opened
+2024/06/12 19:09:05 sorm.LOG:       Activating Foreign Keys
+2024/06/12 19:09:05 [32msorm.SUCCESS:[0m   Database opened without error
+2024/06/12 19:09:05 sorm.LOG:       Creating table Cat with rows:
+2024/06/12 19:09:05 sorm.LOG:       ┌──────────────────────┬────────────────────────────────────
+2024/06/12 19:09:05 sorm.LOG:       │ Id                   │ TEXT PRIMARY KEY
+2024/06/12 19:09:05 sorm.LOG:       │ CatName_u            │ TEXT UNIQUE
+2024/06/12 19:09:05 sorm.LOG:       │ CatDesc              │ TEXT
+2024/06/12 19:09:05 sorm.LOG:       └───────────────────────────────────────────────────────────
+2024/06/12 19:09:05 sorm.LOG:       Executing CREATE TABLE query
+2024/06/12 19:09:05 [32msorm.SUCCESS:[0m   Table Cat created
+2024/06/12 19:09:05 sorm.LOG:       Inserting default nil value into Cat
+2024/06/12 19:09:05 [32msorm.SUCCESS:[0m   Nil value inserted into Cat
+2024/06/12 19:09:05 sorm.LOG:       Creating table Item with rows:
+2024/06/12 19:09:05 sorm.LOG:       ┌──────────────────────┬────────────────────────────────────
+2024/06/12 19:09:05 sorm.LOG:       │ Id                   │ TEXT PRIMARY KEY
+2024/06/12 19:09:05 sorm.LOG:       │ Desc                 │ TEXT
+2024/06/12 19:09:05 sorm.LOG:       │ Price                │ REAL
+2024/06/12 19:09:05 sorm.LOG:       │ InStock              │ BOOLEAN
+2024/06/12 19:09:05 sorm.LOG:       │ Cat_id               │ TEXT FOREIGN KEY REFERENCES Cat
+2024/06/12 19:09:05 sorm.LOG:       └───────────────────────────────────────────────────────────
+2024/06/12 19:09:05 sorm.LOG:       Executing CREATE TABLE query
+2024/06/12 19:09:05 [32msorm.SUCCESS:[0m   Table Item created
+2024/06/12 19:09:05 sorm.LOG:       Inserting default nil value into Item
+2024/06/12 19:09:05 [32msorm.SUCCESS:[0m   Nil value inserted into Item
+2024/06/12 19:09:05 sorm.LOG:       Creating table SomeType with rows:
+2024/06/12 19:09:05 sorm.LOG:       ┌──────────────────────┬────────────────────────────────────
+2024/06/12 19:09:05 sorm.LOG:       │ Seppia               │ TEXT
+2024/06/12 19:09:05 sorm.LOG:       │ CatName_nu           │ TEXT NOT NULL UNIQUE
+2024/06/12 19:09:05 sorm.LOG:       │ Cat_id               │ TEXT FOREIGN KEY REFERENCES Cat
+2024/06/12 19:09:05 sorm.LOG:       │ Anvedi               │ INTEGER
+2024/06/12 19:09:05 sorm.LOG:       └───────────────────────────────────────────────────────────
+2024/06/12 19:09:05 sorm.LOG:       Executing CREATE TABLE query
+2024/06/12 19:09:05 [32msorm.SUCCESS:[0m   Table SomeType created
+2024/06/12 19:09:05 sorm.LOG:       Inserting default nil value into SomeType
+2024/06/12 19:09:05 [32msorm.SUCCESS:[0m   Nil value inserted into SomeType
+2024/06/12 19:09:17 sorm.LOG:       Opening database connection...
+2024/06/12 19:09:17 sorm.LOG:       Database opened
+2024/06/12 19:09:17 sorm.LOG:       Activating Foreign Keys
+2024/06/12 19:09:17 [32msorm.SUCCESS:[0m   Database opened without error
+2024/06/12 19:09:17 sorm.LOG:       Creating table Cat with rows:
+2024/06/12 19:09:17 sorm.LOG:       ┌──────────────────────┬────────────────────────────────────
+2024/06/12 19:09:17 sorm.LOG:       │ Id                   │ TEXT PRIMARY KEY
+2024/06/12 19:09:17 sorm.LOG:       │ CatName_u            │ TEXT UNIQUE
+2024/06/12 19:09:17 sorm.LOG:       │ CatDesc              │ TEXT
+2024/06/12 19:09:17 sorm.LOG:       └──────────────────────┴────────────────────────────────────
+2024/06/12 19:09:17 sorm.LOG:       Executing CREATE TABLE query
+2024/06/12 19:09:17 [32msorm.SUCCESS:[0m   Table Cat created
+2024/06/12 19:09:17 sorm.LOG:       Inserting default nil value into Cat
+2024/06/12 19:09:17 [32msorm.SUCCESS:[0m   Nil value inserted into Cat
+2024/06/12 19:09:17 sorm.LOG:       Creating table Item with rows:
+2024/06/12 19:09:17 sorm.LOG:       ┌──────────────────────┬────────────────────────────────────
+2024/06/12 19:09:17 sorm.LOG:       │ Id                   │ TEXT PRIMARY KEY
+2024/06/12 19:09:17 sorm.LOG:       │ Desc                 │ TEXT
+2024/06/12 19:09:17 sorm.LOG:       │ Price                │ REAL
+2024/06/12 19:09:17 sorm.LOG:       │ InStock              │ BOOLEAN
+2024/06/12 19:09:17 sorm.LOG:       │ Cat_id               │ TEXT FOREIGN KEY REFERENCES Cat
+2024/06/12 19:09:17 sorm.LOG:       └──────────────────────┴────────────────────────────────────
+2024/06/12 19:09:17 sorm.LOG:       Executing CREATE TABLE query
+2024/06/12 19:09:17 [32msorm.SUCCESS:[0m   Table Item created
+2024/06/12 19:09:17 sorm.LOG:       Inserting default nil value into Item
+2024/06/12 19:09:17 [32msorm.SUCCESS:[0m   Nil value inserted into Item
+2024/06/12 19:09:17 sorm.LOG:       Creating table SomeType with rows:
+2024/06/12 19:09:17 sorm.LOG:       ┌──────────────────────┬────────────────────────────────────
+2024/06/12 19:09:17 sorm.LOG:       │ Seppia               │ TEXT
+2024/06/12 19:09:17 sorm.LOG:       │ CatName_nu           │ TEXT NOT NULL UNIQUE
+2024/06/12 19:09:17 sorm.LOG:       │ Cat_id               │ TEXT FOREIGN KEY REFERENCES Cat
+2024/06/12 19:09:17 sorm.LOG:       │ Anvedi               │ INTEGER
+2024/06/12 19:09:17 sorm.LOG:       └──────────────────────┴────────────────────────────────────
+2024/06/12 19:09:17 sorm.LOG:       Executing CREATE TABLE query
+2024/06/12 19:09:17 [32msorm.SUCCESS:[0m   Table SomeType created
+2024/06/12 19:09:17 sorm.LOG:       Inserting default nil value into SomeType
+2024/06/12 19:09:17 [32msorm.SUCCESS:[0m   Nil value inserted into SomeType
+2024/06/12 19:10:58 sorm.LOG:       Opening database connection...
+2024/06/12 19:10:58 sorm.LOG:       Database opened
+2024/06/12 19:10:58 sorm.LOG:       Activating Foreign Keys
+2024/06/12 19:10:58 [32msorm.SUCCESS:[0m   Database opened without error
+2024/06/12 19:10:58 sorm.LOG:       ┌───────────────────────────────────────────────────────────
+2024/06/12 19:10:58 sorm.LOG:       │ Creating table Cat with rows:
+2024/06/12 19:10:58 sorm.LOG:       ├──────────────────────┬────────────────────────────────────
+2024/06/12 19:10:58 sorm.LOG:       ├──────────────────────┼────────────────────────────────────
+2024/06/12 19:10:58 sorm.LOG:       │ Id                   │ TEXT PRIMARY KEY
+2024/06/12 19:10:58 sorm.LOG:       │ CatName_u            │ TEXT UNIQUE
+2024/06/12 19:10:58 sorm.LOG:       │ CatDesc              │ TEXT
+2024/06/12 19:10:58 sorm.LOG:       └──────────────────────┴────────────────────────────────────
+2024/06/12 19:10:58 sorm.LOG:       Executing CREATE TABLE query
+2024/06/12 19:10:58 [32msorm.SUCCESS:[0m   Table Cat created
+2024/06/12 19:10:58 sorm.LOG:       Inserting default nil value into Cat
+2024/06/12 19:10:58 [32msorm.SUCCESS:[0m   Nil value inserted into Cat
+2024/06/12 19:10:58 sorm.LOG:       ┌───────────────────────────────────────────────────────────
+2024/06/12 19:10:58 sorm.LOG:       │ Creating table Item with rows:
+2024/06/12 19:10:58 sorm.LOG:       ├──────────────────────┬────────────────────────────────────
+2024/06/12 19:10:58 sorm.LOG:       ├──────────────────────┼────────────────────────────────────
+2024/06/12 19:10:58 sorm.LOG:       │ Id                   │ TEXT PRIMARY KEY
+2024/06/12 19:10:58 sorm.LOG:       │ Desc                 │ TEXT
+2024/06/12 19:10:58 sorm.LOG:       │ Price                │ REAL
+2024/06/12 19:10:58 sorm.LOG:       │ InStock              │ BOOLEAN
+2024/06/12 19:10:58 sorm.LOG:       │ Cat_id               │ TEXT FOREIGN KEY REFERENCES Cat
+2024/06/12 19:10:58 sorm.LOG:       └──────────────────────┴────────────────────────────────────
+2024/06/12 19:10:58 sorm.LOG:       Executing CREATE TABLE query
+2024/06/12 19:10:58 [32msorm.SUCCESS:[0m   Table Item created
+2024/06/12 19:10:58 sorm.LOG:       Inserting default nil value into Item
+2024/06/12 19:10:58 [32msorm.SUCCESS:[0m   Nil value inserted into Item
+2024/06/12 19:10:58 sorm.LOG:       ┌───────────────────────────────────────────────────────────
+2024/06/12 19:10:58 sorm.LOG:       │ Creating table SomeType with rows:
+2024/06/12 19:10:58 sorm.LOG:       ├──────────────────────┬────────────────────────────────────
+2024/06/12 19:10:58 sorm.LOG:       ├──────────────────────┼────────────────────────────────────
+2024/06/12 19:10:58 sorm.LOG:       │ Seppia               │ TEXT
+2024/06/12 19:10:58 sorm.LOG:       │ CatName_nu           │ TEXT NOT NULL UNIQUE
+2024/06/12 19:10:58 sorm.LOG:       │ Cat_id               │ TEXT FOREIGN KEY REFERENCES Cat
+2024/06/12 19:10:58 sorm.LOG:       │ Anvedi               │ INTEGER
+2024/06/12 19:10:58 sorm.LOG:       └──────────────────────┴────────────────────────────────────
+2024/06/12 19:10:58 sorm.LOG:       Executing CREATE TABLE query
+2024/06/12 19:10:58 [32msorm.SUCCESS:[0m   Table SomeType created
+2024/06/12 19:10:58 sorm.LOG:       Inserting default nil value into SomeType
+2024/06/12 19:10:58 [32msorm.SUCCESS:[0m   Nil value inserted into SomeType
+2024/06/12 19:11:08 sorm.LOG:       Opening database connection...
+2024/06/12 19:11:08 sorm.LOG:       Database opened
+2024/06/12 19:11:08 sorm.LOG:       Activating Foreign Keys
+2024/06/12 19:11:08 [32msorm.SUCCESS:[0m   Database opened without error
+2024/06/12 19:11:08 sorm.LOG:       ┌───────────────────────────────────────────────────────────
+2024/06/12 19:11:08 sorm.LOG:       │ Creating table Cat with rows:
+2024/06/12 19:11:08 sorm.LOG:       ├──────────────────────┼────────────────────────────────────
+2024/06/12 19:11:08 sorm.LOG:       │ Id                   │ TEXT PRIMARY KEY
+2024/06/12 19:11:08 sorm.LOG:       │ CatName_u            │ TEXT UNIQUE
+2024/06/12 19:11:08 sorm.LOG:       │ CatDesc              │ TEXT
+2024/06/12 19:11:08 sorm.LOG:       └──────────────────────┴────────────────────────────────────
+2024/06/12 19:11:08 sorm.LOG:       Executing CREATE TABLE query
+2024/06/12 19:11:08 [32msorm.SUCCESS:[0m   Table Cat created
+2024/06/12 19:11:08 sorm.LOG:       Inserting default nil value into Cat
+2024/06/12 19:11:08 [32msorm.SUCCESS:[0m   Nil value inserted into Cat
+2024/06/12 19:11:08 sorm.LOG:       ┌───────────────────────────────────────────────────────────
+2024/06/12 19:11:08 sorm.LOG:       │ Creating table Item with rows:
+2024/06/12 19:11:08 sorm.LOG:       ├──────────────────────┼────────────────────────────────────
+2024/06/12 19:11:08 sorm.LOG:       │ Id                   │ TEXT PRIMARY KEY
+2024/06/12 19:11:08 sorm.LOG:       │ Desc                 │ TEXT
+2024/06/12 19:11:08 sorm.LOG:       │ Price                │ REAL
+2024/06/12 19:11:08 sorm.LOG:       │ InStock              │ BOOLEAN
+2024/06/12 19:11:08 sorm.LOG:       │ Cat_id               │ TEXT FOREIGN KEY REFERENCES Cat
+2024/06/12 19:11:08 sorm.LOG:       └──────────────────────┴────────────────────────────────────
+2024/06/12 19:11:08 sorm.LOG:       Executing CREATE TABLE query
+2024/06/12 19:11:08 [32msorm.SUCCESS:[0m   Table Item created
+2024/06/12 19:11:08 sorm.LOG:       Inserting default nil value into Item
+2024/06/12 19:11:08 [32msorm.SUCCESS:[0m   Nil value inserted into Item
+2024/06/12 19:11:08 sorm.LOG:       ┌───────────────────────────────────────────────────────────
+2024/06/12 19:11:08 sorm.LOG:       │ Creating table SomeType with rows:
+2024/06/12 19:11:08 sorm.LOG:       ├──────────────────────┼────────────────────────────────────
+2024/06/12 19:11:08 sorm.LOG:       │ Seppia               │ TEXT
+2024/06/12 19:11:08 sorm.LOG:       │ CatName_nu           │ TEXT NOT NULL UNIQUE
+2024/06/12 19:11:08 sorm.LOG:       │ Cat_id               │ TEXT FOREIGN KEY REFERENCES Cat
+2024/06/12 19:11:08 sorm.LOG:       │ Anvedi               │ INTEGER
+2024/06/12 19:11:08 sorm.LOG:       └──────────────────────┴────────────────────────────────────
+2024/06/12 19:11:08 sorm.LOG:       Executing CREATE TABLE query
+2024/06/12 19:11:08 [32msorm.SUCCESS:[0m   Table SomeType created
+2024/06/12 19:11:08 sorm.LOG:       Inserting default nil value into SomeType
+2024/06/12 19:11:08 [32msorm.SUCCESS:[0m   Nil value inserted into SomeType
+2024/06/12 19:11:26 sorm.LOG:       Opening database connection...
+2024/06/12 19:11:26 sorm.LOG:       Database opened
+2024/06/12 19:11:26 sorm.LOG:       Activating Foreign Keys
+2024/06/12 19:11:26 [32msorm.SUCCESS:[0m   Database opened without error
+2024/06/12 19:11:26 sorm.LOG:       ┌───────────────────────────────────────────────────────────
+2024/06/12 19:11:26 sorm.LOG:       │ Creating table Cat with rows:
+2024/06/12 19:11:26 sorm.LOG:       ├──────────────────────┬────────────────────────────────────
+2024/06/12 19:11:26 sorm.LOG:       │ Id                   │ TEXT PRIMARY KEY
+2024/06/12 19:11:26 sorm.LOG:       │ CatName_u            │ TEXT UNIQUE
+2024/06/12 19:11:26 sorm.LOG:       │ CatDesc              │ TEXT
+2024/06/12 19:11:26 sorm.LOG:       └──────────────────────┴────────────────────────────────────
+2024/06/12 19:11:26 sorm.LOG:       Executing CREATE TABLE query
+2024/06/12 19:11:26 [32msorm.SUCCESS:[0m   Table Cat created
+2024/06/12 19:11:26 sorm.LOG:       Inserting default nil value into Cat
+2024/06/12 19:11:26 [32msorm.SUCCESS:[0m   Nil value inserted into Cat
+2024/06/12 19:11:26 sorm.LOG:       ┌───────────────────────────────────────────────────────────
+2024/06/12 19:11:26 sorm.LOG:       │ Creating table Item with rows:
+2024/06/12 19:11:26 sorm.LOG:       ├──────────────────────┬────────────────────────────────────
+2024/06/12 19:11:26 sorm.LOG:       │ Id                   │ TEXT PRIMARY KEY
+2024/06/12 19:11:26 sorm.LOG:       │ Desc                 │ TEXT
+2024/06/12 19:11:26 sorm.LOG:       │ Price                │ REAL
+2024/06/12 19:11:26 sorm.LOG:       │ InStock              │ BOOLEAN
+2024/06/12 19:11:26 sorm.LOG:       │ Cat_id               │ TEXT FOREIGN KEY REFERENCES Cat
+2024/06/12 19:11:26 sorm.LOG:       └──────────────────────┴────────────────────────────────────
+2024/06/12 19:11:26 sorm.LOG:       Executing CREATE TABLE query
+2024/06/12 19:11:26 [32msorm.SUCCESS:[0m   Table Item created
+2024/06/12 19:11:26 sorm.LOG:       Inserting default nil value into Item
+2024/06/12 19:11:26 [32msorm.SUCCESS:[0m   Nil value inserted into Item
+2024/06/12 19:11:26 sorm.LOG:       ┌───────────────────────────────────────────────────────────
+2024/06/12 19:11:26 sorm.LOG:       │ Creating table SomeType with rows:
+2024/06/12 19:11:26 sorm.LOG:       ├──────────────────────┬────────────────────────────────────
+2024/06/12 19:11:26 sorm.LOG:       │ Seppia               │ TEXT
+2024/06/12 19:11:26 sorm.LOG:       │ CatName_nu           │ TEXT NOT NULL UNIQUE
+2024/06/12 19:11:26 sorm.LOG:       │ Cat_id               │ TEXT FOREIGN KEY REFERENCES Cat
+2024/06/12 19:11:26 sorm.LOG:       │ Anvedi               │ INTEGER
+2024/06/12 19:11:26 sorm.LOG:       └──────────────────────┴────────────────────────────────────
+2024/06/12 19:11:26 sorm.LOG:       Executing CREATE TABLE query
+2024/06/12 19:11:26 [32msorm.SUCCESS:[0m   Table SomeType created
+2024/06/12 19:11:26 sorm.LOG:       Inserting default nil value into SomeType
+2024/06/12 19:11:26 [32msorm.SUCCESS:[0m   Nil value inserted into SomeType
+2024/06/12 19:12:43 sorm.LOG:       Opening database connection...
+2024/06/12 19:12:43 sorm.LOG:       Database opened
+2024/06/12 19:12:43 sorm.LOG:       Activating Foreign Keys
+2024/06/12 19:12:43 [32msorm.SUCCESS:[0m   Database opened without error
+2024/06/12 19:12:43 sorm.LOG:       ┌───────────────────────────────────────────────────────────
+2024/06/12 19:12:43 sorm.LOG:       │ Creating table Cat with rows:
+2024/06/12 19:12:43 sorm.LOG:       ├──────────────────────┬────────────────────────────────────
+2024/06/12 19:12:43 sorm.LOG:       │ Id                   │ TEXT PRIMARY KEY
+2024/06/12 19:12:43 sorm.LOG:       │ CatName_u            │ TEXT UNIQUE
+2024/06/12 19:12:43 sorm.LOG:       │ CatDesc              │ TEXT
+2024/06/12 19:12:43 sorm.LOG:       └──────────────────────┴────────────────────────────────────
+2024/06/12 19:12:43 sorm.LOG:       ┌───────────────────────────────────────────────────────────
+2024/06/12 19:12:43 sorm.LOG:       │ Executing CREATE TABLE query
+2024/06/12 19:12:43 sorm.LOG:       └──────────────────────┴────────────────────────────────────
+2024/06/12 19:12:43 sorm.LOG:       ├──────────────────────┬────────────────────────────────────
+2024/06/12 19:12:43 sorm.LOG:       Executing CREATE TABLE query
+2024/06/12 19:12:43 [32msorm.SUCCESS:[0m   Table Cat created
+2024/06/12 19:12:43 sorm.LOG:       Inserting default nil value into Cat
+2024/06/12 19:12:43 [32msorm.SUCCESS:[0m   Nil value inserted into Cat
+2024/06/12 19:12:43 sorm.LOG:       ┌───────────────────────────────────────────────────────────
+2024/06/12 19:12:43 sorm.LOG:       │ Creating table Item with rows:
+2024/06/12 19:12:43 sorm.LOG:       ├──────────────────────┬────────────────────────────────────
+2024/06/12 19:12:43 sorm.LOG:       │ Id                   │ TEXT PRIMARY KEY
+2024/06/12 19:12:43 sorm.LOG:       │ Desc                 │ TEXT
+2024/06/12 19:12:43 sorm.LOG:       │ Price                │ REAL
+2024/06/12 19:12:43 sorm.LOG:       │ InStock              │ BOOLEAN
+2024/06/12 19:12:43 sorm.LOG:       │ Cat_id               │ TEXT FOREIGN KEY REFERENCES Cat
+2024/06/12 19:12:43 sorm.LOG:       └──────────────────────┴────────────────────────────────────
+2024/06/12 19:12:43 sorm.LOG:       ┌───────────────────────────────────────────────────────────
+2024/06/12 19:12:43 sorm.LOG:       │ Executing CREATE TABLE query
+2024/06/12 19:12:43 sorm.LOG:       └──────────────────────┴────────────────────────────────────
+2024/06/12 19:12:43 sorm.LOG:       ├──────────────────────┬────────────────────────────────────
+2024/06/12 19:12:43 sorm.LOG:       Executing CREATE TABLE query
+2024/06/12 19:12:43 [32msorm.SUCCESS:[0m   Table Item created
+2024/06/12 19:12:43 sorm.LOG:       Inserting default nil value into Item
+2024/06/12 19:12:43 [32msorm.SUCCESS:[0m   Nil value inserted into Item
+2024/06/12 19:12:43 sorm.LOG:       ┌───────────────────────────────────────────────────────────
+2024/06/12 19:12:43 sorm.LOG:       │ Creating table SomeType with rows:
+2024/06/12 19:12:43 sorm.LOG:       ├──────────────────────┬────────────────────────────────────
+2024/06/12 19:12:43 sorm.LOG:       │ Seppia               │ TEXT
+2024/06/12 19:12:43 sorm.LOG:       │ CatName_nu           │ TEXT NOT NULL UNIQUE
+2024/06/12 19:12:43 sorm.LOG:       │ Cat_id               │ TEXT FOREIGN KEY REFERENCES Cat
+2024/06/12 19:12:43 sorm.LOG:       │ Anvedi               │ INTEGER
+2024/06/12 19:12:43 sorm.LOG:       └──────────────────────┴────────────────────────────────────
+2024/06/12 19:12:43 sorm.LOG:       ┌───────────────────────────────────────────────────────────
+2024/06/12 19:12:43 sorm.LOG:       │ Executing CREATE TABLE query
+2024/06/12 19:12:43 sorm.LOG:       └──────────────────────┴────────────────────────────────────
+2024/06/12 19:12:43 sorm.LOG:       ├──────────────────────┬────────────────────────────────────
+2024/06/12 19:12:43 sorm.LOG:       Executing CREATE TABLE query
+2024/06/12 19:12:43 [32msorm.SUCCESS:[0m   Table SomeType created
+2024/06/12 19:12:43 sorm.LOG:       Inserting default nil value into SomeType
+2024/06/12 19:12:43 [32msorm.SUCCESS:[0m   Nil value inserted into SomeType
+2024/06/12 19:12:51 sorm.LOG:       Opening database connection...
+2024/06/12 19:12:51 sorm.LOG:       Database opened
+2024/06/12 19:12:51 sorm.LOG:       Activating Foreign Keys
+2024/06/12 19:12:51 [32msorm.SUCCESS:[0m   Database opened without error
+2024/06/12 19:12:51 sorm.LOG:       ┌───────────────────────────────────────────────────────────
+2024/06/12 19:12:51 sorm.LOG:       │ Creating table Cat with rows:
+2024/06/12 19:12:51 sorm.LOG:       ├──────────────────────┬────────────────────────────────────
+2024/06/12 19:12:51 sorm.LOG:       │ Id                   │ TEXT PRIMARY KEY
+2024/06/12 19:12:51 sorm.LOG:       │ CatName_u            │ TEXT UNIQUE
+2024/06/12 19:12:51 sorm.LOG:       │ CatDesc              │ TEXT
+2024/06/12 19:12:51 sorm.LOG:       ┌───────────────────────────────────────────────────────────
+2024/06/12 19:12:51 sorm.LOG:       │ Executing CREATE TABLE query
+2024/06/12 19:12:51 sorm.LOG:       └──────────────────────┴────────────────────────────────────
+2024/06/12 19:12:51 sorm.LOG:       ├──────────────────────┬────────────────────────────────────
+2024/06/12 19:12:51 sorm.LOG:       Executing CREATE TABLE query
+2024/06/12 19:12:51 [32msorm.SUCCESS:[0m   Table Cat created
+2024/06/12 19:12:51 sorm.LOG:       Inserting default nil value into Cat
+2024/06/12 19:12:51 [32msorm.SUCCESS:[0m   Nil value inserted into Cat
+2024/06/12 19:12:51 sorm.LOG:       ┌───────────────────────────────────────────────────────────
+2024/06/12 19:12:51 sorm.LOG:       │ Creating table Item with rows:
+2024/06/12 19:12:51 sorm.LOG:       ├──────────────────────┬────────────────────────────────────
+2024/06/12 19:12:51 sorm.LOG:       │ Id                   │ TEXT PRIMARY KEY
+2024/06/12 19:12:51 sorm.LOG:       │ Desc                 │ TEXT
+2024/06/12 19:12:51 sorm.LOG:       │ Price                │ REAL
+2024/06/12 19:12:51 sorm.LOG:       │ InStock              │ BOOLEAN
+2024/06/12 19:12:51 sorm.LOG:       │ Cat_id               │ TEXT FOREIGN KEY REFERENCES Cat
+2024/06/12 19:12:51 sorm.LOG:       ┌───────────────────────────────────────────────────────────
+2024/06/12 19:12:51 sorm.LOG:       │ Executing CREATE TABLE query
+2024/06/12 19:12:51 sorm.LOG:       └──────────────────────┴────────────────────────────────────
+2024/06/12 19:12:51 sorm.LOG:       ├──────────────────────┬────────────────────────────────────
+2024/06/12 19:12:51 sorm.LOG:       Executing CREATE TABLE query
+2024/06/12 19:12:51 [32msorm.SUCCESS:[0m   Table Item created
+2024/06/12 19:12:51 sorm.LOG:       Inserting default nil value into Item
+2024/06/12 19:12:51 [32msorm.SUCCESS:[0m   Nil value inserted into Item
+2024/06/12 19:12:51 sorm.LOG:       ┌───────────────────────────────────────────────────────────
+2024/06/12 19:12:51 sorm.LOG:       │ Creating table SomeType with rows:
+2024/06/12 19:12:51 sorm.LOG:       ├──────────────────────┬────────────────────────────────────
+2024/06/12 19:12:51 sorm.LOG:       │ Seppia               │ TEXT
+2024/06/12 19:12:51 sorm.LOG:       │ CatName_nu           │ TEXT NOT NULL UNIQUE
+2024/06/12 19:12:51 sorm.LOG:       │ Cat_id               │ TEXT FOREIGN KEY REFERENCES Cat
+2024/06/12 19:12:51 sorm.LOG:       │ Anvedi               │ INTEGER
+2024/06/12 19:12:51 sorm.LOG:       ┌───────────────────────────────────────────────────────────
+2024/06/12 19:12:51 sorm.LOG:       │ Executing CREATE TABLE query
+2024/06/12 19:12:51 sorm.LOG:       └──────────────────────┴────────────────────────────────────
+2024/06/12 19:12:51 sorm.LOG:       ├──────────────────────┬────────────────────────────────────
+2024/06/12 19:12:51 sorm.LOG:       Executing CREATE TABLE query
+2024/06/12 19:12:51 [32msorm.SUCCESS:[0m   Table SomeType created
+2024/06/12 19:12:51 sorm.LOG:       Inserting default nil value into SomeType
+2024/06/12 19:12:51 [32msorm.SUCCESS:[0m   Nil value inserted into SomeType
+2024/06/12 19:13:06 sorm.LOG:       Opening database connection...
+2024/06/12 19:13:06 sorm.LOG:       Database opened
+2024/06/12 19:13:06 sorm.LOG:       Activating Foreign Keys
+2024/06/12 19:13:06 [32msorm.SUCCESS:[0m   Database opened without error
+2024/06/12 19:13:06 sorm.LOG:       ┌───────────────────────────────────────────────────────────
+2024/06/12 19:13:06 sorm.LOG:       │ Creating table Cat with rows:
+2024/06/12 19:13:06 sorm.LOG:       ├──────────────────────┬────────────────────────────────────
+2024/06/12 19:13:06 sorm.LOG:       │ Id                   │ TEXT PRIMARY KEY
+2024/06/12 19:13:06 sorm.LOG:       │ CatName_u            │ TEXT UNIQUE
+2024/06/12 19:13:06 sorm.LOG:       │ CatDesc              │ TEXT
+2024/06/12 19:13:06 sorm.LOG:       ┌───────────────────────────────────────────────────────────
+2024/06/12 19:13:06 sorm.LOG:       │ Executing CREATE TABLE query
+2024/06/12 19:13:06 sorm.LOG:       └───────────────────────────────────────────────────────────
+2024/06/12 19:13:06 [32msorm.SUCCESS:[0m   Table Cat created
+2024/06/12 19:13:06 sorm.LOG:       Inserting default nil value into Cat
+2024/06/12 19:13:06 [32msorm.SUCCESS:[0m   Nil value inserted into Cat
+2024/06/12 19:13:06 sorm.LOG:       ┌───────────────────────────────────────────────────────────
+2024/06/12 19:13:06 sorm.LOG:       │ Creating table Item with rows:
+2024/06/12 19:13:06 sorm.LOG:       ├──────────────────────┬────────────────────────────────────
+2024/06/12 19:13:06 sorm.LOG:       │ Id                   │ TEXT PRIMARY KEY
+2024/06/12 19:13:06 sorm.LOG:       │ Desc                 │ TEXT
+2024/06/12 19:13:06 sorm.LOG:       │ Price                │ REAL
+2024/06/12 19:13:06 sorm.LOG:       │ InStock              │ BOOLEAN
+2024/06/12 19:13:06 sorm.LOG:       │ Cat_id               │ TEXT FOREIGN KEY REFERENCES Cat
+2024/06/12 19:13:06 sorm.LOG:       ┌───────────────────────────────────────────────────────────
+2024/06/12 19:13:06 sorm.LOG:       │ Executing CREATE TABLE query
+2024/06/12 19:13:06 sorm.LOG:       └───────────────────────────────────────────────────────────
+2024/06/12 19:13:06 [32msorm.SUCCESS:[0m   Table Item created
+2024/06/12 19:13:06 sorm.LOG:       Inserting default nil value into Item
+2024/06/12 19:13:06 [32msorm.SUCCESS:[0m   Nil value inserted into Item
+2024/06/12 19:13:06 sorm.LOG:       ┌───────────────────────────────────────────────────────────
+2024/06/12 19:13:06 sorm.LOG:       │ Creating table SomeType with rows:
+2024/06/12 19:13:06 sorm.LOG:       ├──────────────────────┬────────────────────────────────────
+2024/06/12 19:13:06 sorm.LOG:       │ Seppia               │ TEXT
+2024/06/12 19:13:06 sorm.LOG:       │ CatName_nu           │ TEXT NOT NULL UNIQUE
+2024/06/12 19:13:06 sorm.LOG:       │ Cat_id               │ TEXT FOREIGN KEY REFERENCES Cat
+2024/06/12 19:13:06 sorm.LOG:       │ Anvedi               │ INTEGER
+2024/06/12 19:13:06 sorm.LOG:       ┌───────────────────────────────────────────────────────────
+2024/06/12 19:13:06 sorm.LOG:       │ Executing CREATE TABLE query
+2024/06/12 19:13:06 sorm.LOG:       └───────────────────────────────────────────────────────────
+2024/06/12 19:13:06 [32msorm.SUCCESS:[0m   Table SomeType created
+2024/06/12 19:13:06 sorm.LOG:       Inserting default nil value into SomeType
+2024/06/12 19:13:06 [32msorm.SUCCESS:[0m   Nil value inserted into SomeType
+2024/06/12 19:13:25 sorm.LOG:       Opening database connection...
+2024/06/12 19:13:25 sorm.LOG:       Database opened
+2024/06/12 19:13:25 sorm.LOG:       Activating Foreign Keys
+2024/06/12 19:13:25 [32msorm.SUCCESS:[0m   Database opened without error
+2024/06/12 19:13:25 sorm.LOG:       ┌───────────────────────────────────────────────────────────
+2024/06/12 19:13:25 sorm.LOG:       │ Creating table Cat with rows:
+2024/06/12 19:13:25 sorm.LOG:       ├──────────────────────┬────────────────────────────────────
+2024/06/12 19:13:25 sorm.LOG:       │ Id                   │ TEXT PRIMARY KEY
+2024/06/12 19:13:25 sorm.LOG:       │ CatName_u            │ TEXT UNIQUE
+2024/06/12 19:13:25 sorm.LOG:       │ CatDesc              │ TEXT
+2024/06/12 19:13:25 sorm.LOG:       ┌───────────────────────────────────────────────────────────
+2024/06/12 19:13:25 sorm.LOG:       │ Executing CREATE TABLE query
+2024/06/12 19:13:25 sorm.LOG:       └───────────────────────────────────────────────────────────
+2024/06/12 19:13:25 sorm.LOG:       ┌───────────────────────────────────────────────────────────
+2024/06/12 19:13:25 sorm.LOG:       │ Executing CREATE TABLE query
+2024/06/12 19:13:25 sorm.LOG:       └───────────────────────────────────────────────────────────
+2024/06/12 19:13:25 [32msorm.SUCCESS:[0m   Table Cat created
+2024/06/12 19:13:25 sorm.LOG:       Inserting default nil value into Cat
+2024/06/12 19:13:25 [32msorm.SUCCESS:[0m   Nil value inserted into Cat
+2024/06/12 19:13:25 sorm.LOG:       ┌───────────────────────────────────────────────────────────
+2024/06/12 19:13:25 sorm.LOG:       │ Creating table Item with rows:
+2024/06/12 19:13:25 sorm.LOG:       ├──────────────────────┬────────────────────────────────────
+2024/06/12 19:13:25 sorm.LOG:       │ Id                   │ TEXT PRIMARY KEY
+2024/06/12 19:13:25 sorm.LOG:       │ Desc                 │ TEXT
+2024/06/12 19:13:25 sorm.LOG:       │ Price                │ REAL
+2024/06/12 19:13:25 sorm.LOG:       │ InStock              │ BOOLEAN
+2024/06/12 19:13:25 sorm.LOG:       │ Cat_id               │ TEXT FOREIGN KEY REFERENCES Cat
+2024/06/12 19:13:25 sorm.LOG:       ┌───────────────────────────────────────────────────────────
+2024/06/12 19:13:25 sorm.LOG:       │ Executing CREATE TABLE query
+2024/06/12 19:13:25 sorm.LOG:       └───────────────────────────────────────────────────────────
+2024/06/12 19:13:25 sorm.LOG:       ┌───────────────────────────────────────────────────────────
+2024/06/12 19:13:25 sorm.LOG:       │ Executing CREATE TABLE query
+2024/06/12 19:13:25 sorm.LOG:       └───────────────────────────────────────────────────────────
+2024/06/12 19:13:25 [32msorm.SUCCESS:[0m   Table Item created
+2024/06/12 19:13:25 sorm.LOG:       Inserting default nil value into Item
+2024/06/12 19:13:25 [32msorm.SUCCESS:[0m   Nil value inserted into Item
+2024/06/12 19:13:25 sorm.LOG:       ┌───────────────────────────────────────────────────────────
+2024/06/12 19:13:25 sorm.LOG:       │ Creating table SomeType with rows:
+2024/06/12 19:13:25 sorm.LOG:       ├──────────────────────┬────────────────────────────────────
+2024/06/12 19:13:25 sorm.LOG:       │ Seppia               │ TEXT
+2024/06/12 19:13:25 sorm.LOG:       │ CatName_nu           │ TEXT NOT NULL UNIQUE
+2024/06/12 19:13:25 sorm.LOG:       │ Cat_id               │ TEXT FOREIGN KEY REFERENCES Cat
+2024/06/12 19:13:25 sorm.LOG:       │ Anvedi               │ INTEGER
+2024/06/12 19:13:25 sorm.LOG:       ┌───────────────────────────────────────────────────────────
+2024/06/12 19:13:25 sorm.LOG:       │ Executing CREATE TABLE query
+2024/06/12 19:13:25 sorm.LOG:       └───────────────────────────────────────────────────────────
+2024/06/12 19:13:25 sorm.LOG:       ┌───────────────────────────────────────────────────────────
+2024/06/12 19:13:25 sorm.LOG:       │ Executing CREATE TABLE query
+2024/06/12 19:13:25 sorm.LOG:       └───────────────────────────────────────────────────────────
+2024/06/12 19:13:25 [32msorm.SUCCESS:[0m   Table SomeType created
+2024/06/12 19:13:25 sorm.LOG:       Inserting default nil value into SomeType
+2024/06/12 19:13:25 [32msorm.SUCCESS:[0m   Nil value inserted into SomeType
+2024/06/12 19:14:48 sorm.LOG:       Opening database connection...
+2024/06/12 19:14:48 sorm.LOG:       Database opened
+2024/06/12 19:14:48 sorm.LOG:       Activating Foreign Keys
+2024/06/12 19:14:48 [32msorm.SUCCESS:[0m   Database opened without error
+2024/06/12 19:14:48 sorm.LOG:       │ Creating table Cat with rows:
+2024/06/12 19:14:48 sorm.LOG:       │ Id                   │ TEXT PRIMARY KEY
+2024/06/12 19:14:48 sorm.LOG:       │ CatName_u            │ TEXT UNIQUE
+2024/06/12 19:14:48 sorm.LOG:       │ CatDesc              │ TEXT
+2024/06/12 19:14:48 sorm.LOG:       ┌───────────────────────────────────────────────────────────
+2024/06/12 19:14:48 sorm.LOG:       │ Executing CREATE TABLE query
+2024/06/12 19:14:48 sorm.LOG:       └───────────────────────────────────────────────────────────
+2024/06/12 19:14:48 sorm.LOG:       ┌───────────────────────────────────────────────────────────
+2024/06/12 19:14:48 sorm.LOG:       │ Executing CREATE TABLE query
+2024/06/12 19:14:48 sorm.LOG:       └───────────────────────────────────────────────────────────
+2024/06/12 19:14:48 [32msorm.SUCCESS:[0m   Table Cat created
+2024/06/12 19:14:48 sorm.LOG:       Inserting default nil value into Cat
+2024/06/12 19:14:48 [32msorm.SUCCESS:[0m   Nil value inserted into Cat
+2024/06/12 19:14:48 sorm.LOG:       │ Creating table Item with rows:
+2024/06/12 19:14:48 sorm.LOG:       │ Id                   │ TEXT PRIMARY KEY
+2024/06/12 19:14:48 sorm.LOG:       │ Desc                 │ TEXT
+2024/06/12 19:14:48 sorm.LOG:       │ Price                │ REAL
+2024/06/12 19:14:48 sorm.LOG:       │ InStock              │ BOOLEAN
+2024/06/12 19:14:48 sorm.LOG:       │ Cat_id               │ TEXT FOREIGN KEY REFERENCES Cat
+2024/06/12 19:14:48 sorm.LOG:       ┌───────────────────────────────────────────────────────────
+2024/06/12 19:14:48 sorm.LOG:       │ Executing CREATE TABLE query
+2024/06/12 19:14:48 sorm.LOG:       └───────────────────────────────────────────────────────────
+2024/06/12 19:14:48 sorm.LOG:       ┌───────────────────────────────────────────────────────────
+2024/06/12 19:14:48 sorm.LOG:       │ Executing CREATE TABLE query
+2024/06/12 19:14:48 sorm.LOG:       └───────────────────────────────────────────────────────────
+2024/06/12 19:14:48 [32msorm.SUCCESS:[0m   Table Item created
+2024/06/12 19:14:48 sorm.LOG:       Inserting default nil value into Item
+2024/06/12 19:14:48 [32msorm.SUCCESS:[0m   Nil value inserted into Item
+2024/06/12 19:14:48 sorm.LOG:       │ Creating table SomeType with rows:
+2024/06/12 19:14:48 sorm.LOG:       │ Seppia               │ TEXT
+2024/06/12 19:14:48 sorm.LOG:       │ CatName_nu           │ TEXT NOT NULL UNIQUE
+2024/06/12 19:14:48 sorm.LOG:       │ Cat_id               │ TEXT FOREIGN KEY REFERENCES Cat
+2024/06/12 19:14:48 sorm.LOG:       │ Anvedi               │ INTEGER
+2024/06/12 19:14:48 sorm.LOG:       ┌───────────────────────────────────────────────────────────
+2024/06/12 19:14:48 sorm.LOG:       │ Executing CREATE TABLE query
+2024/06/12 19:14:48 sorm.LOG:       └───────────────────────────────────────────────────────────
+2024/06/12 19:14:48 sorm.LOG:       ┌───────────────────────────────────────────────────────────
+2024/06/12 19:14:48 sorm.LOG:       │ Executing CREATE TABLE query
+2024/06/12 19:14:48 sorm.LOG:       └───────────────────────────────────────────────────────────
+2024/06/12 19:14:48 [32msorm.SUCCESS:[0m   Table SomeType created
+2024/06/12 19:14:48 sorm.LOG:       Inserting default nil value into SomeType
+2024/06/12 19:14:48 [32msorm.SUCCESS:[0m   Nil value inserted into SomeType
+2024/06/12 19:15:25 sorm.LOG:       Opening database connection...
+2024/06/12 19:15:25 sorm.LOG:       Database opened
+2024/06/12 19:15:25 sorm.LOG:       Activating Foreign Keys
+2024/06/12 19:15:25 [32msorm.SUCCESS:[0m   Database opened without error
+2024/06/12 19:15:25 sorm.LOG:       │ Creating table Cat with rows:
+2024/06/12 19:15:25 sorm.LOG:       │ Id                   │ TEXT PRIMARY KEY
+2024/06/12 19:15:25 sorm.LOG:       │ CatName_u            │ TEXT UNIQUE
+2024/06/12 19:15:25 sorm.LOG:       │ CatDesc              │ TEXT
+2024/06/12 19:15:25 sorm.LOG:       │ Executing CREATE TABLE query
+2024/06/12 19:15:25 [32msorm.SUCCESS:[0m   Table Cat created
+2024/06/12 19:15:25 sorm.LOG:       Inserting default nil value into Cat
+2024/06/12 19:15:25 [32msorm.SUCCESS:[0m   Nil value inserted into Cat
+2024/06/12 19:15:25 sorm.LOG:       │ Creating table Item with rows:
+2024/06/12 19:15:25 sorm.LOG:       │ Id                   │ TEXT PRIMARY KEY
+2024/06/12 19:15:25 sorm.LOG:       │ Desc                 │ TEXT
+2024/06/12 19:15:25 sorm.LOG:       │ Price                │ REAL
+2024/06/12 19:15:25 sorm.LOG:       │ InStock              │ BOOLEAN
+2024/06/12 19:15:25 sorm.LOG:       │ Cat_id               │ TEXT FOREIGN KEY REFERENCES Cat
+2024/06/12 19:15:25 sorm.LOG:       │ Executing CREATE TABLE query
+2024/06/12 19:15:25 [32msorm.SUCCESS:[0m   Table Item created
+2024/06/12 19:15:25 sorm.LOG:       Inserting default nil value into Item
+2024/06/12 19:15:25 [32msorm.SUCCESS:[0m   Nil value inserted into Item
+2024/06/12 19:15:25 sorm.LOG:       │ Creating table SomeType with rows:
+2024/06/12 19:15:25 sorm.LOG:       │ Seppia               │ TEXT
+2024/06/12 19:15:25 sorm.LOG:       │ CatName_nu           │ TEXT NOT NULL UNIQUE
+2024/06/12 19:15:25 sorm.LOG:       │ Cat_id               │ TEXT FOREIGN KEY REFERENCES Cat
+2024/06/12 19:15:25 sorm.LOG:       │ Anvedi               │ INTEGER
+2024/06/12 19:15:25 sorm.LOG:       │ Executing CREATE TABLE query
+2024/06/12 19:15:25 [32msorm.SUCCESS:[0m   Table SomeType created
+2024/06/12 19:15:25 sorm.LOG:       Inserting default nil value into SomeType
+2024/06/12 19:15:25 [32msorm.SUCCESS:[0m   Nil value inserted into SomeType

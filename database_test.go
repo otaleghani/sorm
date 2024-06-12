@@ -24,7 +24,7 @@ type SomeType struct {
 	Seppia      string
 	CatName_nu string
 	Cat_id string
-	Anvedi_id string
+  Anvedi int
 }
 
 type ItemCat struct {
@@ -56,27 +56,20 @@ func Test_Create(t *testing.T) {
 }
 
 func Test_CreateTable(t *testing.T) {
-	if err := dbG.CreateTable(Item{}); err != nil {
+	if err := dbG.CreateTable(Cat{}); err != nil {
 		t.Fatal(err)
 	}
-	if err := dbG.CreateTable(Cat{}); err != nil {
+	if err := dbG.CreateTable(Item{}); err != nil {
 		t.Fatal(err)
 	}
 	if err := dbG.CreateTable(SomeType{}); err != nil {
 		t.Fatal(err)
 	}
 
-type SomeType struct {
-	Seppia      string
-	CatName_nu string
-	Cat_id string
-	Anvedi_id string
-}
   err := dbG.InsertInto(SomeType{
-    Seppia: "asd",
+    // Seppia: "asd",
     CatName_nu: "asdoma",
-    Cat_id: "seppiola",
-    Anvedi_id: "asd",
+    // Cat_id: "nil",
   })
   if err != nil {
     t.Fatal(err)

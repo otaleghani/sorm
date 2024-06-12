@@ -2,6 +2,7 @@ package sorm
 
 import (
 	"os"
+  "fmt"
 	"database/sql"
 
 	_ "github.com/mattn/go-sqlite3"
@@ -15,19 +16,28 @@ type Database struct {
 }
 
 func CreateDatabase(dbPath string, foreignKeys bool) (*Database, error) {
+  logInfo("Opening database connection...")
   db, err := sql.Open("sqlite3", dbPath)
 	if err != nil {
+    logError(fmt.Sprintf("sql:Open, %v", err))
 		return &Database{}, err
 	}
+  logInfo("Database opened")
+
   if foreignKeys {
+    logInfo("Activating Foreign Keys")
     _, err = db.Exec("PRAGMA foreign_keys = ON;")
     if err != nil {
+      logError(fmt.Sprintf("db.Exec, %v", err))
       return &Database{}, err
     }
   }
+
+  logSuccess("Database opened without error")
   return &Database{Connection: db, Path: dbPath}, db.Ping()
 }
 
 func DeleteDatabase(dbPath string) error {
 	return os.Remove(dbPath)
 }
+

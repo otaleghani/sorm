@@ -44,7 +44,8 @@ func (db *Database) InsertInto(models ...interface{}) error {
 			field := t.Field(i)
 			fields = append(fields, field.Name)
 			placeholders = append(placeholders, "?")
-			values = append(values, v.Field(i).Interface())
+      values = append(values, defaultNil(field.Type, v.Field(i).Interface()))
+			// values = append(values, v.Field(i).Interface())
 		}
 		query := fmt.Sprintf("INSERT INTO %s (%s) VALUES (%s);", tableName, strings.Join(fields, ", "), strings.Join(placeholders, ", ")) // #nosec G201
 		stmt, err := tx.Prepare(query)
@@ -60,4 +61,32 @@ func (db *Database) InsertInto(models ...interface{}) error {
 	}
 
 	return err
+}
+
+func defaultNil(goType reflect.Type, value interface{}) interface{} {
+	sqlType := sqlType(goType)
+
+  switch sqlType {
+  case "INTEGER":
+    if value == 0 {
+      return 0
+    }
+    return value
+  case "REAL":
+    if value == 0.0 {
+      return 0.0
+    }
+    return value
+  case "BOOLEAN":
+    if value == false {
+      return 0
+    }
+    return value
+  case "TEXT":
+    if value == "" {
+      return "nil"
+    }
+    return value
+  }
+  return value
 }
