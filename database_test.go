@@ -1,7 +1,7 @@
 package sorm
 
 import (
-	"fmt"
+	// "fmt"
 	// "github.com/otaleghani/spg"
 	// "strconv"
 	"testing"
@@ -12,7 +12,7 @@ type Item struct {
 	Desc    string
 	Price   float64
 	InStock bool
-	CatId   string
+	Cat_id   string
 }
 
 type Cat struct {
@@ -24,6 +24,7 @@ type SomeType struct {
 	Seppia      string
 	CatName_nu string
 	Cat_id string
+	Anvedi_id string
 }
 
 type ItemCat struct {
@@ -47,8 +48,7 @@ func Test_Delete(t *testing.T) {
 }
 
 func Test_Create(t *testing.T) {
-	fmt.Println("im here")
-  db, err := CreateDatabase("test.db")
+  db, err := CreateDatabase("test.db", true)
   dbG = *db
 	if err != nil {
 		t.Fatal(err)
@@ -65,6 +65,22 @@ func Test_CreateTable(t *testing.T) {
 	if err := dbG.CreateTable(SomeType{}); err != nil {
 		t.Fatal(err)
 	}
+
+type SomeType struct {
+	Seppia      string
+	CatName_nu string
+	Cat_id string
+	Anvedi_id string
+}
+  err := dbG.InsertInto(SomeType{
+    Seppia: "asd",
+    CatName_nu: "asdoma",
+    Cat_id: "seppiola",
+    Anvedi_id: "asd",
+  })
+  if err != nil {
+    t.Fatal(err)
+  }
 }
 
 //func Test_Insert(t *testing.T) {
