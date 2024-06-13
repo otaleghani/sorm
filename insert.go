@@ -9,9 +9,12 @@ import (
 )
 
 func (db *Database) InsertInto(models ...interface{}) error {
+  logNotice("Starting insert transaction")
+
   // Starts database transaction
 	tx, err := db.Connection.Begin()
 	if err != nil {
+    logError(fmt.Sprintf("db.Connection.Begin: %v", err))
 		return err
 	}
 	defer func() {
@@ -40,6 +43,8 @@ func (db *Database) InsertInto(models ...interface{}) error {
 		fields := []string{}
 		placeholders := []string{}
 		values := []interface{}{}
+
+    logInfo(fmt.Sprintf("Inserting into %v", tableName))
 		for i := 0; i < t.NumField(); i++ {
 			field := t.Field(i)
 			fields = append(fields, field.Name)
@@ -50,16 +55,19 @@ func (db *Database) InsertInto(models ...interface{}) error {
 		query := fmt.Sprintf("INSERT INTO %s (%s) VALUES (%s);", tableName, strings.Join(fields, ", "), strings.Join(placeholders, ", ")) // #nosec G201
 		stmt, err := tx.Prepare(query)
 		if err != nil {
+      logError(fmt.Sprintf("tx.Prepare: %v", err))
 			return err
 		}
 		defer stmt.Close()
 
 		_, err = stmt.Exec(values...)
 		if err != nil {
+      logError(fmt.Sprintf("stmt.Exec: %v", err))
 			return err
 		}
 	}
 
+  logSuccess("Items inserted")
 	return err
 }
 

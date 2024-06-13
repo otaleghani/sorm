@@ -32,3 +32,8 @@ func logInfo(msg string) {
 func logSuccess(msg string) {
   logToFile(fmt.Sprintf("%-24v %v", "\033[32msorm.SUCCESS:\033[0m", msg))
 }
+
+func logNotice(msg string) {
+  fmt.Println("──────────────────────────────────────────────────────────────────────────────────────────")
+  logToFile(fmt.Sprintf("%-24v %v", "\033[35msorm.NOTICE:\033[0m", msg))
+}

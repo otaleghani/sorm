@@ -13,6 +13,7 @@ func (db *Database) Update(model interface{}, conditions string, args ...interfa
 	tableName := t.Name()
 	fields := []string{}
 	values := []interface{}{}
+  logNotice(fmt.Sprintf("Updating in table %v", tableName))
 
 	for i := 0; i < t.NumField(); i++ {
 		field := t.Field(i)
@@ -60,6 +61,25 @@ func (db *Database) Update(model interface{}, conditions string, args ...interfa
 	// Append condition arguments to the values slice
 	values = append(values, args...)
 
-	_, err := db.Connection.Exec(query, values...)
-	return err
+	result, err := db.Connection.Exec(query, values...)
+  if err != nil {
+    logError(fmt.Sprintf("db.Connection.Exec: %v", err))
+    return err
+  }
+
+	rowsAffected, err := result.RowsAffected()
+	if err != nil {
+    logError(fmt.Sprintf("result.RowsAffected: %v", err))
+    return err
+	}
+
+	if rowsAffected > 0 {
+    logSuccess(fmt.Sprintf("Update successful. Rows affected: %v", rowsAffected))
+    return nil
+	} else {
+    logInfo("No rows were affected")
+    return nil
+	}
+
+	return nil
 }

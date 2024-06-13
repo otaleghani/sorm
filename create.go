@@ -30,7 +30,7 @@ func (db *Database) CreateTable(model interface{}) error {
   constraints := []string{}
 	t := reflect.TypeOf(model)
 	tableName := t.Name()
-  logInfo(fmt.Sprintf("│ Creating table %v with rows:", tableName))
+  logNotice(fmt.Sprintf("Creating table: %v", tableName))
 
 	for i := 0; i < t.NumField(); i++ {
 		field := t.Field(i)
@@ -38,7 +38,6 @@ func (db *Database) CreateTable(model interface{}) error {
 
     if field.Name == "Id" {
 			fields = append(fields, fmt.Sprintf("%s %s PRIMARY KEY", field.Name, sqlType))
-      logInfo(fmt.Sprintf("│ %-20v │ %v PRIMARY KEY", field.Name, sqlType))
       continue
     }
     parts := strings.Split(field.Name, "_")
@@ -47,25 +46,20 @@ func (db *Database) CreateTable(model interface{}) error {
       switch suffix {
       case "u":
         fields = append(fields, fmt.Sprintf("%s %s UNIQUE", field.Name, sqlType))
-        logInfo(fmt.Sprintf("│ %-20v │ %v UNIQUE", field.Name, sqlType))
       case "n":
         fields = append(fields, fmt.Sprintf("%s %s NOT NULL", field.Name, sqlType))
-        logInfo(fmt.Sprintf("│ %-20v │ %v NOT NULL", field.Name, sqlType))
       case "nu":
         fields = append(fields, fmt.Sprintf("%s %s NOT NULL UNIQUE", field.Name, sqlType))
-        logInfo(fmt.Sprintf("│ %-20v │ %v NOT NULL UNIQUE", field.Name, sqlType))
       case "id":
 			  fields = append(fields, fmt.Sprintf("%s %s", field.Name, sqlType))
         constraints = append(constraints, fmt.Sprintf("FOREIGN KEY (%s) REFERENCES %s(Id) ON UPDATE CASCADE", field.Name, parts[0]))
-        logInfo(fmt.Sprintf("│ %-20v │ %v FOREIGN KEY REFERENCES %v", field.Name, sqlType, parts[0]))
       default: 
 			  fields = append(fields, fmt.Sprintf("%s %s", field.Name, sqlType))
-        logInfo(fmt.Sprintf("│ %-20v │ %v", field.Name, sqlType))
       }
     } else {
 			fields = append(fields, fmt.Sprintf("%s %s", field.Name, sqlType))
-      logInfo(fmt.Sprintf("│ %-20v │ %v", field.Name, sqlType))
     }
+    logInfo(fmt.Sprintf("\t%v", fields[i]))
 	}
 
   query := ""
@@ -75,7 +69,7 @@ func (db *Database) CreateTable(model interface{}) error {
 	  query = fmt.Sprintf("CREATE TABLE IF NOT EXISTS %s (%s, %s);", tableName, strings.Join(fields, ", "), strings.Join(constraints, ", "))
   }
 
-  logInfo("│ Executing CREATE TABLE query")
+  logInfo(fmt.Sprintf("Executing query on database %v", db.Path))
 	_, err := db.Connection.Exec(query)
   if err != nil {
     logError(fmt.Sprintf("db.Exec, %v", err))

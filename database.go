@@ -16,7 +16,7 @@ type Database struct {
 }
 
 func CreateDatabase(dbPath string, foreignKeys bool) (*Database, error) {
-  logInfo("Opening database connection...")
+  logNotice(fmt.Sprintf("Opening database connection at %v", dbPath))
   db, err := sql.Open("sqlite3", dbPath)
 	if err != nil {
     logError(fmt.Sprintf("sql:Open, %v", err))
@@ -25,7 +25,7 @@ func CreateDatabase(dbPath string, foreignKeys bool) (*Database, error) {
   logInfo("Database opened")
 
   if foreignKeys {
-    logInfo("Activating Foreign Keys")
+    logInfo("Activating foreign keys")
     _, err = db.Exec("PRAGMA foreign_keys = ON;")
     if err != nil {
       logError(fmt.Sprintf("db.Exec, %v", err))
@@ -33,7 +33,7 @@ func CreateDatabase(dbPath string, foreignKeys bool) (*Database, error) {
     }
   }
 
-  logSuccess("Database opened without error")
+  logSuccess("Database opened")
   return &Database{Connection: db, Path: dbPath}, db.Ping()
 }
 

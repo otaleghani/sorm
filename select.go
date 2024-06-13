@@ -18,6 +18,8 @@ func (db *Database) Select(dest interface{}, conditions string, args ...interfac
 	elemType := sliceValue.Type().Elem()
 	tableName := elemType.Name()
 	fields := []string{}
+  logNotice(fmt.Sprintf("Selecting from %v with condition %v", tableName, conditions))
+
 	for i := 0; i < elemType.NumField(); i++ {
 		field := elemType.Field(i)
 		fields = append(fields, field.Name)
@@ -30,18 +32,21 @@ func (db *Database) Select(dest interface{}, conditions string, args ...interfac
 
 	stmt, err := db.Connection.Prepare(query)
 	if err != nil {
+    logError(fmt.Sprintf("db.Connection.Prepare: %v", err))
 		return err
 	}
 	defer stmt.Close()
 
 	rows, err := stmt.Query(args...)
 	if err != nil {
+    logError(fmt.Sprintf("stmt.Query: %v", err))
 		return err
 	}
 	defer rows.Close()
 
 	columns, err := rows.Columns()
 	if err != nil {
+    logError(fmt.Sprintf("rows.Columns: %v", err))
 		return err
 	}
 
@@ -53,9 +58,12 @@ func (db *Database) Select(dest interface{}, conditions string, args ...interfac
 			fieldPtrs[i] = elem.Field(i).Addr().Interface()
 		}
 		if err := rows.Scan(fieldPtrs...); err != nil {
+    logError(fmt.Sprintf("rows.Scan: %v", err))
 			return err
 		}
 		sliceValue.Set(reflect.Append(sliceValue, elem))
 	}
+
+  logSuccess("Items selected and returned")
 	return rows.Err()
 }

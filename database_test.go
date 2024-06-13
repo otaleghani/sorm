@@ -67,13 +67,32 @@ func Test_CreateTable(t *testing.T) {
 	}
 
   err := dbG.InsertInto(SomeType{
-    // Seppia: "asd",
+    Seppia: "asd",
     CatName_nu: "asdoma",
     // Cat_id: "nil",
   })
   if err != nil {
     t.Fatal(err)
   }
+
+  result := []SomeType{}
+  err = dbG.Select(&result, "seppia = ?", "asd")
+  if err != nil {
+    t.Fatal(err)
+  }
+
+  newType := SomeType{
+    Seppia: "asdef",
+  }
+  err = dbG.Update(newType, "Seppia = ?", "asd2")
+
+  err = dbG.Delete(SomeType{}, "Seppia = ?", "asdef")
+  if err != nil {
+    t.Fatal(err)
+  }
+
+
+
 }
 
 //func Test_Insert(t *testing.T) {
