@@ -90,9 +90,6 @@ func Test_CreateTable(t *testing.T) {
   if err != nil {
     t.Fatal(err)
   }
-
-
-
 }
 
 //func Test_Insert(t *testing.T) {

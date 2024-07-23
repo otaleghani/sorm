@@ -9,7 +9,7 @@ import (
 )
 
 func (db *Database) InsertInto(models ...interface{}) error {
-  logNotice("Starting insert transaction")
+  // logNotice("Starting insert transaction")
 
   // Starts database transaction
 	tx, err := db.Connection.Begin()

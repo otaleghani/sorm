@@ -3075,3 +3075,414 @@
 2024/06/13 12:14:44 [35msorm.NOTICE:[0m    Deleting from table SomeType with condition Seppia = ?
 2024/06/13 12:14:44 sorm.LOG:       Executing query on database test.db
 2024/06/13 12:14:44 sorm.LOG:       Item was not found, so it was not deleted
+2024/06/18 10:56:39 [35msorm.NOTICE:[0m    Opening database connection at test.db
+2024/06/18 10:56:39 sorm.LOG:       Database opened
+2024/06/18 10:56:39 sorm.LOG:       Activating foreign keys
+2024/06/18 10:56:39 [32msorm.SUCCESS:[0m   Database opened
+2024/06/18 10:56:39 sorm.LOG:       CREATE TABLE IF NOT EXISTS Cat (Id TEXT PRIMARY KEY, CatName_u TEXT UNIQUE, CatDesc TEXT);
+2024/06/18 10:56:39 sorm.LOG:       CREATE TABLE IF NOT EXISTS Item (Id TEXT PRIMARY KEY, Desc TEXT, Price REAL, InStock BOOLEAN, Cat_id TEXT, FOREIGN KEY (Cat_id) REFERENCES Cat(Id) ON UPDATE CASCADE);
+2024/06/18 10:56:39 sorm.LOG:       CREATE TABLE IF NOT EXISTS SomeType (Seppia TEXT, CatName_nu TEXT NOT NULL UNIQUE, Cat_id TEXT, Anvedi INTEGER, FOREIGN KEY (Cat_id) REFERENCES Cat(Id) ON UPDATE CASCADE);
+2024/06/18 10:56:39 [35msorm.NOTICE:[0m    Starting insert transaction
+2024/06/18 10:56:39 sorm.LOG:       Inserting into SomeType
+2024/06/18 10:56:39 [32msorm.SUCCESS:[0m   Items inserted
+2024/06/18 10:56:39 [35msorm.NOTICE:[0m    Selecting from SomeType with condition seppia = ?
+2024/06/18 10:56:39 [32msorm.SUCCESS:[0m   Items selected and returned
+2024/06/18 10:56:39 [35msorm.NOTICE:[0m    Updating in table SomeType
+2024/06/18 10:56:39 sorm.LOG:       No rows were affected
+2024/06/18 10:56:39 [35msorm.NOTICE:[0m    Deleting from table SomeType with condition Seppia = ?
+2024/06/18 10:56:39 sorm.LOG:       Executing query on database test.db
+2024/06/18 10:56:39 sorm.LOG:       Item was not found, so it was not deleted
+2024/06/18 10:58:06 [35msorm.NOTICE:[0m    Opening database connection at test.db
+2024/06/18 10:58:06 sorm.LOG:       Database opened
+2024/06/18 10:58:06 sorm.LOG:       Activating foreign keys
+2024/06/18 10:58:06 [32msorm.SUCCESS:[0m   Database opened
+2024/06/18 10:58:06 sorm.LOG:       CREATE TABLE IF NOT EXISTS Cat (Id TEXT PRIMARY KEY,
+CatName_u TEXT UNIQUE,
+CatDesc TEXT);
+2024/06/18 10:58:06 sorm.LOG:       CREATE TABLE IF NOT EXISTS Item (Id TEXT PRIMARY KEY,Desc TEXT,Price REAL,InStock BOOLEAN,Cat_id TEXT, FOREIGN KEY (Cat_id) REFERENCES Cat(Id) ON UPDATE CASCADE);
+2024/06/18 10:58:06 sorm.LOG:       CREATE TABLE IF NOT EXISTS SomeType (Seppia TEXT,CatName_nu TEXT NOT NULL UNIQUE,Cat_id TEXT,Anvedi INTEGER, FOREIGN KEY (Cat_id) REFERENCES Cat(Id) ON UPDATE CASCADE);
+2024/06/18 10:58:06 [35msorm.NOTICE:[0m    Starting insert transaction
+2024/06/18 10:58:06 sorm.LOG:       Inserting into SomeType
+2024/06/18 10:58:06 [32msorm.SUCCESS:[0m   Items inserted
+2024/06/18 10:58:06 [35msorm.NOTICE:[0m    Selecting from SomeType with condition seppia = ?
+2024/06/18 10:58:06 [32msorm.SUCCESS:[0m   Items selected and returned
+2024/06/18 10:58:06 [35msorm.NOTICE:[0m    Updating in table SomeType
+2024/06/18 10:58:06 sorm.LOG:       No rows were affected
+2024/06/18 10:58:06 [35msorm.NOTICE:[0m    Deleting from table SomeType with condition Seppia = ?
+2024/06/18 10:58:06 sorm.LOG:       Executing query on database test.db
+2024/06/18 10:58:06 sorm.LOG:       Item was not found, so it was not deleted
+2024/06/18 10:59:14 [35msorm.NOTICE:[0m    Opening database connection at test.db
+2024/06/18 10:59:14 sorm.LOG:       Database opened
+2024/06/18 10:59:14 sorm.LOG:       Activating foreign keys
+2024/06/18 10:59:14 [32msorm.SUCCESS:[0m   Database opened
+2024/06/18 10:59:14 sorm.LOG:       CREATE TABLE IF NOT EXISTS Cat (Id TEXT PRIMARY KEY,CatName_u TEXT UNIQUE,CatDesc TEXT);
+2024/06/18 10:59:14 sorm.LOG:       CREATE TABLE IF NOT EXISTS Item (Id TEXT PRIMARY KEY,Desc TEXT,Price REAL,InStock BOOLEAN,Cat_id TEXT, FOREIGN KEY (Cat_id) REFERENCES Cat(Id) ON UPDATE CASCADE);
+2024/06/18 10:59:14 sorm.LOG:       CREATE TABLE IF NOT EXISTS SomeType (Seppia TEXT,CatName_nu TEXT NOT NULL UNIQUE,Cat_id TEXT,Anvedi INTEGER, FOREIGN KEY (Cat_id) REFERENCES Cat(Id) ON UPDATE CASCADE);
+2024/06/18 10:59:14 [35msorm.NOTICE:[0m    Starting insert transaction
+2024/06/18 10:59:14 sorm.LOG:       Inserting into SomeType
+2024/06/18 10:59:14 [32msorm.SUCCESS:[0m   Items inserted
+2024/06/18 10:59:14 [35msorm.NOTICE:[0m    Selecting from SomeType with condition seppia = ?
+2024/06/18 10:59:14 [32msorm.SUCCESS:[0m   Items selected and returned
+2024/06/18 10:59:14 [35msorm.NOTICE:[0m    Updating in table SomeType
+2024/06/18 10:59:14 sorm.LOG:       No rows were affected
+2024/06/18 10:59:14 [35msorm.NOTICE:[0m    Deleting from table SomeType with condition Seppia = ?
+2024/06/18 10:59:14 sorm.LOG:       Executing query on database test.db
+2024/06/18 10:59:14 sorm.LOG:       Item was not found, so it was not deleted
+2024/06/18 11:00:03 [35msorm.NOTICE:[0m    Opening database connection at test.db
+2024/06/18 11:00:03 sorm.LOG:       Database opened
+2024/06/18 11:00:03 sorm.LOG:       Activating foreign keys
+2024/06/18 11:00:03 [32msorm.SUCCESS:[0m   Database opened
+2024/06/18 11:00:03 sorm.LOG:       CREATE TABLE IF NOT EXISTS Cat (Id TEXT PRIMARY KEY, CatName_u TEXT UNIQUE, CatDesc TEXT);
+2024/06/18 11:00:03 sorm.LOG:       CREATE TABLE IF NOT EXISTS Item (Id TEXT PRIMARY KEY, Desc TEXT, Price REAL, InStock BOOLEAN, Cat_id TEXT, FOREIGN KEY (Cat_id) REFERENCES Cat(Id) ON UPDATE CASCADE);
+2024/06/18 11:00:03 sorm.LOG:       CREATE TABLE IF NOT EXISTS SomeType (Seppia TEXT, CatName_nu TEXT NOT NULL UNIQUE, Cat_id TEXT, Anvedi INTEGER, FOREIGN KEY (Cat_id) REFERENCES Cat(Id) ON UPDATE CASCADE);
+2024/06/18 11:00:03 [35msorm.NOTICE:[0m    Starting insert transaction
+2024/06/18 11:00:03 sorm.LOG:       Inserting into SomeType
+2024/06/18 11:00:03 [32msorm.SUCCESS:[0m   Items inserted
+2024/06/18 11:00:03 [35msorm.NOTICE:[0m    Selecting from SomeType with condition seppia = ?
+2024/06/18 11:00:03 [32msorm.SUCCESS:[0m   Items selected and returned
+2024/06/18 11:00:03 [35msorm.NOTICE:[0m    Updating in table SomeType
+2024/06/18 11:00:03 sorm.LOG:       No rows were affected
+2024/06/18 11:00:03 [35msorm.NOTICE:[0m    Deleting from table SomeType with condition Seppia = ?
+2024/06/18 11:00:03 sorm.LOG:       Executing query on database test.db
+2024/06/18 11:00:03 sorm.LOG:       Item was not found, so it was not deleted
+2024/06/18 11:00:52 [35msorm.NOTICE:[0m    Opening database connection at test.db
+2024/06/18 11:00:52 sorm.LOG:       Database opened
+2024/06/18 11:00:52 sorm.LOG:       Activating foreign keys
+2024/06/18 11:00:52 [32msorm.SUCCESS:[0m   Database opened
+2024/06/18 11:00:52 sorm.LOG:       CREATE TABLE IF NOT EXISTS
+Cat
+(Id TEXT PRIMARY KEY, CatName_u TEXT UNIQUE, CatDesc TEXT);
+2024/06/18 11:00:52 sorm.LOG:       CREATE TABLE IF NOT EXISTS Item (Id TEXT PRIMARY KEY, Desc TEXT, Price REAL, InStock BOOLEAN, Cat_id TEXT, FOREIGN KEY (Cat_id) REFERENCES Cat(Id) ON UPDATE CASCADE);
+2024/06/18 11:00:52 sorm.LOG:       CREATE TABLE IF NOT EXISTS SomeType (Seppia TEXT, CatName_nu TEXT NOT NULL UNIQUE, Cat_id TEXT, Anvedi INTEGER, FOREIGN KEY (Cat_id) REFERENCES Cat(Id) ON UPDATE CASCADE);
+2024/06/18 11:00:52 [35msorm.NOTICE:[0m    Starting insert transaction
+2024/06/18 11:00:52 sorm.LOG:       Inserting into SomeType
+2024/06/18 11:00:52 [32msorm.SUCCESS:[0m   Items inserted
+2024/06/18 11:00:52 [35msorm.NOTICE:[0m    Selecting from SomeType with condition seppia = ?
+2024/06/18 11:00:52 [32msorm.SUCCESS:[0m   Items selected and returned
+2024/06/18 11:00:52 [35msorm.NOTICE:[0m    Updating in table SomeType
+2024/06/18 11:00:52 sorm.LOG:       No rows were affected
+2024/06/18 11:00:52 [35msorm.NOTICE:[0m    Deleting from table SomeType with condition Seppia = ?
+2024/06/18 11:00:52 sorm.LOG:       Executing query on database test.db
+2024/06/18 11:00:52 sorm.LOG:       Item was not found, so it was not deleted
+2024/06/18 11:01:06 [35msorm.NOTICE:[0m    Opening database connection at test.db
+2024/06/18 11:01:06 sorm.LOG:       Database opened
+2024/06/18 11:01:06 sorm.LOG:       Activating foreign keys
+2024/06/18 11:01:06 [32msorm.SUCCESS:[0m   Database opened
+2024/06/18 11:01:06 sorm.LOG:       CREATE TABLE IF NOT EXISTS Cat
+(Id TEXT PRIMARY KEY, CatName_u TEXT UNIQUE, CatDesc TEXT);
+2024/06/18 11:01:06 sorm.LOG:       CREATE TABLE IF NOT EXISTS Item (Id TEXT PRIMARY KEY, Desc TEXT, Price REAL, InStock BOOLEAN, Cat_id TEXT, FOREIGN KEY (Cat_id) REFERENCES Cat(Id) ON UPDATE CASCADE);
+2024/06/18 11:01:06 sorm.LOG:       CREATE TABLE IF NOT EXISTS SomeType (Seppia TEXT, CatName_nu TEXT NOT NULL UNIQUE, Cat_id TEXT, Anvedi INTEGER, FOREIGN KEY (Cat_id) REFERENCES Cat(Id) ON UPDATE CASCADE);
+2024/06/18 11:01:06 [35msorm.NOTICE:[0m    Starting insert transaction
+2024/06/18 11:01:06 sorm.LOG:       Inserting into SomeType
+2024/06/18 11:01:06 [32msorm.SUCCESS:[0m   Items inserted
+2024/06/18 11:01:06 [35msorm.NOTICE:[0m    Selecting from SomeType with condition seppia = ?
+2024/06/18 11:01:06 [32msorm.SUCCESS:[0m   Items selected and returned
+2024/06/18 11:01:06 [35msorm.NOTICE:[0m    Updating in table SomeType
+2024/06/18 11:01:06 sorm.LOG:       No rows were affected
+2024/06/18 11:01:06 [35msorm.NOTICE:[0m    Deleting from table SomeType with condition Seppia = ?
+2024/06/18 11:01:06 sorm.LOG:       Executing query on database test.db
+2024/06/18 11:01:06 sorm.LOG:       Item was not found, so it was not deleted
+2024/06/18 11:01:29 [35msorm.NOTICE:[0m    Opening database connection at test.db
+2024/06/18 11:01:29 sorm.LOG:       Database opened
+2024/06/18 11:01:29 sorm.LOG:       Activating foreign keys
+2024/06/18 11:01:29 [32msorm.SUCCESS:[0m   Database opened
+2024/06/18 11:01:29 sorm.LOG:       CREATE TABLE IF NOT EXISTS Cat
+(Id TEXT PRIMARY KEY, CatName_u TEXT UNIQUE, CatDesc TEXT);
+2024/06/18 11:01:29 sorm.LOG:       CREATE TABLE IF NOT EXISTS Item
+(Id TEXT PRIMARY KEY, Desc TEXT, Price REAL, InStock BOOLEAN, Cat_id TEXT,
+FOREIGN KEY (Cat_id) REFERENCES Cat(Id) ON UPDATE CASCADE);
+2024/06/18 11:01:29 sorm.LOG:       CREATE TABLE IF NOT EXISTS SomeType
+(Seppia TEXT, CatName_nu TEXT NOT NULL UNIQUE, Cat_id TEXT, Anvedi INTEGER,
+FOREIGN KEY (Cat_id) REFERENCES Cat(Id) ON UPDATE CASCADE);
+2024/06/18 11:01:29 [35msorm.NOTICE:[0m    Starting insert transaction
+2024/06/18 11:01:29 sorm.LOG:       Inserting into SomeType
+2024/06/18 11:01:29 [32msorm.SUCCESS:[0m   Items inserted
+2024/06/18 11:01:29 [35msorm.NOTICE:[0m    Selecting from SomeType with condition seppia = ?
+2024/06/18 11:01:29 [32msorm.SUCCESS:[0m   Items selected and returned
+2024/06/18 11:01:29 [35msorm.NOTICE:[0m    Updating in table SomeType
+2024/06/18 11:01:29 sorm.LOG:       No rows were affected
+2024/06/18 11:01:29 [35msorm.NOTICE:[0m    Deleting from table SomeType with condition Seppia = ?
+2024/06/18 11:01:29 sorm.LOG:       Executing query on database test.db
+2024/06/18 11:01:29 sorm.LOG:       Item was not found, so it was not deleted
+2024/06/18 11:02:29 [35msorm.NOTICE:[0m    Opening database connection at test.db
+2024/06/18 11:02:29 sorm.LOG:       Database opened
+2024/06/18 11:02:29 sorm.LOG:       Activating foreign keys
+2024/06/18 11:02:29 [32msorm.SUCCESS:[0m   Database opened
+2024/06/18 11:02:29 sorm.LOG:       CREATE TABLE IF NOT EXISTS Cat
+(Id TEXT PRIMARY KEY,
+CatName_u TEXT UNIQUE,
+CatDesc TEXT);
+2024/06/18 11:02:29 sorm.LOG:       CREATE TABLE IF NOT EXISTS Item
+(Id TEXT PRIMARY KEY,
+Desc TEXT,
+Price REAL,
+InStock BOOLEAN,
+Cat_id TEXT,
+FOREIGN KEY (Cat_id) REFERENCES Cat(Id) ON UPDATE CASCADE);
+2024/06/18 11:02:29 sorm.LOG:       CREATE TABLE IF NOT EXISTS SomeType
+(Seppia TEXT,
+CatName_nu TEXT NOT NULL UNIQUE,
+Cat_id TEXT,
+Anvedi INTEGER,
+FOREIGN KEY (Cat_id) REFERENCES Cat(Id) ON UPDATE CASCADE);
+2024/06/18 11:02:29 [35msorm.NOTICE:[0m    Starting insert transaction
+2024/06/18 11:02:29 sorm.LOG:       Inserting into SomeType
+2024/06/18 11:02:29 [32msorm.SUCCESS:[0m   Items inserted
+2024/06/18 11:02:29 [35msorm.NOTICE:[0m    Selecting from SomeType with condition seppia = ?
+2024/06/18 11:02:29 [32msorm.SUCCESS:[0m   Items selected and returned
+2024/06/18 11:02:29 [35msorm.NOTICE:[0m    Updating in table SomeType
+2024/06/18 11:02:29 sorm.LOG:       No rows were affected
+2024/06/18 11:02:29 [35msorm.NOTICE:[0m    Deleting from table SomeType with condition Seppia = ?
+2024/06/18 11:02:29 sorm.LOG:       Executing query on database test.db
+2024/06/18 11:02:29 sorm.LOG:       Item was not found, so it was not deleted
+2024/06/18 11:02:51 [35msorm.NOTICE:[0m    Opening database connection at test.db
+2024/06/18 11:02:51 sorm.LOG:       Database opened
+2024/06/18 11:02:51 sorm.LOG:       Activating foreign keys
+2024/06/18 11:02:51 [32msorm.SUCCESS:[0m   Database opened
+2024/06/18 11:02:51 sorm.LOG:       CREATE TABLE IF NOT EXISTS Cat (
+Id TEXT PRIMARY KEY,
+CatName_u TEXT UNIQUE,
+CatDesc TEXT);
+2024/06/18 11:02:51 sorm.LOG:       CREATE TABLE IF NOT EXISTS Item (
+Id TEXT PRIMARY KEY,
+Desc TEXT,
+Price REAL,
+InStock BOOLEAN,
+Cat_id TEXT,
+FOREIGN KEY (Cat_id) REFERENCES Cat(Id) ON UPDATE CASCADE);
+2024/06/18 11:02:51 sorm.LOG:       CREATE TABLE IF NOT EXISTS SomeType (
+Seppia TEXT,
+CatName_nu TEXT NOT NULL UNIQUE,
+Cat_id TEXT,
+Anvedi INTEGER,
+FOREIGN KEY (Cat_id) REFERENCES Cat(Id) ON UPDATE CASCADE);
+2024/06/18 11:02:51 [35msorm.NOTICE:[0m    Starting insert transaction
+2024/06/18 11:02:51 sorm.LOG:       Inserting into SomeType
+2024/06/18 11:02:51 [32msorm.SUCCESS:[0m   Items inserted
+2024/06/18 11:02:51 [35msorm.NOTICE:[0m    Selecting from SomeType with condition seppia = ?
+2024/06/18 11:02:51 [32msorm.SUCCESS:[0m   Items selected and returned
+2024/06/18 11:02:51 [35msorm.NOTICE:[0m    Updating in table SomeType
+2024/06/18 11:02:51 sorm.LOG:       No rows were affected
+2024/06/18 11:02:51 [35msorm.NOTICE:[0m    Deleting from table SomeType with condition Seppia = ?
+2024/06/18 11:02:51 sorm.LOG:       Executing query on database test.db
+2024/06/18 11:02:51 sorm.LOG:       Item was not found, so it was not deleted
+2024/06/18 11:03:10 [35msorm.NOTICE:[0m    Opening database connection at test.db
+2024/06/18 11:03:10 sorm.LOG:       Database opened
+2024/06/18 11:03:10 sorm.LOG:       Activating foreign keys
+2024/06/18 11:03:10 [32msorm.SUCCESS:[0m   Database opened
+2024/06/18 11:03:10 sorm.LOG:       
+CREATE TABLE IF NOT EXISTS Cat (
+Id TEXT PRIMARY KEY,
+CatName_u TEXT UNIQUE,
+CatDesc TEXT);
+2024/06/18 11:03:10 sorm.LOG:       
+CREATE TABLE IF NOT EXISTS Item (
+Id TEXT PRIMARY KEY,
+Desc TEXT,
+Price REAL,
+InStock BOOLEAN,
+Cat_id TEXT,
+FOREIGN KEY (Cat_id) REFERENCES Cat(Id) ON UPDATE CASCADE);
+2024/06/18 11:03:10 sorm.LOG:       
+CREATE TABLE IF NOT EXISTS SomeType (
+Seppia TEXT,
+CatName_nu TEXT NOT NULL UNIQUE,
+Cat_id TEXT,
+Anvedi INTEGER,
+FOREIGN KEY (Cat_id) REFERENCES Cat(Id) ON UPDATE CASCADE);
+2024/06/18 11:03:10 [35msorm.NOTICE:[0m    Starting insert transaction
+2024/06/18 11:03:10 sorm.LOG:       Inserting into SomeType
+2024/06/18 11:03:10 [32msorm.SUCCESS:[0m   Items inserted
+2024/06/18 11:03:10 [35msorm.NOTICE:[0m    Selecting from SomeType with condition seppia = ?
+2024/06/18 11:03:10 [32msorm.SUCCESS:[0m   Items selected and returned
+2024/06/18 11:03:10 [35msorm.NOTICE:[0m    Updating in table SomeType
+2024/06/18 11:03:10 sorm.LOG:       No rows were affected
+2024/06/18 11:03:10 [35msorm.NOTICE:[0m    Deleting from table SomeType with condition Seppia = ?
+2024/06/18 11:03:10 sorm.LOG:       Executing query on database test.db
+2024/06/18 11:03:10 sorm.LOG:       Item was not found, so it was not deleted
+2024/06/18 11:03:42 [35msorm.NOTICE:[0m    Opening database connection at test.db
+2024/06/18 11:03:42 sorm.LOG:       Database opened
+2024/06/18 11:03:42 sorm.LOG:       Activating foreign keys
+2024/06/18 11:03:42 [32msorm.SUCCESS:[0m   Database opened
+2024/06/18 11:03:42 sorm.LOG:       CREATE TABLE IF NOT EXISTS Cat (Id TEXT PRIMARY KEY, CatName_u TEXT UNIQUE, CatDesc TEXT);
+2024/06/18 11:03:42 sorm.LOG:       CREATE TABLE IF NOT EXISTS Item (Id TEXT PRIMARY KEY, Desc TEXT, Price REAL, InStock BOOLEAN, Cat_id TEXT, FOREIGN KEY (Cat_id) REFERENCES Cat(Id) ON UPDATE CASCADE);
+2024/06/18 11:03:42 sorm.LOG:       CREATE TABLE IF NOT EXISTS SomeType (Seppia TEXT, CatName_nu TEXT NOT NULL UNIQUE, Cat_id TEXT, Anvedi INTEGER, FOREIGN KEY (Cat_id) REFERENCES Cat(Id) ON UPDATE CASCADE);
+2024/06/18 11:03:42 [35msorm.NOTICE:[0m    Starting insert transaction
+2024/06/18 11:03:42 sorm.LOG:       Inserting into SomeType
+2024/06/18 11:03:42 [32msorm.SUCCESS:[0m   Items inserted
+2024/06/18 11:03:42 [35msorm.NOTICE:[0m    Selecting from SomeType with condition seppia = ?
+2024/06/18 11:03:42 [32msorm.SUCCESS:[0m   Items selected and returned
+2024/06/18 11:03:42 [35msorm.NOTICE:[0m    Updating in table SomeType
+2024/06/18 11:03:42 sorm.LOG:       No rows were affected
+2024/06/18 11:03:42 [35msorm.NOTICE:[0m    Deleting from table SomeType with condition Seppia = ?
+2024/06/18 11:03:42 sorm.LOG:       Executing query on database test.db
+2024/06/18 11:03:42 sorm.LOG:       Item was not found, so it was not deleted
+2024/06/18 11:04:34 [35msorm.NOTICE:[0m    Opening database connection at test.db
+2024/06/18 11:04:34 sorm.LOG:       Database opened
+2024/06/18 11:04:34 sorm.LOG:       Activating foreign keys
+2024/06/18 11:04:34 [32msorm.SUCCESS:[0m   Database opened
+2024/06/18 11:04:34 sorm.LOG:       CREATE TABLE IF NOT EXISTS Cat (Id TEXT PRIMARY KEY, CatName_u TEXT UNIQUE, CatDesc TEXT);
+2024/06/18 11:04:34 sorm.LOG:       CREATE TABLE IF NOT EXISTS Item (Id TEXT PRIMARY KEY, Desc TEXT, Price REAL, InStock BOOLEAN, Cat_id TEXT, FOREIGN KEY (Cat_id) REFERENCES Cat(Id) ON UPDATE CASCADE);
+2024/06/18 11:04:34 sorm.LOG:       CREATE TABLE IF NOT EXISTS SomeType (Seppia TEXT, CatName_nu TEXT NOT NULL UNIQUE, Cat_id TEXT, Anvedi INTEGER, FOREIGN KEY (Cat_id) REFERENCES Cat(Id) ON UPDATE CASCADE);
+2024/06/18 11:04:34 [35msorm.NOTICE:[0m    Starting insert transaction
+2024/06/18 11:04:34 sorm.LOG:       Inserting into SomeType
+2024/06/18 11:04:34 [32msorm.SUCCESS:[0m   Items inserted
+2024/06/18 11:04:34 [35msorm.NOTICE:[0m    Selecting from SomeType with condition seppia = ?
+2024/06/18 11:04:34 [32msorm.SUCCESS:[0m   Items selected and returned
+2024/06/18 11:04:34 [35msorm.NOTICE:[0m    Updating in table SomeType
+2024/06/18 11:04:34 sorm.LOG:       No rows were affected
+2024/06/18 11:04:34 [35msorm.NOTICE:[0m    Deleting from table SomeType with condition Seppia = ?
+2024/06/18 11:04:34 sorm.LOG:       Executing query on database test.db
+2024/06/18 11:04:34 sorm.LOG:       Item was not found, so it was not deleted
+2024/06/18 11:05:12 [35msorm.NOTICE:[0m    Opening database connection at test.db
+2024/06/18 11:05:12 sorm.LOG:       Database opened
+2024/06/18 11:05:12 sorm.LOG:       Activating foreign keys
+2024/06/18 11:05:12 [32msorm.SUCCESS:[0m   Database opened
+2024/06/18 11:05:12 sorm.LOG:       CREATE TABLE IF NOT EXISTS Cat (Id TEXT PRIMARY KEY, CatName_u TEXT UNIQUE, CatDesc TEXT);
+2024/06/18 11:05:12 sorm.LOG:       CREATE TABLE IF NOT EXISTS Item (Id TEXT PRIMARY KEY, Desc TEXT, Price REAL, InStock BOOLEAN, Cat_id TEXT, FOREIGN KEY (Cat_id) REFERENCES Cat(Id) ON UPDATE CASCADE);
+2024/06/18 11:05:12 sorm.LOG:       CREATE TABLE IF NOT EXISTS SomeType (Seppia TEXT, CatName_nu TEXT NOT NULL UNIQUE, Cat_id TEXT, Anvedi INTEGER, FOREIGN KEY (Cat_id) REFERENCES Cat(Id) ON UPDATE CASCADE);
+2024/06/18 11:05:12 [35msorm.NOTICE:[0m    Starting insert transaction
+2024/06/18 11:05:12 sorm.LOG:       Inserting into SomeType
+2024/06/18 11:05:12 [32msorm.SUCCESS:[0m   Items inserted
+2024/06/18 11:05:12 [35msorm.NOTICE:[0m    Selecting from SomeType with condition seppia = ?
+2024/06/18 11:05:12 [32msorm.SUCCESS:[0m   Items selected and returned
+2024/06/18 11:05:12 [35msorm.NOTICE:[0m    Updating in table SomeType
+2024/06/18 11:05:12 sorm.LOG:       No rows were affected
+2024/06/18 11:05:12 [35msorm.NOTICE:[0m    Deleting from table SomeType with condition Seppia = ?
+2024/06/18 11:05:12 sorm.LOG:       Executing query on database test.db
+2024/06/18 11:05:12 sorm.LOG:       Item was not found, so it was not deleted
+2024/06/18 11:06:35 [35msorm.NOTICE:[0m    Opening database connection at test.db
+2024/06/18 11:06:35 sorm.LOG:       Database opened
+2024/06/18 11:06:35 sorm.LOG:       Activating foreign keys
+2024/06/18 11:06:35 [32msorm.SUCCESS:[0m   Database opened
+2024/06/18 11:06:35 sorm.LOG:       CREATE TABLE IF NOT EXISTS Cat (Id TEXT PRIMARY KEY, CatName_u TEXT UNIQUE, CatDesc TEXT);
+2024/06/18 11:06:35 sorm.LOG:       CREATE TABLE IF NOT EXISTS Item (Id TEXT PRIMARY KEY, Desc TEXT, Price REAL, InStock BOOLEAN, Cat_id TEXT, FOREIGN KEY (Cat_id) REFERENCES Cat(Id) ON UPDATE CASCADE);
+2024/06/18 11:06:35 sorm.LOG:       CREATE TABLE IF NOT EXISTS SomeType (Seppia TEXT, CatName_nu TEXT NOT NULL UNIQUE, Cat_id TEXT, Anvedi INTEGER, FOREIGN KEY (Cat_id) REFERENCES Cat(Id) ON UPDATE CASCADE);
+2024/06/18 11:06:35 [35msorm.NOTICE:[0m    Starting insert transaction
+2024/06/18 11:06:35 sorm.LOG:       Inserting into SomeType
+2024/06/18 11:06:35 [32msorm.SUCCESS:[0m   Items inserted
+2024/06/18 11:06:35 [35msorm.NOTICE:[0m    Selecting from SomeType with condition seppia = ?
+2024/06/18 11:06:35 [32msorm.SUCCESS:[0m   Items selected and returned
+2024/06/18 11:06:35 [35msorm.NOTICE:[0m    Updating in table SomeType
+2024/06/18 11:06:35 sorm.LOG:       No rows were affected
+2024/06/18 11:06:35 [35msorm.NOTICE:[0m    Deleting from table SomeType with condition Seppia = ?
+2024/06/18 11:06:35 sorm.LOG:       Executing query on database test.db
+2024/06/18 11:06:35 sorm.LOG:       Item was not found, so it was not deleted
+2024/06/18 11:09:01 sorm.LOG:       sql.Open at path test.db
+2024/06/18 11:09:01 sorm.LOG:       foreign keys activated
+2024/06/18 11:09:01 sorm.LOG:       CREATE TABLE IF NOT EXISTS Cat (Id TEXT PRIMARY KEY, CatName_u TEXT UNIQUE, CatDesc TEXT);
+2024/06/18 11:09:01 sorm.LOG:       CREATE TABLE IF NOT EXISTS Item (Id TEXT PRIMARY KEY, Desc TEXT, Price REAL, InStock BOOLEAN, Cat_id TEXT, FOREIGN KEY (Cat_id) REFERENCES Cat(Id) ON UPDATE CASCADE);
+2024/06/18 11:09:01 sorm.LOG:       CREATE TABLE IF NOT EXISTS SomeType (Seppia TEXT, CatName_nu TEXT NOT NULL UNIQUE, Cat_id TEXT, Anvedi INTEGER, FOREIGN KEY (Cat_id) REFERENCES Cat(Id) ON UPDATE CASCADE);
+2024/06/18 11:09:01 [35msorm.NOTICE:[0m    Starting insert transaction
+2024/06/18 11:09:01 sorm.LOG:       Inserting into SomeType
+2024/06/18 11:09:01 [32msorm.SUCCESS:[0m   Items inserted
+2024/06/18 11:09:01 [35msorm.NOTICE:[0m    Selecting from SomeType with condition seppia = ?
+2024/06/18 11:09:01 [32msorm.SUCCESS:[0m   Items selected and returned
+2024/06/18 11:09:01 [35msorm.NOTICE:[0m    Updating in table SomeType
+2024/06/18 11:09:01 sorm.LOG:       No rows were affected
+2024/06/18 11:09:01 [35msorm.NOTICE:[0m    Deleting from table SomeType with condition Seppia = ?
+2024/06/18 11:09:01 sorm.LOG:       Executing query on database test.db
+2024/06/18 11:09:01 sorm.LOG:       Item was not found, so it was not deleted
+2024/06/18 11:10:16 sorm.LOG:       sql.Open at path test.db
+2024/06/18 11:10:16 sorm.LOG:       foreign keys activated
+2024/06/18 11:10:16 sorm.LOG:       CREATE TABLE IF NOT EXISTS Cat (Id TEXT PRIMARY KEY, CatName_u TEXT UNIQUE, CatDesc TEXT);
+2024/06/18 11:10:16 sorm.LOG:       CREATE TABLE IF NOT EXISTS Item (Id TEXT PRIMARY KEY, Desc TEXT, Price REAL, InStock BOOLEAN, Cat_id TEXT, FOREIGN KEY (Cat_id) REFERENCES Cat(Id) ON UPDATE CASCADE);
+2024/06/18 11:10:16 sorm.LOG:       CREATE TABLE IF NOT EXISTS SomeType (Seppia TEXT, CatName_nu TEXT NOT NULL UNIQUE, Cat_id TEXT, Anvedi INTEGER, FOREIGN KEY (Cat_id) REFERENCES Cat(Id) ON UPDATE CASCADE);
+2024/06/18 11:10:16 [35msorm.NOTICE:[0m    Starting insert transaction
+2024/06/18 11:10:16 sorm.LOG:       Inserting into SomeType
+2024/06/18 11:10:16 [32msorm.SUCCESS:[0m   Items inserted
+2024/06/18 11:10:16 [35msorm.NOTICE:[0m    Selecting from SomeType with condition seppia = ?
+2024/06/18 11:10:16 [32msorm.SUCCESS:[0m   Items selected and returned
+2024/06/18 11:10:16 [35msorm.NOTICE:[0m    Updating in table SomeType
+2024/06/18 11:10:16 sorm.LOG:       No rows were affected
+2024/06/18 11:10:16 sorm.LOG:       item was not found, so it was not deleted
+2024/06/18 11:11:11 sorm.LOG:       sql.Open at path test.db
+2024/06/18 11:11:11 sorm.LOG:       foreign keys activated
+2024/06/18 11:11:11 sorm.LOG:       CREATE TABLE IF NOT EXISTS Cat (Id TEXT PRIMARY KEY, CatName_u TEXT UNIQUE, CatDesc TEXT);
+2024/06/18 11:11:11 sorm.LOG:       CREATE TABLE IF NOT EXISTS Item (Id TEXT PRIMARY KEY, Desc TEXT, Price REAL, InStock BOOLEAN, Cat_id TEXT, FOREIGN KEY (Cat_id) REFERENCES Cat(Id) ON UPDATE CASCADE);
+2024/06/18 11:11:11 sorm.LOG:       CREATE TABLE IF NOT EXISTS SomeType (Seppia TEXT, CatName_nu TEXT NOT NULL UNIQUE, Cat_id TEXT, Anvedi INTEGER, FOREIGN KEY (Cat_id) REFERENCES Cat(Id) ON UPDATE CASCADE);
+2024/06/18 11:11:11 [35msorm.NOTICE:[0m    Starting insert transaction
+2024/06/18 11:11:11 sorm.LOG:       Inserting into SomeType
+2024/06/18 11:11:11 [32msorm.SUCCESS:[0m   Items inserted
+2024/06/18 11:11:11 [35msorm.NOTICE:[0m    Selecting from SomeType with condition seppia = ?
+2024/06/18 11:11:11 [32msorm.SUCCESS:[0m   Items selected and returned
+2024/06/18 11:11:11 [35msorm.NOTICE:[0m    Updating in table SomeType
+2024/06/18 11:11:11 sorm.LOG:       No rows were affected
+2024/06/18 11:11:11 sorm.LOG:       DELETE FROM SomeType WHERE Seppia = ?; :: item was not found, so it was not deleted
+2024/06/18 11:11:51 sorm.LOG:       sql.Open at path test.db
+2024/06/18 11:11:51 sorm.LOG:       foreign keys activated
+2024/06/18 11:11:51 sorm.LOG:       CREATE TABLE IF NOT EXISTS Cat (Id TEXT PRIMARY KEY, CatName_u TEXT UNIQUE, CatDesc TEXT);
+2024/06/18 11:11:52 sorm.LOG:       CREATE TABLE IF NOT EXISTS Item (Id TEXT PRIMARY KEY, Desc TEXT, Price REAL, InStock BOOLEAN, Cat_id TEXT, FOREIGN KEY (Cat_id) REFERENCES Cat(Id) ON UPDATE CASCADE);
+2024/06/18 11:11:52 sorm.LOG:       CREATE TABLE IF NOT EXISTS SomeType (Seppia TEXT, CatName_nu TEXT NOT NULL UNIQUE, Cat_id TEXT, Anvedi INTEGER, FOREIGN KEY (Cat_id) REFERENCES Cat(Id) ON UPDATE CASCADE);
+2024/06/18 11:11:52 [35msorm.NOTICE:[0m    Starting insert transaction
+2024/06/18 11:11:52 sorm.LOG:       Inserting into SomeType
+2024/06/18 11:11:52 [32msorm.SUCCESS:[0m   Items inserted
+2024/06/18 11:11:52 [35msorm.NOTICE:[0m    Selecting from SomeType with condition seppia = ?
+2024/06/18 11:11:52 [32msorm.SUCCESS:[0m   Items selected and returned
+2024/06/18 11:11:52 [35msorm.NOTICE:[0m    Updating in table SomeType
+2024/06/18 11:11:52 sorm.LOG:       No rows were affected
+2024/06/18 11:11:52 sorm.LOG:       DELETE FROM SomeType WHERE Seppia = ?; :: 404
+2024/06/18 11:12:05 sorm.LOG:       sql.Open at path test.db
+2024/06/18 11:12:05 sorm.LOG:       foreign keys activated
+2024/06/18 11:12:05 sorm.LOG:       CREATE TABLE IF NOT EXISTS Cat (Id TEXT PRIMARY KEY, CatName_u TEXT UNIQUE, CatDesc TEXT);
+2024/06/18 11:12:05 sorm.LOG:       CREATE TABLE IF NOT EXISTS Item (Id TEXT PRIMARY KEY, Desc TEXT, Price REAL, InStock BOOLEAN, Cat_id TEXT, FOREIGN KEY (Cat_id) REFERENCES Cat(Id) ON UPDATE CASCADE);
+2024/06/18 11:12:05 sorm.LOG:       CREATE TABLE IF NOT EXISTS SomeType (Seppia TEXT, CatName_nu TEXT NOT NULL UNIQUE, Cat_id TEXT, Anvedi INTEGER, FOREIGN KEY (Cat_id) REFERENCES Cat(Id) ON UPDATE CASCADE);
+2024/06/18 11:12:05 [35msorm.NOTICE:[0m    Starting insert transaction
+2024/06/18 11:12:05 sorm.LOG:       Inserting into SomeType
+2024/06/18 11:12:05 [32msorm.SUCCESS:[0m   Items inserted
+2024/06/18 11:12:05 [35msorm.NOTICE:[0m    Selecting from SomeType with condition seppia = ?
+2024/06/18 11:12:05 [32msorm.SUCCESS:[0m   Items selected and returned
+2024/06/18 11:12:05 [35msorm.NOTICE:[0m    Updating in table SomeType
+2024/06/18 11:12:05 sorm.LOG:       No rows were affected
+2024/06/18 11:12:05 sorm.LOG:       DELETE FROM SomeType WHERE Seppia = ?; 404
+2024/06/18 11:14:17 sorm.LOG:       sql.Open at path test.db
+2024/06/18 11:14:17 sorm.LOG:       foreign keys activated
+2024/06/18 11:14:17 sorm.LOG:       CREATE TABLE IF NOT EXISTS Cat (Id TEXT PRIMARY KEY, CatName_u TEXT UNIQUE, CatDesc TEXT);
+2024/06/18 11:14:17 sorm.LOG:       CREATE TABLE IF NOT EXISTS Item (Id TEXT PRIMARY KEY, Desc TEXT, Price REAL, InStock BOOLEAN, Cat_id TEXT, FOREIGN KEY (Cat_id) REFERENCES Cat(Id) ON UPDATE CASCADE);
+2024/06/18 11:14:17 sorm.LOG:       CREATE TABLE IF NOT EXISTS SomeType (Seppia TEXT, CatName_nu TEXT NOT NULL UNIQUE, Cat_id TEXT, Anvedi INTEGER, FOREIGN KEY (Cat_id) REFERENCES Cat(Id) ON UPDATE CASCADE);
+2024/06/18 11:14:17 [35msorm.NOTICE:[0m    Starting insert transaction
+2024/06/18 11:14:17 sorm.LOG:       Inserting into SomeType
+2024/06/18 11:14:17 [32msorm.SUCCESS:[0m   Items inserted
+2024/06/18 11:14:17 [35msorm.NOTICE:[0m    Selecting from SomeType with condition seppia = ?
+2024/06/18 11:14:17 [32msorm.SUCCESS:[0m   Items selected and returned
+2024/06/18 11:14:17 [35msorm.NOTICE:[0m    Updating in table SomeType
+2024/06/18 11:14:17 sorm.LOG:       No rows were affected
+2024/06/18 11:14:17 sorm.LOG:       DELETE FROM SomeType WHERE Seppia = ?; 404
+2024/06/18 11:14:39 sorm.LOG:       sql.Open at path test.db
+2024/06/18 11:14:39 sorm.LOG:       foreign keys activated
+2024/06/18 11:14:39 sorm.LOG:       CREATE TABLE IF NOT EXISTS Cat (Id TEXT PRIMARY KEY, CatName_u TEXT UNIQUE, CatDesc TEXT);
+2024/06/18 11:14:39 sorm.LOG:       CREATE TABLE IF NOT EXISTS Item (Id TEXT PRIMARY KEY, Desc TEXT, Price REAL, InStock BOOLEAN, Cat_id TEXT, FOREIGN KEY (Cat_id) REFERENCES Cat(Id) ON UPDATE CASCADE);
+2024/06/18 11:14:39 sorm.LOG:       CREATE TABLE IF NOT EXISTS SomeType (Seppia TEXT, CatName_nu TEXT NOT NULL UNIQUE, Cat_id TEXT, Anvedi INTEGER, FOREIGN KEY (Cat_id) REFERENCES Cat(Id) ON UPDATE CASCADE);
+2024/06/18 11:14:39 [35msorm.NOTICE:[0m    Starting insert transaction
+2024/06/18 11:14:39 sorm.LOG:       Inserting into SomeType
+2024/06/18 11:14:39 [32msorm.SUCCESS:[0m   Items inserted
+2024/06/18 11:14:39 [35msorm.NOTICE:[0m    Selecting from SomeType with condition seppia = ?
+2024/06/18 11:14:39 [32msorm.SUCCESS:[0m   Items selected and returned
+2024/06/18 11:14:39 [35msorm.NOTICE:[0m    Updating in table SomeType
+2024/06/18 11:14:39 sorm.LOG:       No rows were affected
+2024/06/18 11:14:39 sorm.LOG:       DELETE FROM SomeType WHERE Seppia = ?; item not found
+2024/06/18 11:15:38 sorm.LOG:       sql.Open at path test.db
+2024/06/18 11:15:38 sorm.LOG:       foreign keys activated
+2024/06/18 11:15:38 sorm.LOG:       CREATE TABLE IF NOT EXISTS Cat (Id TEXT PRIMARY KEY, CatName_u TEXT UNIQUE, CatDesc TEXT);
+2024/06/18 11:15:38 sorm.LOG:       CREATE TABLE IF NOT EXISTS Item (Id TEXT PRIMARY KEY, Desc TEXT, Price REAL, InStock BOOLEAN, Cat_id TEXT, FOREIGN KEY (Cat_id) REFERENCES Cat(Id) ON UPDATE CASCADE);
+2024/06/18 11:15:38 sorm.LOG:       CREATE TABLE IF NOT EXISTS SomeType (Seppia TEXT, CatName_nu TEXT NOT NULL UNIQUE, Cat_id TEXT, Anvedi INTEGER, FOREIGN KEY (Cat_id) REFERENCES Cat(Id) ON UPDATE CASCADE);
+2024/06/18 11:15:38 [35msorm.NOTICE:[0m    Starting insert transaction
+2024/06/18 11:15:38 sorm.LOG:       Inserting into SomeType
+2024/06/18 11:15:38 [32msorm.SUCCESS:[0m   Items inserted
+2024/06/18 11:15:38 [35msorm.NOTICE:[0m    Selecting from SomeType with condition seppia = ?
+2024/06/18 11:15:38 [32msorm.SUCCESS:[0m   Items selected and returned
+2024/06/18 11:15:38 [35msorm.NOTICE:[0m    Updating in table SomeType
+2024/06/18 11:15:38 sorm.LOG:       No rows were affected
+2024/06/18 11:15:38 sorm.LOG:       DELETE FROM SomeType WHERE Seppia = ?;, item not found
+2024/07/23 14:57:59 sorm.LOG:       sql.Open at path test.db
+2024/07/23 14:57:59 sorm.LOG:       foreign keys activated
+2024/07/23 14:57:59 sorm.LOG:       CREATE TABLE IF NOT EXISTS Cat (Id TEXT PRIMARY KEY, CatName_u TEXT UNIQUE, CatDesc TEXT);
+2024/07/23 14:57:59 sorm.LOG:       CREATE TABLE IF NOT EXISTS Item (Id TEXT PRIMARY KEY, Desc TEXT, Price REAL, InStock BOOLEAN, Cat_id TEXT DEFAULT 'nil', FOREIGN KEY (Cat_id) REFERENCES Cat(Id) ON UPDATE CASCADE ON DELETE SET DEFAULT);
+2024/07/23 14:57:59 sorm.LOG:       CREATE TABLE IF NOT EXISTS SomeType (Seppia TEXT, CatName_nu TEXT NOT NULL UNIQUE, Cat_id TEXT DEFAULT 'nil', Anvedi INTEGER, FOREIGN KEY (Cat_id) REFERENCES Cat(Id) ON UPDATE CASCADE ON DELETE SET DEFAULT);
+2024/07/23 14:57:59 sorm.LOG:       Inserting into SomeType
+2024/07/23 14:57:59 [32msorm.SUCCESS:[0m   Items inserted
+2024/07/23 14:57:59 [35msorm.NOTICE:[0m    Selecting from SomeType with condition seppia = ?
+2024/07/23 14:57:59 [32msorm.SUCCESS:[0m   Items selected and returned
+2024/07/23 14:57:59 [35msorm.NOTICE:[0m    Updating in table SomeType
+2024/07/23 14:57:59 sorm.LOG:       No rows were affected
+2024/07/23 14:57:59 sorm.LOG:       DELETE FROM SomeType WHERE Seppia = ?;, item not found

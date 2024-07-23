@@ -30,7 +30,8 @@ func (db *Database) CreateTable(model interface{}) error {
   constraints := []string{}
 	t := reflect.TypeOf(model)
 	tableName := t.Name()
-  logNotice(fmt.Sprintf("Creating table: %v", tableName))
+
+  // logNotice(fmt.Sprintf("Creating table: %v", tableName))
 
 	for i := 0; i < t.NumField(); i++ {
 		field := t.Field(i)
@@ -51,15 +52,15 @@ func (db *Database) CreateTable(model interface{}) error {
       case "nu":
         fields = append(fields, fmt.Sprintf("%s %s NOT NULL UNIQUE", field.Name, sqlType))
       case "id":
-			  fields = append(fields, fmt.Sprintf("%s %s", field.Name, sqlType))
-        constraints = append(constraints, fmt.Sprintf("FOREIGN KEY (%s) REFERENCES %s(Id) ON UPDATE CASCADE", field.Name, parts[0]))
+			  fields = append(fields, fmt.Sprintf("%s %s DEFAULT 'nil'", field.Name, sqlType))
+        constraints = append(constraints, fmt.Sprintf("FOREIGN KEY (%s) REFERENCES %s(Id) ON UPDATE CASCADE ON DELETE SET DEFAULT", field.Name, parts[0]))
       default: 
 			  fields = append(fields, fmt.Sprintf("%s %s", field.Name, sqlType))
       }
     } else {
 			fields = append(fields, fmt.Sprintf("%s %s", field.Name, sqlType))
     }
-    logInfo(fmt.Sprintf("\t%v", fields[i]))
+    // logInfo(fmt.Sprintf("\t%v", fields[i]))
 	}
 
   query := ""
@@ -69,21 +70,20 @@ func (db *Database) CreateTable(model interface{}) error {
 	  query = fmt.Sprintf("CREATE TABLE IF NOT EXISTS %s (%s, %s);", tableName, strings.Join(fields, ", "), strings.Join(constraints, ", "))
   }
 
-  logInfo(fmt.Sprintf("Executing query on database %v", db.Path))
+  logInfo(fmt.Sprintf("%v", query))
 	_, err := db.Connection.Exec(query)
   if err != nil {
     logError(fmt.Sprintf("db.Exec, %v", err))
     return err
   }
-  logSuccess(fmt.Sprintf("Table %v created", tableName))
 
-  logInfo(fmt.Sprintf("Inserting default nil value into %v", tableName))
+  // logInfo(fmt.Sprintf("Inserting default nil value into %v", tableName))
   err = db.InsertNil(model)
   if err != nil {
     logError(fmt.Sprintf("db.InsertNil, %v", err))
     return err
   }
-  logSuccess(fmt.Sprintf("Nil value inserted into %v", tableName))
+  // logSuccess(fmt.Sprintf("Nil value inserted into %v", tableName))
 
 	return nil
 }
